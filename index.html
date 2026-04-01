@@ -1,0 +1,787 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="RM5 Pluri-Services — Votre partenaire multiservices de confiance à Matadi, Kongo Central. Génie civil, IT, fret maritime, maintenance, nettoyage et plus.">
+  <meta name="author" content="Mavinga Lubabu Raison">
+  <meta property="og:title" content="RM5 Pluri-Services">
+  <meta property="og:description" content="Votre partenaire multiservices de confiance à Matadi, Kongo Central.">
+  <meta property="og:type" content="website">
+  <title>RM5 Pluri-Services — Votre partenaire multiservices de confiance</title>
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Barlow+Condensed:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- ================================================
+     ICONS SPRITE (inline, hidden)
+================================================ -->
+<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+  <!-- construction -->
+  <symbol id="icon-construction" viewBox="0 0 48 48">
+    <rect x="4" y="36" width="40" height="6" rx="1" fill="currentColor"/>
+    <rect x="10" y="20" width="4" height="16" fill="currentColor"/>
+    <rect x="34" y="20" width="4" height="16" fill="currentColor"/>
+    <rect x="18" y="26" width="12" height="10" fill="currentColor" opacity="0.5"/>
+    <polygon points="24,6 6,20 42,20" fill="currentColor"/>
+  </symbol>
+  <!-- maintenance/gear -->
+  <symbol id="icon-maintenance" viewBox="0 0 48 48">
+    <circle cx="24" cy="24" r="7" fill="none" stroke="currentColor" stroke-width="3"/>
+    <path d="M24 4v8M24 36v8M4 24h8M36 24h8M9.4 9.4l5.7 5.7M32.9 32.9l5.7 5.7M9.4 38.6l5.7-5.7M32.9 15.1l5.7-5.7" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="24" cy="24" r="2.5" fill="currentColor"/>
+  </symbol>
+  <!-- IT/computer -->
+  <symbol id="icon-it" viewBox="0 0 48 48">
+    <rect x="6" y="8" width="36" height="24" rx="2" fill="none" stroke="currentColor" stroke-width="3"/>
+    <line x1="16" y1="40" x2="32" y2="40" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+    <line x1="24" y1="32" x2="24" y2="40" stroke="currentColor" stroke-width="3"/>
+    <polyline points="13,22 19,16 25,22 31,14" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <!-- supply/box -->
+  <symbol id="icon-supply" viewBox="0 0 48 48">
+    <rect x="8" y="20" width="32" height="22" rx="2" fill="none" stroke="currentColor" stroke-width="3"/>
+    <path d="M16 20v-6a8 8 0 0 1 16 0v6" fill="none" stroke="currentColor" stroke-width="3"/>
+    <line x1="8" y1="30" x2="40" y2="30" stroke="currentColor" stroke-width="2"/>
+  </symbol>
+  <!-- cleaning -->
+  <symbol id="icon-cleaning" viewBox="0 0 48 48">
+    <path d="M18 42 L22 8 L30 8 L34 42" stroke="currentColor" stroke-width="3" fill="none" stroke-linejoin="round"/>
+    <line x1="16" y1="42" x2="36" y2="42" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+    <ellipse cx="26" cy="8" rx="7" ry="3" stroke="currentColor" stroke-width="2.5" fill="none"/>
+    <path d="M12 20 C14 16 20 16 22 20 C24 24 30 24 32 20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
+  </symbol>
+  <!-- freight/truck -->
+  <symbol id="icon-freight" viewBox="0 0 48 48">
+    <path d="M4 30V20L28 20V36H4V30Z" fill="none" stroke="currentColor" stroke-width="3"/>
+    <path d="M28 24H36L44 31V36H28V24Z" fill="none" stroke="currentColor" stroke-width="3"/>
+    <circle cx="12" cy="38" r="4" stroke="currentColor" stroke-width="3" fill="none"/>
+    <circle cx="36" cy="38" r="4" stroke="currentColor" stroke-width="3" fill="none"/>
+    <line x1="4" y1="26" x2="28" y2="26" stroke="currentColor" stroke-width="1.5" opacity="0.4"/>
+  </symbol>
+  <!-- consulting/person -->
+  <symbol id="icon-consulting" viewBox="0 0 48 48">
+    <circle cx="24" cy="16" r="10" fill="none" stroke="currentColor" stroke-width="3"/>
+    <path d="M8 44c0-8 7.2-14 16-14s16 6 16 14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
+    <line x1="24" y1="12" x2="24" y2="20" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+    <circle cx="24" cy="23" r="1.5" fill="currentColor"/>
+  </symbol>
+  <!-- arrow right -->
+  <symbol id="icon-arrow-right" viewBox="0 0 24 24">
+    <line x1="5" y1="12" x2="19" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    <polyline points="12,5 19,12 12,19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </symbol>
+  <!-- chevron up -->
+  <symbol id="icon-chevron-up" viewBox="0 0 24 24">
+    <polyline points="18,15 12,9 6,15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  </symbol>
+  <!-- phone -->
+  <symbol id="icon-phone" viewBox="0 0 24 24">
+    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.42 2 2 0 0 1 3.61 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6.29 6.29l.97-.97a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" fill="none" stroke="currentColor" stroke-width="2"/>
+  </symbol>
+  <!-- mail -->
+  <symbol id="icon-mail" viewBox="0 0 24 24">
+    <rect x="2" y="4" width="20" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+    <polyline points="2,4 12,13 22,4" fill="none" stroke="currentColor" stroke-width="2"/>
+  </symbol>
+  <!-- map pin -->
+  <symbol id="icon-pin" viewBox="0 0 24 24">
+    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" fill="none" stroke="currentColor" stroke-width="2"/>
+    <circle cx="12" cy="10" r="3" fill="none" stroke="currentColor" stroke-width="2"/>
+  </symbol>
+  <!-- user -->
+  <symbol id="icon-user" viewBox="0 0 24 24">
+    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    <circle cx="12" cy="7" r="4" fill="none" stroke="currentColor" stroke-width="2"/>
+  </symbol>
+  <!-- building -->
+  <symbol id="icon-building" viewBox="0 0 24 24">
+    <rect x="3" y="3" width="18" height="18" rx="1" fill="none" stroke="currentColor" stroke-width="2"/>
+    <line x1="3" y1="9" x2="21" y2="9" stroke="currentColor" stroke-width="2"/>
+    <line x1="3" y1="15" x2="21" y2="15" stroke="currentColor" stroke-width="2"/>
+    <line x1="9" y1="3" x2="9" y2="21" stroke="currentColor" stroke-width="2"/>
+  </symbol>
+  <!-- globe -->
+  <symbol id="icon-globe" viewBox="0 0 24 24">
+    <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/>
+    <ellipse cx="12" cy="12" rx="4" ry="10" fill="none" stroke="currentColor" stroke-width="2"/>
+    <line x1="2" y1="12" x2="22" y2="12" stroke="currentColor" stroke-width="2"/>
+  </symbol>
+  <!-- government -->
+  <symbol id="icon-gov" viewBox="0 0 24 24">
+    <line x1="3" y1="22" x2="21" y2="22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    <line x1="3" y1="10" x2="21" y2="10" stroke="currentColor" stroke-width="2"/>
+    <polygon points="12,2 3,10 21,10" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+    <rect x="7" y="10" width="3" height="12" fill="currentColor" opacity="0.4"/>
+    <rect x="14" y="10" width="3" height="12" fill="currentColor" opacity="0.4"/>
+  </symbol>
+  <!-- check -->
+  <symbol id="icon-check" viewBox="0 0 24 24">
+    <polyline points="20,6 9,17 4,12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  </symbol>
+  <!-- send -->
+  <symbol id="icon-send" viewBox="0 0 24 24">
+    <line x1="22" y1="2" x2="11" y2="13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+    <polygon points="22,2 15,22 11,13 2,9" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+  </symbol>
+  <!-- star -->
+  <symbol id="icon-star" viewBox="0 0 24 24">
+    <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+  </symbol>
+  <!-- shield -->
+  <symbol id="icon-shield" viewBox="0 0 24 24">
+    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" fill="none" stroke="currentColor" stroke-width="2"/>
+  </symbol>
+  <!-- zap -->
+  <symbol id="icon-zap" viewBox="0 0 24 24">
+    <polygon points="13,2 3,14 12,14 11,22 21,10 12,10" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+  </symbol>
+  <!-- team -->
+  <symbol id="icon-team" viewBox="0 0 24 24">
+    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" fill="none" stroke="currentColor" stroke-width="2"/>
+    <circle cx="9" cy="7" r="4" fill="none" stroke="currentColor" stroke-width="2"/>
+    <path d="M23 21v-2a4 4 0 0 0-3-3.87" fill="none" stroke="currentColor" stroke-width="2"/>
+    <path d="M16 3.13a4 4 0 0 1 0 7.75" fill="none" stroke="currentColor" stroke-width="2"/>
+  </symbol>
+</svg>
+
+<!-- ================================================
+     NAVBAR
+================================================ -->
+<nav id="navbar">
+  <a href="#" class="nav-logo">
+    <div class="nav-logo-badge">RM5</div>
+    <div>
+      <span class="nav-logo-name">RM5 Pluri-Services</span>
+      <span class="nav-logo-sub">Votre partenaire multiservices</span>
+    </div>
+  </a>
+
+  <div class="nav-menu">
+    <a href="#about">À propos</a>
+    <a href="#services">Services</a>
+    <a href="#vision">Vision</a>
+    <a href="#clients">Clientèle</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+    Demander un devis
+  </button>
+
+  <button class="nav-hamburger" id="hamburger" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- Mobile Nav -->
+<nav class="nav-mobile" id="mobile-nav">
+  <a href="#about">À propos</a>
+  <a href="#services">Services</a>
+  <a href="#vision">Vision & Mission</a>
+  <a href="#clients">Clientèle</a>
+  <a href="#contact">Contact</a>
+  <button class="nav-cta">Demander un devis</button>
+</nav>
+
+<!-- ================================================
+     HERO
+================================================ -->
+<section id="hero">
+  <div class="hero-bg-img"></div>
+  <div class="hero-overlay"></div>
+
+  <div class="hero-content">
+    <div class="hero-eyebrow">
+      <div class="hero-eyebrow-line"></div>
+      <span class="hero-eyebrow-text">Fondée en 2025 · Matadi, Kongo Central · RDC</span>
+    </div>
+
+    <h1 class="hero-title">
+      Votre<br>
+      <span class="accent">partenaire</span><br>
+      <span class="line-2">multiservices</span>
+    </h1>
+
+    <p class="hero-desc">
+      RM5 Pluri-Services intervient pour les particuliers, entreprises et institutions dans les domaines du génie civil, de l'informatique, du fret international et bien plus encore.
+    </p>
+
+    <div class="hero-actions">
+      <button class="btn-primary" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">
+        Découvrir nos services
+        <svg><use href="#icon-arrow-right"/></svg>
+      </button>
+      <button class="btn-outline" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
+        Nous contacter
+      </button>
+    </div>
+  </div>
+
+  <!-- Stats sidebar -->
+  <div class="hero-sidebar">
+    <div class="hero-sidebar-line"></div>
+    <div class="hero-stat">
+      <div class="hero-stat-num" data-count="7">7+</div>
+      <div class="hero-stat-label">Domaines d'intervention</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-num" data-count="4">4</div>
+      <div class="hero-stat-label">Types de clientèle</div>
+    </div>
+    <div class="hero-stat">
+      <div class="hero-stat-num" data-count="2025">2025</div>
+      <div class="hero-stat-label">Année de création</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================
+     TICKER
+================================================ -->
+<div class="ticker-bar">
+  <div class="ticker-track">
+    <div class="ticker-item"><span class="ticker-text">Génie civil</span><div class="ticker-diamond"></div></div>
+    <div class="ticker-item"><span class="ticker-text">Services informatiques</span><div class="ticker-diamond"></div></div>
+    <div class="ticker-item"><span class="ticker-text">Fret maritime &amp; aérien</span><div class="ticker-diamond"></div></div>
+    <div class="ticker-item"><span class="ticker-text">Nettoyage &amp; assainissement</span><div class="ticker-diamond"></div></div>
+    <div class="ticker-item"><span class="ticker-text">Entretien &amp; maintenance</span><div class="ticker-diamond"></div></div>
+    <div class="ticker-item"><span class="ticker-text">Fourniture de matériels</span><div class="ticker-diamond"></div></div>
+    <div class="ticker-item"><span class="ticker-text">Conseils techniques</span><div class="ticker-diamond"></div></div>
+    <div class="ticker-item"><span class="ticker-text">Réhabilitation d'infrastructures</span><div class="ticker-diamond"></div></div>
+    <div class="ticker-item"><span class="ticker-text">Accompagnement professionnel</span><div class="ticker-diamond"></div></div>
+  </div>
+</div>
+
+<!-- ================================================
+     ABOUT
+================================================ -->
+<section id="about">
+  <div class="about-grid">
+    <!-- Visual -->
+    <div class="about-visual-wrap fade-up">
+      <img src="images/about-visual.svg" alt="RM5 Pluri-Services — Présentation" class="about-visual-img">
+      <div class="about-badge">
+        <span class="about-badge-year">2025</span>
+        <span class="about-badge-label">Fondée</span>
+      </div>
+    </div>
+
+    <!-- Text -->
+    <div>
+      <p class="section-tag fade-up">Qui sommes-nous</p>
+      <h2 class="section-title fade-up">RM5<br>Pluri-<br>Services</h2>
+      <p class="section-lead fade-up">
+        Entreprise spécialisée dans la prestation de services diversifiés, RM5 Pluri-Services répond efficacement aux besoins des particuliers, entreprises et institutions grâce à une approche professionnelle et orientée vers la satisfaction client.
+      </p>
+
+      <div class="about-quote fade-up">
+        <p>"Votre partenaire multiservices de confiance, alliant professionnalisme, innovation et engagement envers le développement socio-économique local."</p>
+      </div>
+
+      <div class="values-grid fade-up">
+        <div class="value-chip"><div class="value-dot"></div>Professionnalisme</div>
+        <div class="value-chip"><div class="value-dot"></div>Intégrité</div>
+        <div class="value-chip"><div class="value-dot"></div>Innovation</div>
+        <div class="value-chip"><div class="value-dot"></div>Esprit d'équipe</div>
+        <div class="value-chip"><div class="value-dot"></div>Satisfaction client</div>
+        <div class="value-chip"><div class="value-dot"></div>Qualité</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================
+     SERVICES
+================================================ -->
+<section id="services">
+  <div class="services-header">
+    <div>
+      <p class="section-tag">Ce que nous faisons</p>
+      <h2 class="section-title" style="color:white">Domaines<br>d'intervention</h2>
+    </div>
+    <p class="section-lead">
+      Nous offrons une gamme complète de services adaptés aux besoins spécifiques de chaque client, avec réactivité et expertise.
+    </p>
+  </div>
+
+  <div class="services-grid">
+    <!-- 1 -->
+    <div class="service-card">
+      <div class="service-num">01</div>
+      <div class="service-icon-wrap">
+        <svg><use href="#icon-construction"/></svg>
+      </div>
+      <h3 class="service-title">Génie civil &amp; réhabilitation</h3>
+      <p class="service-desc">Réhabilitation et construction d'infrastructures selon les standards professionnels les plus exigeants. Routes, bâtiments, ouvrages d'art.</p>
+      <div class="service-arrow"><svg><use href="#icon-arrow-right"/></svg></div>
+    </div>
+
+    <!-- 2 -->
+    <div class="service-card">
+      <div class="service-num">02</div>
+      <div class="service-icon-wrap">
+        <svg><use href="#icon-maintenance"/></svg>
+      </div>
+      <h3 class="service-title">Entretien &amp; maintenance</h3>
+      <p class="service-desc">Maintenance préventive et corrective de bâtiments et équipements industriels. Intervention rapide et garantie de qualité.</p>
+      <div class="service-arrow"><svg><use href="#icon-arrow-right"/></svg></div>
+    </div>
+
+    <!-- 3 -->
+    <div class="service-card">
+      <div class="service-num">03</div>
+      <div class="service-icon-wrap">
+        <svg><use href="#icon-it"/></svg>
+      </div>
+      <h3 class="service-title">Services informatiques &amp; bureautiques</h3>
+      <p class="service-desc">Solutions numériques sur mesure : installation, maintenance, réseaux, formation bureautique pour entreprises et institutions.</p>
+      <div class="service-arrow"><svg><use href="#icon-arrow-right"/></svg></div>
+    </div>
+
+    <!-- 4 -->
+    <div class="service-card">
+      <div class="service-num">04</div>
+      <div class="service-icon-wrap">
+        <svg><use href="#icon-supply"/></svg>
+      </div>
+      <h3 class="service-title">Fourniture de matériels &amp; équipements</h3>
+      <p class="service-desc">Approvisionnement en matériels et équipements professionnels de qualité. Sourcing local et international selon vos spécifications.</p>
+      <div class="service-arrow"><svg><use href="#icon-arrow-right"/></svg></div>
+    </div>
+
+    <!-- 5 -->
+    <div class="service-card">
+      <div class="service-num">05</div>
+      <div class="service-icon-wrap">
+        <svg><use href="#icon-cleaning"/></svg>
+      </div>
+      <h3 class="service-title">Nettoyage &amp; assainissement</h3>
+      <p class="service-desc">Services de nettoyage industriel et assainissement selon les normes environnementales en vigueur. Résidentiel, commercial et industriel.</p>
+      <div class="service-arrow"><svg><use href="#icon-arrow-right"/></svg></div>
+    </div>
+
+    <!-- 6 -->
+    <div class="service-card">
+      <div class="service-num">06</div>
+      <div class="service-icon-wrap">
+        <svg><use href="#icon-freight"/></svg>
+      </div>
+      <h3 class="service-title">Fret maritime &amp; aérien</h3>
+      <p class="service-desc">Gestion complète du transport de marchandises par voie maritime et aérienne. Logistique internationale, dédouanement, livraison.</p>
+      <div class="service-arrow"><svg><use href="#icon-arrow-right"/></svg></div>
+    </div>
+
+    <!-- 7 -->
+    <div class="service-card">
+      <div class="service-num">07</div>
+      <div class="service-icon-wrap">
+        <svg><use href="#icon-consulting"/></svg>
+      </div>
+      <h3 class="service-title">Conseils &amp; accompagnement technique</h3>
+      <p class="service-desc">Expertise et accompagnement personnalisé pour vos projets. Audit, études de faisabilité, conseil stratégique et suivi de projets.</p>
+      <div class="service-arrow"><svg><use href="#icon-arrow-right"/></svg></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================
+     VISION / MISSION
+================================================ -->
+<section id="vision">
+  <div class="vm-top">
+    <div>
+      <p class="section-tag fade-up">Notre orientation</p>
+      <h2 class="section-title fade-up">Vision &amp;<br>Mission</h2>
+    </div>
+    <p class="section-lead fade-up">
+      Chaque prestation est guidée par une vision claire et une mission de service exceptionnel, ancrée dans les réalités du marché congolais.
+    </p>
+  </div>
+
+  <div class="vm-cards">
+    <div class="vm-card vision-card fade-up">
+      <svg class="vm-card-icon"><use href="#icon-star"/></svg>
+      <div class="vm-card-label">Notre vision</div>
+      <h3 class="vm-card-title">Référence<br>incontournable</h3>
+      <p class="vm-card-text">
+        Devenir une référence incontournable dans le secteur des services multisectoriels en offrant des prestations de qualité adaptées aux réalités locales et aux besoins croissants du marché congolais.
+      </p>
+    </div>
+
+    <div class="vm-card mission-card fade-up">
+      <svg class="vm-card-icon"><use href="#icon-zap"/></svg>
+      <div class="vm-card-label">Notre mission</div>
+      <h3 class="vm-card-title">Services fiables<br>&amp; accessibles</h3>
+      <p class="vm-card-text">
+        Fournir des services fiables, rapides et accessibles tout en garantissant la pleine satisfaction des clients et en contribuant activement au développement socio-économique de la République Démocratique du Congo.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================
+     OBJECTIVES
+================================================ -->
+<section id="objectives">
+  <p class="section-tag fade-up">Nos engagements</p>
+  <h2 class="section-title fade-up">Objectifs<br>stratégiques</h2>
+
+  <div class="objectives-grid">
+    <div class="obj-main fade-up">
+      <div class="obj-main-label">Objectif général</div>
+      <h3 class="obj-main-title">Qualité &amp; Excellence</h3>
+      <p class="obj-main-text">
+        Offrir des services de qualité supérieure répondant précisément aux besoins spécifiques de nos clients, avec un engagement total envers leur satisfaction et la création de valeur durable.
+      </p>
+    </div>
+
+    <div class="obj-list fade-up">
+      <div class="obj-item">
+        <div class="obj-item-num">01</div>
+        <p class="obj-item-text">Assurer un service rapide et efficace avec des délais d'intervention compétitifs</p>
+      </div>
+      <div class="obj-item">
+        <div class="obj-item-num">02</div>
+        <p class="obj-item-text">Garantir la qualité des prestations à travers des processus rigoureux de contrôle</p>
+      </div>
+      <div class="obj-item">
+        <div class="obj-item-num">03</div>
+        <p class="obj-item-text">Développer un portefeuille clients solide basé sur la confiance et la fidélité</p>
+      </div>
+      <div class="obj-item">
+        <div class="obj-item-num">04</div>
+        <p class="obj-item-text">Contribuer à la création d'emplois et au développement économique local</p>
+      </div>
+      <div class="obj-item">
+        <div class="obj-item-num">05</div>
+        <p class="obj-item-text">Étendre notre présence géographique et développer des partenariats stratégiques</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================
+     CLIENTS
+================================================ -->
+<section id="clients">
+  <p class="section-tag fade-up">À qui nous servons</p>
+  <h2 class="section-title fade-up">Clientèle<br>cible</h2>
+  <p class="section-lead fade-up" style="margin-bottom:0">
+    RM5 Pluri-Services s'adresse à une clientèle diversifiée, des particuliers aux grandes institutions.
+  </p>
+
+  <div class="clients-grid">
+    <div class="client-card fade-up">
+      <div class="client-icon-wrap">
+        <svg><use href="#icon-user"/></svg>
+      </div>
+      <div class="client-label">Particuliers</div>
+      <p class="client-desc">Services personnalisés pour toutes vos besoins domestiques et personnels</p>
+    </div>
+
+    <div class="client-card fade-up">
+      <div class="client-icon-wrap">
+        <svg><use href="#icon-building"/></svg>
+      </div>
+      <div class="client-label">Entreprises privées</div>
+      <p class="client-desc">Solutions professionnelles adaptées aux PME et grandes entreprises</p>
+    </div>
+
+    <div class="client-card fade-up">
+      <div class="client-icon-wrap">
+        <svg><use href="#icon-globe"/></svg>
+      </div>
+      <div class="client-label">ONG</div>
+      <p class="client-desc">Partenariats avec les organisations non gouvernementales locales et internationales</p>
+    </div>
+
+    <div class="client-card fade-up">
+      <div class="client-icon-wrap">
+        <svg><use href="#icon-gov"/></svg>
+      </div>
+      <div class="client-label">Institutions publiques</div>
+      <p class="client-desc">Appui aux administrations publiques et aux collectivités territoriales</p>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================
+     STRENGTHS
+================================================ -->
+<section id="strengths">
+  <div class="strengths-header">
+    <p class="section-tag">Pourquoi nous choisir</p>
+    <h2 class="section-title" style="color:white">Nos atouts</h2>
+  </div>
+
+  <div class="strengths-grid">
+    <div class="strength-item fade-up">
+      <div class="strength-num">01</div>
+      <div class="strength-body">
+        <h3 class="strength-title">Équipe dynamique &amp; compétente</h3>
+        <p class="strength-text">Des professionnels qualifiés et engagés, formés aux meilleures pratiques du secteur, prêts à répondre à vos besoins.</p>
+      </div>
+    </div>
+
+    <div class="strength-item fade-up">
+      <div class="strength-num">02</div>
+      <div class="strength-body">
+        <h3 class="strength-title">Flexibilité &amp; réactivité</h3>
+        <p class="strength-text">Capacité d'adaptation rapide aux besoins changeants des clients avec des délais d'exécution optimisés.</p>
+      </div>
+    </div>
+
+    <div class="strength-item fade-up">
+      <div class="strength-num">03</div>
+      <div class="strength-body">
+        <h3 class="strength-title">Polyvalence des services</h3>
+        <p class="strength-text">Un seul interlocuteur pour tous vos besoins. Notre gamme étendue couvre l'ensemble de vos projets.</p>
+      </div>
+    </div>
+
+    <div class="strength-item fade-up">
+      <div class="strength-num">04</div>
+      <div class="strength-body">
+        <h3 class="strength-title">Prix compétitifs</h3>
+        <p class="strength-text">Des tarifs transparents et compétitifs sans compromis sur la qualité. Rapport qualité-prix imbattable.</p>
+      </div>
+    </div>
+
+    <div class="strength-item fade-up">
+      <div class="strength-num">05</div>
+      <div class="strength-body">
+        <h3 class="strength-title">Engagement qualité</h3>
+        <p class="strength-text">Chaque prestation est encadrée par des procédures strictes de contrôle qualité et de satisfaction client.</p>
+      </div>
+    </div>
+
+    <div class="strength-item fade-up">
+      <div class="strength-num">06</div>
+      <div class="strength-body">
+        <h3 class="strength-title">Connaissance du marché local</h3>
+        <p class="strength-text">Ancrée dans la réalité du Kongo Central, RM5 comprend les défis et opportunités du tissu économique local.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================
+     CONTACT
+================================================ -->
+<section id="contact">
+  <p class="section-tag fade-up">Travaillons ensemble</p>
+  <h2 class="section-title fade-up">Contactez-<br>nous</h2>
+
+  <div class="contact-grid">
+    <!-- Info + Map -->
+    <div>
+      <div class="contact-info-list">
+        <div class="contact-info-item fade-up">
+          <div class="contact-info-icon">
+            <svg><use href="#icon-pin"/></svg>
+          </div>
+          <div>
+            <div class="contact-info-label">Adresse</div>
+            <div class="contact-info-val">Avenue Kinkela N°9 bis, Quartier Ville-Haute<br>Commune de Matadi, Kongo Central — RDC</div>
+          </div>
+        </div>
+
+        <div class="contact-info-item fade-up">
+          <div class="contact-info-icon">
+            <svg><use href="#icon-phone"/></svg>
+          </div>
+          <div>
+            <div class="contact-info-label">Téléphone</div>
+            <div class="contact-info-val">+243 823 258 701</div>
+          </div>
+        </div>
+
+        <div class="contact-info-item fade-up">
+          <div class="contact-info-icon">
+            <svg><use href="#icon-mail"/></svg>
+          </div>
+          <div>
+            <div class="contact-info-label">Email</div>
+            <div class="contact-info-val">raisonmavinga@gmail.com</div>
+          </div>
+        </div>
+
+        <div class="contact-info-item fade-up">
+          <div class="contact-info-icon">
+            <svg><use href="#icon-user"/></svg>
+          </div>
+          <div>
+            <div class="contact-info-label">Responsable</div>
+            <div class="contact-info-val">Mavinga Lubabu Raison</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Map -->
+      <div class="contact-map-wrap fade-up">
+        <img src="images/map.svg" alt="Localisation RM5 Pluri-Services — Matadi, Kongo Central">
+      </div>
+    </div>
+
+    <!-- Form -->
+    <div class="contact-form fade-up">
+      <h3 class="form-title">Envoyez-nous un message</h3>
+      <p class="form-subtitle">Remplissez ce formulaire et nous vous répondrons dans les plus brefs délais.</p>
+
+      <form id="contact-form" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label class="form-label" for="f-name">Nom complet *</label>
+            <input class="form-input" type="text" id="f-name" placeholder="Votre nom" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="f-email">Email *</label>
+            <input class="form-input" type="email" id="f-email" placeholder="votre@email.com" required>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="f-service">Service concerné</label>
+          <select class="form-select" id="f-service">
+            <option value="">Sélectionnez un service...</option>
+            <option>Génie civil &amp; réhabilitation</option>
+            <option>Entretien &amp; maintenance</option>
+            <option>Services informatiques &amp; bureautiques</option>
+            <option>Fourniture de matériels &amp; équipements</option>
+            <option>Nettoyage &amp; assainissement</option>
+            <option>Fret maritime &amp; aérien</option>
+            <option>Conseils &amp; accompagnement technique</option>
+            <option>Autre</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="f-subject">Objet *</label>
+          <input class="form-input" type="text" id="f-subject" placeholder="Objet de votre demande" required>
+        </div>
+
+        <div class="form-group">
+          <label class="form-label" for="f-message">Message *</label>
+          <textarea class="form-input" id="f-message" placeholder="Décrivez votre besoin..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">
+          <svg><use href="#icon-send"/></svg>
+          Envoyer le message
+        </button>
+
+        <p class="form-note">* Champs obligatoires. Vos données restent confidentielles.</p>
+      </form>
+
+      <!-- Success message -->
+      <div id="form-success" class="form-success">
+        <div class="form-success-icon">
+          <svg><use href="#icon-check"/></svg>
+        </div>
+        <h3>Message envoyé !</h3>
+        <p>Merci de nous avoir contactés. Nous vous répondrons dans les plus brefs délais.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================================================
+     FOOTER
+================================================ -->
+<footer>
+  <div class="footer-main">
+    <!-- Brand -->
+    <div>
+      <div class="footer-brand-logo">
+        <img src="images/logo-white.svg" alt="RM5 Pluri-Services" height="50">
+      </div>
+      <p class="footer-tagline">
+        Votre partenaire multiservices de confiance à Matadi, Kongo Central, République Démocratique du Congo.
+      </p>
+      <div class="footer-social">
+        <a href="mailto:raisonmavinga@gmail.com" class="social-btn" title="Email">
+          <svg><use href="#icon-mail"/></svg>
+        </a>
+        <a href="tel:+243823258701" class="social-btn" title="Téléphone">
+          <svg><use href="#icon-phone"/></svg>
+        </a>
+        <a href="#contact" class="social-btn" title="Localisation">
+          <svg><use href="#icon-pin"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <!-- Services -->
+    <div>
+      <div class="footer-col-title">Nos services</div>
+      <div class="footer-links">
+        <a href="#services">Génie civil &amp; réhabilitation</a>
+        <a href="#services">Entretien &amp; maintenance</a>
+        <a href="#services">Services informatiques</a>
+        <a href="#services">Fourniture d'équipements</a>
+        <a href="#services">Nettoyage &amp; assainissement</a>
+        <a href="#services">Fret maritime &amp; aérien</a>
+        <a href="#services">Conseils techniques</a>
+      </div>
+    </div>
+
+    <!-- Company -->
+    <div>
+      <div class="footer-col-title">Entreprise</div>
+      <div class="footer-links">
+        <a href="#about">À propos de nous</a>
+        <a href="#vision">Vision &amp; Mission</a>
+        <a href="#objectives">Nos objectifs</a>
+        <a href="#strengths">Nos atouts</a>
+        <a href="#clients">Clientèle</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+
+    <!-- Contact -->
+    <div>
+      <div class="footer-col-title">Contact</div>
+      <div class="footer-contact-item">
+        <svg><use href="#icon-pin"/></svg>
+        <span class="footer-contact-text">Avenue Kinkela N°9 bis, Quartier Ville-Haute, Matadi, Kongo Central</span>
+      </div>
+      <div class="footer-contact-item">
+        <svg><use href="#icon-phone"/></svg>
+        <span class="footer-contact-text">+243 823 258 701</span>
+      </div>
+      <div class="footer-contact-item">
+        <svg><use href="#icon-mail"/></svg>
+        <span class="footer-contact-text">raisonmavinga@gmail.com</span>
+      </div>
+      <div class="footer-contact-item">
+        <svg><use href="#icon-user"/></svg>
+        <span class="footer-contact-text">Mavinga Lubabu Raison<br>Responsable</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2025 RM5 Pluri-Services SARL. Tous droits réservés.</span>
+    <div class="footer-legal">
+      <a href="#">Mentions légales</a>
+      <a href="#">Politique de confidentialité</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<!-- Scroll to top -->
+<button id="scroll-top" aria-label="Retour en haut">
+  <svg><use href="#icon-chevron-up"/></svg>
+</button>
+
+<!-- Main JS -->
+<script src="js/main.js"></script>
+
+</body>
+</html>

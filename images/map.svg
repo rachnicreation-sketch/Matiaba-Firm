@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="320" viewBox="0 0 600 320">
+  <defs>
+    <pattern id="mapgrid" width="30" height="30" patternUnits="userSpaceOnUse">
+      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(227,30,36,0.1)" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+  <rect width="600" height="320" fill="#1a1a1a"/>
+  <rect width="600" height="320" fill="url(#mapgrid)"/>
+  
+  <!-- Stylized map of Congo/DRC area -->
+  <path d="M 150 60 Q 200 40 260 50 Q 320 55 370 70 Q 420 85 450 110 Q 480 135 470 170 Q 460 200 440 220 Q 410 245 380 250 Q 340 258 300 255 Q 260 252 230 240 Q 190 225 170 200 Q 145 170 140 140 Q 130 105 150 60 Z" fill="rgba(227,30,36,0.08)" stroke="rgba(227,30,36,0.2)" stroke-width="1.5"/>
+  
+  <!-- Rivers -->
+  <path d="M 160 120 Q 220 140 280 135 Q 340 130 400 150" fill="none" stroke="rgba(100,160,255,0.2)" stroke-width="2"/>
+  <path d="M 200 180 Q 250 170 300 175 Q 350 180 390 200" fill="none" stroke="rgba(100,160,255,0.15)" stroke-width="1.5"/>
+  
+  <!-- City marker - Matadi -->
+  <circle cx="195" cy="200" r="10" fill="#E31E24" opacity="0.9"/>
+  <circle cx="195" cy="200" r="20" fill="none" stroke="#E31E24" stroke-width="1.5" opacity="0.4"/>
+  <circle cx="195" cy="200" r="32" fill="none" stroke="#E31E24" stroke-width="1" opacity="0.2"/>
+  
+  <!-- Location label -->
+  <rect x="215" y="188" width="160" height="26" fill="rgba(227,30,36,0.9)" rx="2"/>
+  <text x="295" y="206" font-family="Arial,sans-serif" font-size="11" font-weight="700" fill="white" text-anchor="middle" letter-spacing="1">MATADI, KONGO CENTRAL</text>
+  
+  <!-- Address label -->
+  <rect x="215" y="220" width="200" height="20" fill="rgba(0,0,0,0.7)" rx="2"/>
+  <text x="315" y="234" font-family="Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.7)" text-anchor="middle">Avenue Kinkela N°9 bis, Ville-Haute</text>
+
+  <!-- Compass -->
+  <circle cx="545" cy="55" r="25" fill="rgba(0,0,0,0.5)" stroke="rgba(227,30,36,0.3)" stroke-width="1"/>
+  <text x="545" y="44" font-family="Arial,sans-serif" font-size="10" fill="white" text-anchor="middle" font-weight="700">N</text>
+  <text x="545" y="72" font-family="Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.5)" text-anchor="middle">S</text>
+  <text x="528" y="59" font-family="Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.5)" text-anchor="middle">O</text>
+  <text x="562" y="59" font-family="Arial,sans-serif" font-size="10" fill="rgba(255,255,255,0.5)" text-anchor="middle">E</text>
+  <line x1="545" y1="46" x2="545" y2="65" stroke="white" stroke-width="1.5"/>
+  <polygon points="545,46 542,55 548,55" fill="#E31E24"/>
+  
+  <!-- Bottom info bar -->
+  <rect x="0" y="285" width="600" height="35" fill="rgba(227,30,36,0.8)"/>
+  <text x="300" y="308" font-family="Arial,sans-serif" font-size="12" font-weight="700" fill="white" text-anchor="middle" letter-spacing="2">RM5 PLURI-SERVICES · SIÈGE SOCIAL · MATADI, RDC</text>
+</svg>
