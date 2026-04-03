@@ -1,5 +1,5 @@
-/* ============================================
-   RM5 PLURI-SERVICES — Main JavaScript
+﻿/* ============================================
+   MATIABA FIRM â€” Main JavaScript
    ============================================ */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   /* -----------------------------------------------
-     INTERSECTION OBSERVER — fade-up animations
+     INTERSECTION OBSERVER â€” fade-up animations
   -------------------------------------------------- */
   const fadeEls = document.querySelectorAll('.fade-up');
 
@@ -94,7 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* -----------------------------------------------
-     COUNTER ANIMATION — hero stats
+     COUNTER ANIMATION â€” hero stats
   -------------------------------------------------- */
   function animateCounter(el, target, duration = 1800) {
     const start = performance.now();
@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
   statNums.forEach(el => counterObserver.observe(el));
 
   /* -----------------------------------------------
-     CONTACT FORM — validation & submission
+     CONTACT FORM â€” validation & submission
   -------------------------------------------------- */
   const form = document.getElementById('contact-form');
 
@@ -139,43 +139,74 @@ document.addEventListener('DOMContentLoaded', () => {
     form.addEventListener('submit', async (e) => {
       e.preventDefault();
 
-      const btn = form.querySelector('.btn-submit');
-      const name     = form.querySelector('#f-name').value.trim();
-      const email    = form.querySelector('#f-email').value.trim();
-      const service  = form.querySelector('#f-service').value;
-      const subject  = form.querySelector('#f-subject').value.trim();
-      const message  = form.querySelector('#f-message').value.trim();
+      const btn     = form.querySelector('.btn-submit');
+      const name    = form.querySelector('#f-name').value.trim();
+      const email   = form.querySelector('#f-email').value.trim();
+      const service = form.querySelector('#f-service').value;
+      const subject = form.querySelector('#f-subject').value.trim();
+      const message = form.querySelector('#f-message').value.trim();
 
       // Basic validation
       let valid = true;
       [form.querySelector('#f-name'), form.querySelector('#f-email'),
        form.querySelector('#f-subject'), form.querySelector('#f-message')].forEach(input => {
         if (!input.value.trim()) {
-          input.style.borderColor = '#E31E24';
+          input.style.borderColor = 'var(--green-bright)';
+          input.style.boxShadow = '0 0 0 3px rgba(61,186,80,0.15)';
           valid = false;
         } else {
           input.style.borderColor = '';
+          input.style.boxShadow = '';
         }
       });
 
-      // Email format
       if (email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-        form.querySelector('#f-email').style.borderColor = '#E31E24';
+        form.querySelector('#f-email').style.borderColor = '#ef4444';
         valid = false;
       }
 
       if (!valid) return;
 
-      // Simulate submission
-      btn.textContent = 'Envoi en cours...';
+      const btnOrigText = btn.innerHTML;
+      btn.innerHTML = 'Envoi en cours...';
       btn.style.opacity = '0.7';
       btn.disabled = true;
 
-      await new Promise(r => setTimeout(r, 1600));
+      try {
+        // Determine PHP handler path (works from both root and pages/)
+        // Always target WAMP server for PHP processing
+        const basePath = window.location.pathname.replace(/\/pages\/.*|\/[^\/]*$/, '');
+        const origin   = window.location.hostname === '127.0.0.1' || window.location.hostname === 'localhost'
+          ? 'http://localhost'
+          : window.location.origin;
+        const action   = origin + basePath + '/contact.php';
 
-      // Show success
-      form.style.display = 'none';
-      document.getElementById('form-success').style.display = 'block';
+        const formData = new FormData();
+        formData.append('name',    name);
+        formData.append('email',   email);
+        formData.append('service', service);
+        formData.append('subject', subject);
+        formData.append('message', message);
+
+        const res  = await fetch(action, { method: 'POST', body: formData });
+        const data = await res.json();
+
+        if (data.success) {
+          form.style.display = 'none';
+          const successEl = document.getElementById('form-success');
+          if (successEl) successEl.style.display = 'block';
+        } else {
+          alert('Erreur : ' + (data.message || 'Veuillez rÃ©essayer.'));
+          btn.innerHTML = btnOrigText;
+          btn.style.opacity = '';
+          btn.disabled = false;
+        }
+      } catch (err) {
+        alert('Impossible d\'envoyer le message. VÃ©rifiez votre connexion et rÃ©essayez.');
+        btn.innerHTML = btnOrigText;
+        btn.style.opacity = '';
+        btn.disabled = false;
+      }
     });
 
     // Clear error on input
@@ -187,7 +218,7 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   /* -----------------------------------------------
-     SERVICES CARDS — stagger reveal
+     SERVICES CARDS â€” stagger reveal
   -------------------------------------------------- */
   const serviceCards = document.querySelectorAll('.service-card');
   const serviceObserver = new IntersectionObserver((entries) => {
@@ -210,7 +241,7 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   /* -----------------------------------------------
-     TICKER — duplicate for seamless loop
+     TICKER â€” duplicate for seamless loop
   -------------------------------------------------- */
   const tickerTrack = document.querySelector('.ticker-track');
   if (tickerTrack) {
@@ -219,3 +250,4 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
 });
+

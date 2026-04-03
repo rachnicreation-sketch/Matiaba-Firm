@@ -1,293 +1,345 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="RM5 Pluri-Services — Votre partenaire multiservices de confiance à Matadi, Kongo Central. Génie civil, IT, fret maritime, maintenance, nettoyage et plus.">
-  <meta name="author" content="Mavinga Lubabu Raison">
-  <meta property="og:title" content="RM5 Pluri-Services">
-  <meta property="og:description" content="Votre partenaire multiservices de confiance à Matadi, Kongo Central.">
+  <meta name="description"
+    content="Matiaba Firm — Ingénierie IT, Digitalisation & IA, Génie civil, Nettoyage et services multisectoriels. Votre partenaire de confiance.">
+  <meta property="og:title" content="Matiaba Firm">
+  <meta property="og:description" content="Ingénierie IT, Digitalisation & IA, et services multisectoriels.">
   <meta property="og:type" content="website">
-  <title>RM5 Pluri-Services — Votre partenaire multiservices de confiance</title>
-  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <title>Matiaba Firm — Ingénierie IT, Digitalisation & IA, Multiservices</title>
+  <link rel="icon" type="image/png" href="images/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Barlow+Condensed:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
-
-<!-- ================================================
-     ICONS SPRITE (inline, hidden)
-================================================ -->
-<svg xmlns="http://www.w3.org/2000/svg" style="display:none">
-  <!-- construction -->
-  <symbol id="icon-construction" viewBox="0 0 48 48">
-    <rect x="4" y="36" width="40" height="6" rx="1" fill="currentColor"/>
-    <rect x="10" y="20" width="4" height="16" fill="currentColor"/>
-    <rect x="34" y="20" width="4" height="16" fill="currentColor"/>
-    <rect x="18" y="26" width="12" height="10" fill="currentColor" opacity="0.5"/>
-    <polygon points="24,6 6,20 42,20" fill="currentColor"/>
-  </symbol>
-  <!-- maintenance/gear -->
-  <symbol id="icon-maintenance" viewBox="0 0 48 48">
-    <circle cx="24" cy="24" r="7" fill="none" stroke="currentColor" stroke-width="3"/>
-    <path d="M24 4v8M24 36v8M4 24h8M36 24h8M9.4 9.4l5.7 5.7M32.9 32.9l5.7 5.7M9.4 38.6l5.7-5.7M32.9 15.1l5.7-5.7" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
-    <circle cx="24" cy="24" r="2.5" fill="currentColor"/>
-  </symbol>
-  <!-- IT/computer -->
-  <symbol id="icon-it" viewBox="0 0 48 48">
-    <rect x="6" y="8" width="36" height="24" rx="2" fill="none" stroke="currentColor" stroke-width="3"/>
-    <line x1="16" y1="40" x2="32" y2="40" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
-    <line x1="24" y1="32" x2="24" y2="40" stroke="currentColor" stroke-width="3"/>
-    <polyline points="13,22 19,16 25,22 31,14" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-  </symbol>
-  <!-- supply/box -->
-  <symbol id="icon-supply" viewBox="0 0 48 48">
-    <rect x="8" y="20" width="32" height="22" rx="2" fill="none" stroke="currentColor" stroke-width="3"/>
-    <path d="M16 20v-6a8 8 0 0 1 16 0v6" fill="none" stroke="currentColor" stroke-width="3"/>
-    <line x1="8" y1="30" x2="40" y2="30" stroke="currentColor" stroke-width="2"/>
-  </symbol>
-  <!-- cleaning -->
-  <symbol id="icon-cleaning" viewBox="0 0 48 48">
-    <path d="M18 42 L22 8 L30 8 L34 42" stroke="currentColor" stroke-width="3" fill="none" stroke-linejoin="round"/>
-    <line x1="16" y1="42" x2="36" y2="42" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
-    <ellipse cx="26" cy="8" rx="7" ry="3" stroke="currentColor" stroke-width="2.5" fill="none"/>
-    <path d="M12 20 C14 16 20 16 22 20 C24 24 30 24 32 20" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" opacity="0.6"/>
-  </symbol>
-  <!-- freight/truck -->
-  <symbol id="icon-freight" viewBox="0 0 48 48">
-    <path d="M4 30V20L28 20V36H4V30Z" fill="none" stroke="currentColor" stroke-width="3"/>
-    <path d="M28 24H36L44 31V36H28V24Z" fill="none" stroke="currentColor" stroke-width="3"/>
-    <circle cx="12" cy="38" r="4" stroke="currentColor" stroke-width="3" fill="none"/>
-    <circle cx="36" cy="38" r="4" stroke="currentColor" stroke-width="3" fill="none"/>
-    <line x1="4" y1="26" x2="28" y2="26" stroke="currentColor" stroke-width="1.5" opacity="0.4"/>
-  </symbol>
-  <!-- consulting/person -->
-  <symbol id="icon-consulting" viewBox="0 0 48 48">
-    <circle cx="24" cy="16" r="10" fill="none" stroke="currentColor" stroke-width="3"/>
-    <path d="M8 44c0-8 7.2-14 16-14s16 6 16 14" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"/>
-    <line x1="24" y1="12" x2="24" y2="20" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-    <circle cx="24" cy="23" r="1.5" fill="currentColor"/>
-  </symbol>
-  <!-- arrow right -->
-  <symbol id="icon-arrow-right" viewBox="0 0 24 24">
-    <line x1="5" y1="12" x2="19" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-    <polyline points="12,5 19,12 12,19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-  </symbol>
-  <!-- chevron up -->
-  <symbol id="icon-chevron-up" viewBox="0 0 24 24">
-    <polyline points="18,15 12,9 6,15" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
-  </symbol>
-  <!-- phone -->
-  <symbol id="icon-phone" viewBox="0 0 24 24">
-    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.42 2 2 0 0 1 3.61 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6.29 6.29l.97-.97a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z" fill="none" stroke="currentColor" stroke-width="2"/>
-  </symbol>
-  <!-- mail -->
-  <symbol id="icon-mail" viewBox="0 0 24 24">
-    <rect x="2" y="4" width="20" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
-    <polyline points="2,4 12,13 22,4" fill="none" stroke="currentColor" stroke-width="2"/>
-  </symbol>
-  <!-- map pin -->
-  <symbol id="icon-pin" viewBox="0 0 24 24">
-    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" fill="none" stroke="currentColor" stroke-width="2"/>
-    <circle cx="12" cy="10" r="3" fill="none" stroke="currentColor" stroke-width="2"/>
-  </symbol>
-  <!-- user -->
-  <symbol id="icon-user" viewBox="0 0 24 24">
-    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-    <circle cx="12" cy="7" r="4" fill="none" stroke="currentColor" stroke-width="2"/>
-  </symbol>
-  <!-- building -->
-  <symbol id="icon-building" viewBox="0 0 24 24">
-    <rect x="3" y="3" width="18" height="18" rx="1" fill="none" stroke="currentColor" stroke-width="2"/>
-    <line x1="3" y1="9" x2="21" y2="9" stroke="currentColor" stroke-width="2"/>
-    <line x1="3" y1="15" x2="21" y2="15" stroke="currentColor" stroke-width="2"/>
-    <line x1="9" y1="3" x2="9" y2="21" stroke="currentColor" stroke-width="2"/>
-  </symbol>
-  <!-- globe -->
-  <symbol id="icon-globe" viewBox="0 0 24 24">
-    <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/>
-    <ellipse cx="12" cy="12" rx="4" ry="10" fill="none" stroke="currentColor" stroke-width="2"/>
-    <line x1="2" y1="12" x2="22" y2="12" stroke="currentColor" stroke-width="2"/>
-  </symbol>
-  <!-- government -->
-  <symbol id="icon-gov" viewBox="0 0 24 24">
-    <line x1="3" y1="22" x2="21" y2="22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-    <line x1="3" y1="10" x2="21" y2="10" stroke="currentColor" stroke-width="2"/>
-    <polygon points="12,2 3,10 21,10" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-    <rect x="7" y="10" width="3" height="12" fill="currentColor" opacity="0.4"/>
-    <rect x="14" y="10" width="3" height="12" fill="currentColor" opacity="0.4"/>
-  </symbol>
-  <!-- check -->
-  <symbol id="icon-check" viewBox="0 0 24 24">
-    <polyline points="20,6 9,17 4,12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-  </symbol>
-  <!-- send -->
-  <symbol id="icon-send" viewBox="0 0 24 24">
-    <line x1="22" y1="2" x2="11" y2="13" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-    <polygon points="22,2 15,22 11,13 2,9" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-  </symbol>
-  <!-- star -->
-  <symbol id="icon-star" viewBox="0 0 24 24">
-    <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-  </symbol>
-  <!-- shield -->
-  <symbol id="icon-shield" viewBox="0 0 24 24">
-    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" fill="none" stroke="currentColor" stroke-width="2"/>
-  </symbol>
-  <!-- zap -->
-  <symbol id="icon-zap" viewBox="0 0 24 24">
-    <polygon points="13,2 3,14 12,14 11,22 21,10 12,10" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
-  </symbol>
-  <!-- team -->
-  <symbol id="icon-team" viewBox="0 0 24 24">
-    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" fill="none" stroke="currentColor" stroke-width="2"/>
-    <circle cx="9" cy="7" r="4" fill="none" stroke="currentColor" stroke-width="2"/>
-    <path d="M23 21v-2a4 4 0 0 0-3-3.87" fill="none" stroke="currentColor" stroke-width="2"/>
-    <path d="M16 3.13a4 4 0 0 1 0 7.75" fill="none" stroke="currentColor" stroke-width="2"/>
-  </symbol>
-</svg>
-
-<!-- ================================================
-     NAVBAR
-================================================ -->
+  <!-- ICONS SPRITE -->
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none">
+    <symbol id="icon-construction" viewBox="0 0 48 48">
+      <rect x="4" y="36" width="40" height="6" rx="1" fill="currentColor" />
+      <rect x="10" y="20" width="4" height="16" fill="currentColor" />
+      <rect x="34" y="20" width="4" height="16" fill="currentColor" />
+      <rect x="18" y="26" width="12" height="10" fill="currentColor" opacity="0.5" />
+      <polygon points="24,6 6,20 42,20" fill="currentColor" />
+    </symbol>
+    <symbol id="icon-maintenance" viewBox="0 0 48 48">
+      <circle cx="24" cy="24" r="7" fill="none" stroke="currentColor" stroke-width="3" />
+      <path d="M24 4v8M24 36v8M4 24h8M36 24h8M9.4 9.4l5.7 5.7M32.9 32.9l5.7 5.7M9.4 38.6l5.7-5.7M32.9 15.1l5.7-5.7"
+        stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+      <circle cx="24" cy="24" r="2.5" fill="currentColor" />
+    </symbol>
+    <symbol id="icon-it" viewBox="0 0 48 48">
+      <rect x="6" y="8" width="36" height="24" rx="2" fill="none" stroke="currentColor" stroke-width="3" />
+      <line x1="16" y1="40" x2="32" y2="40" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+      <line x1="24" y1="32" x2="24" y2="40" stroke="currentColor" stroke-width="3" />
+      <polyline points="13,22 19,16 25,22 31,14" stroke="currentColor" stroke-width="2.5" fill="none"
+        stroke-linecap="round" />
+    </symbol>
+    <symbol id="icon-supply" viewBox="0 0 48 48">
+      <rect x="8" y="20" width="32" height="22" rx="2" fill="none" stroke="currentColor" stroke-width="3" />
+      <path d="M16 20v-6a8 8 0 0 1 16 0v6" fill="none" stroke="currentColor" stroke-width="3" />
+      <line x1="8" y1="30" x2="40" y2="30" stroke="currentColor" stroke-width="2" />
+    </symbol>
+    <symbol id="icon-cleaning" viewBox="0 0 48 48">
+      <path d="M18 42 L22 8 L30 8 L34 42" stroke="currentColor" stroke-width="3" fill="none" stroke-linejoin="round" />
+      <line x1="16" y1="42" x2="36" y2="42" stroke="currentColor" stroke-width="3" stroke-linecap="round" />
+      <ellipse cx="26" cy="8" rx="7" ry="3" stroke="currentColor" stroke-width="2.5" fill="none" />
+    </symbol>
+    <symbol id="icon-freight" viewBox="0 0 48 48">
+      <path d="M4 30V20L28 20V36H4V30Z" fill="none" stroke="currentColor" stroke-width="3" />
+      <path d="M28 24H36L44 31V36H28V24Z" fill="none" stroke="currentColor" stroke-width="3" />
+      <circle cx="12" cy="38" r="4" stroke="currentColor" stroke-width="3" fill="none" />
+      <circle cx="36" cy="38" r="4" stroke="currentColor" stroke-width="3" fill="none" />
+    </symbol>
+    <symbol id="icon-consulting" viewBox="0 0 48 48">
+      <circle cx="24" cy="16" r="10" fill="none" stroke="currentColor" stroke-width="3" />
+      <path d="M8 44c0-8 7.2-14 16-14s16 6 16 14" fill="none" stroke="currentColor" stroke-width="3"
+        stroke-linecap="round" />
+    </symbol>
+    <symbol id="icon-network" viewBox="0 0 48 48">
+      <circle cx="24" cy="8" r="5" fill="none" stroke="currentColor" stroke-width="2.5" />
+      <circle cx="8" cy="38" r="5" fill="none" stroke="currentColor" stroke-width="2.5" />
+      <circle cx="40" cy="38" r="5" fill="none" stroke="currentColor" stroke-width="2.5" />
+      <line x1="24" y1="13" x2="10" y2="33" stroke="currentColor" stroke-width="2" />
+      <line x1="24" y1="13" x2="38" y2="33" stroke="currentColor" stroke-width="2" />
+      <line x1="13" y1="38" x2="35" y2="38" stroke="currentColor" stroke-width="2" />
+    </symbol>
+    <symbol id="icon-shield" viewBox="0 0 48 48">
+      <path d="M24 6L8 12v14c0 11 7 19 16 22 9-3 16-11 16-22V12L24 6z" fill="none" stroke="currentColor"
+        stroke-width="2.5" />
+      <polyline points="16,24 22,30 32,18" stroke="currentColor" stroke-width="2.5" fill="none"
+        stroke-linecap="round" />
+    </symbol>
+    <symbol id="icon-cloud" viewBox="0 0 48 48">
+      <path d="M36 34H14a10 10 0 1 1 1-20 12 12 0 1 1 22 4 8 8 0 0 1-1 16z" fill="none" stroke="currentColor"
+        stroke-width="2.5" />
+    </symbol>
+    <symbol id="icon-robot" viewBox="0 0 48 48">
+      <rect x="8" y="16" width="32" height="24" rx="4" fill="none" stroke="currentColor" stroke-width="2.5" />
+      <circle cx="18" cy="28" r="3" fill="currentColor" />
+      <circle cx="30" cy="28" r="3" fill="currentColor" />
+      <line x1="22" y1="34" x2="26" y2="34" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+      <line x1="24" y1="16" x2="24" y2="10" stroke="currentColor" stroke-width="2.5" />
+      <circle cx="24" cy="8" r="2.5" fill="currentColor" />
+      <line x1="8" y1="26" x2="4" y2="26" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+      <line x1="40" y1="26" x2="44" y2="26" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+    </symbol>
+    <symbol id="icon-chart" viewBox="0 0 48 48">
+      <polyline points="6,36 16,24 24,30 34,14 42,20" stroke="currentColor" stroke-width="2.5" fill="none"
+        stroke-linecap="round" stroke-linejoin="round" />
+      <line x1="6" y1="42" x2="42" y2="42" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+      <line x1="6" y1="10" x2="6" y2="42" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+    </symbol>
+    <symbol id="icon-workflow" viewBox="0 0 48 48">
+      <rect x="6" y="8" width="14" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="2.5" />
+      <rect x="28" y="20" width="14" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="2.5" />
+      <rect x="6" y="32" width="14" height="10" rx="2" fill="none" stroke="currentColor" stroke-width="2.5" />
+      <path d="M20 13h4a4 4 0 0 1 4 4v3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+      <path d="M28 30h-4a4 4 0 0 0-4 4v2" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+    </symbol>
+    <symbol id="icon-data" viewBox="0 0 48 48">
+      <ellipse cx="24" cy="12" rx="16" ry="6" fill="none" stroke="currentColor" stroke-width="2.5" />
+      <path d="M8 12v12c0 3.3 7.2 6 16 6s16-2.7 16-6V12" fill="none" stroke="currentColor" stroke-width="2.5" />
+      <path d="M8 24v12c0 3.3 7.2 6 16 6s16-2.7 16-6V24" fill="none" stroke="currentColor" stroke-width="2.5" />
+    </symbol>
+    <symbol id="icon-chat" viewBox="0 0 48 48">
+      <path d="M40 8H8a2 2 0 0 0-2 2v22a2 2 0 0 0 2 2h6l4 6 4-6h18a2 2 0 0 0 2-2V10a2 2 0 0 0-2-2z" fill="none"
+        stroke="currentColor" stroke-width="2.5" />
+      <line x1="16" y1="20" x2="32" y2="20" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+      <line x1="16" y1="27" x2="26" y2="27" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+    </symbol>
+    <symbol id="icon-code" viewBox="0 0 48 48">
+      <polyline points="16,16 6,24 16,32" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round"
+        stroke-linejoin="round" />
+      <polyline points="32,16 42,24 32,32" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round"
+        stroke-linejoin="round" />
+      <line x1="28" y1="12" x2="20" y2="36" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+    </symbol>
+    <symbol id="icon-marketing" viewBox="0 0 48 48">
+      <circle cx="24" cy="24" r="18" fill="none" stroke="currentColor" stroke-width="2.5" />
+      <path d="M6 24h36M24 6c-5 6-8 12-8 18s3 12 8 18M24 6c5 6 8 12 8 18s-3 12-8 18" fill="none" stroke="currentColor"
+        stroke-width="2" />
+    </symbol>
+    <symbol id="icon-helpdesk" viewBox="0 0 48 48">
+      <circle cx="24" cy="20" r="10" fill="none" stroke="currentColor" stroke-width="2.5" />
+      <path d="M8 42c0-8 7-14 16-14s16 6 16 14" fill="none" stroke="currentColor" stroke-width="2.5"
+        stroke-linecap="round" />
+      <path d="M24 14v6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" />
+      <circle cx="24" cy="23" r="1.5" fill="currentColor" />
+    </symbol>
+    <symbol id="icon-arrow-right" viewBox="0 0 24 24">
+      <line x1="5" y1="12" x2="19" y2="12" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+      <polyline points="12,5 19,12 12,19" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round" fill="none" />
+    </symbol>
+    <symbol id="icon-chevron-up" viewBox="0 0 24 24">
+      <polyline points="18,15 12,9 6,15" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+        stroke-linejoin="round" fill="none" />
+    </symbol>
+    <symbol id="icon-phone" viewBox="0 0 24 24">
+      <path
+        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.42 2 2 0 0 1 3.61 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6.29 6.29l.97-.97a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"
+        fill="none" stroke="currentColor" stroke-width="2" />
+    </symbol>
+    <symbol id="icon-mail" viewBox="0 0 24 24">
+      <rect x="2" y="4" width="20" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="2" />
+      <polyline points="2,4 12,13 22,4" fill="none" stroke="currentColor" stroke-width="2" />
+    </symbol>
+    <symbol id="icon-pin" viewBox="0 0 24 24">
+      <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" fill="none" stroke="currentColor" stroke-width="2" />
+      <circle cx="12" cy="10" r="3" fill="none" stroke="currentColor" stroke-width="2" />
+    </symbol>
+    <symbol id="icon-user" viewBox="0 0 24 24">
+      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linecap="round" />
+      <circle cx="12" cy="7" r="4" fill="none" stroke="currentColor" stroke-width="2" />
+    </symbol>
+    <symbol id="icon-building" viewBox="0 0 24 24">
+      <rect x="3" y="3" width="18" height="18" rx="1" fill="none" stroke="currentColor" stroke-width="2" />
+      <line x1="3" y1="9" x2="21" y2="9" stroke="currentColor" stroke-width="2" />
+      <line x1="3" y1="15" x2="21" y2="15" stroke="currentColor" stroke-width="2" />
+      <line x1="9" y1="3" x2="9" y2="21" stroke="currentColor" stroke-width="2" />
+    </symbol>
+    <symbol id="icon-globe" viewBox="0 0 24 24">
+      <circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2" />
+      <ellipse cx="12" cy="12" rx="4" ry="10" fill="none" stroke="currentColor" stroke-width="2" />
+      <line x1="2" y1="12" x2="22" y2="12" stroke="currentColor" stroke-width="2" />
+    </symbol>
+    <symbol id="icon-gov" viewBox="0 0 24 24">
+      <line x1="3" y1="22" x2="21" y2="22" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+      <line x1="3" y1="10" x2="21" y2="10" stroke="currentColor" stroke-width="2" />
+      <polygon points="12,2 3,10 21,10" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+      <rect x="7" y="10" width="3" height="12" fill="currentColor" opacity="0.4" />
+      <rect x="14" y="10" width="3" height="12" fill="currentColor" opacity="0.4" />
+    </symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24">
+      <polyline points="20,6 9,17 4,12" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"
+        stroke-linejoin="round" />
+    </symbol>
+    <symbol id="icon-send" viewBox="0 0 24 24">
+      <line x1="22" y1="2" x2="11" y2="13" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+      <polygon points="22,2 15,22 11,13 2,9" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linejoin="round" />
+    </symbol>
+    <symbol id="icon-star" viewBox="0 0 24 24">
+      <polygon points="12,2 15.09,8.26 22,9.27 17,14.14 18.18,21.02 12,17.77 5.82,21.02 7,14.14 2,9.27 8.91,8.26"
+        fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" />
+    </symbol>
+    <symbol id="icon-zap" viewBox="0 0 24 24">
+      <polygon points="13,2 3,14 12,14 11,22 21,10 12,10" fill="none" stroke="currentColor" stroke-width="2"
+        stroke-linejoin="round" />
+    </symbol>
+    <symbol id="icon-team" viewBox="0 0 24 24">
+      <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" fill="none" stroke="currentColor" stroke-width="2" />
+      <circle cx="9" cy="7" r="4" fill="none" stroke="currentColor" stroke-width="2" />
+      <path d="M23 21v-2a4 4 0 0 0-3-3.87" fill="none" stroke="currentColor" stroke-width="2" />
+      <path d="M16 3.13a4 4 0 0 1 0 7.75" fill="none" stroke="currentColor" stroke-width="2" />
+    </symbol>
+  </svg><!-- NAVBAR -->
 <nav id="navbar">
   <a href="#" class="nav-logo">
-    <div class="nav-logo-badge">RM5</div>
+    <img src="images/logo.png" alt="Matiaba Firm" class="nav-logo-img">
     <div>
-      <span class="nav-logo-name">RM5 Pluri-Services</span>
-      <span class="nav-logo-sub">Votre partenaire multiservices</span>
+      <span class="nav-logo-name">Matiaba Firm</span>
+      <span class="nav-logo-sub">Clean and Save</span>
     </div>
   </a>
-
   <div class="nav-menu">
     <a href="#about">À propos</a>
-    <a href="#services">Services</a>
+    <div class="nav-item-dropdown">
+      <a href="pages/services.html" class="nav-link">Services <svg width="10" height="6" viewBox="0 0 10 6" fill="none" style="display:inline;vertical-align:middle;margin-left:4px"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <div class="mega-menu">
+        <div class="mega-col">
+          <div class="mega-col-title">🏗️ Multiservices</div>
+          <div class="mega-links">
+            <a href="pages/services/genie-civil.html" class="mega-link"><span class="mega-link-icon">🏗️</span> Génie civil</a>
+            <a href="pages/services/maintenance.html" class="mega-link"><span class="mega-link-icon">⚙️</span> Maintenance</a>
+            <a href="pages/services/informatique-bureautique.html" class="mega-link"><span class="mega-link-icon">💻</span> Informatique</a>
+            <a href="pages/services/fourniture-btp.html" class="mega-link"><span class="mega-link-icon">🧱</span> Fourniture BTP</a>
+            <a href="pages/services/nettoyage-assainissement.html" class="mega-link"><span class="mega-link-icon">🧹</span> Nettoyage</a>
+            <a href="pages/services/fret-logistique.html" class="mega-link"><span class="mega-link-icon">🚢</span> Fret Logistique</a>
+            <a href="pages/services/conseils-technique.html" class="mega-link"><span class="mega-link-icon">🎯</span> Conseils</a>
+          </div>
+        </div>
+        <div class="mega-col mega-col-it">
+          <div class="mega-col-title">🖥️ Secteur IT</div>
+          <div class="mega-links">
+            <a href="pages/services/infogerance.html" class="mega-link"><span class="mega-link-icon">☁️</span> Infogérance</a>
+            <a href="pages/services/dev-web-mobile.html" class="mega-link"><span class="mega-link-icon">📱</span> Dev Web/Mobile</a>
+            <a href="pages/services/marketing-digital.html" class="mega-link"><span class="mega-link-icon">📈</span> Marketing</a>
+            <a href="pages/services/reseaux-systemes.html" class="mega-link"><span class="mega-link-icon">🌐</span> Réseaux</a>
+            <a href="pages/services/cybersecurite.html" class="mega-link"><span class="mega-link-icon">🔐</span> Cybersécurité</a>
+            <a href="pages/services/cloud-hebergement.html" class="mega-link"><span class="mega-link-icon">☁️</span> Cloud</a>
+          </div>
+        </div>
+        <div class="mega-col mega-col-ia">
+          <div class="mega-col-title">🤖 IA & Digital</div>
+          <div class="mega-links">
+            <a href="pages/services/rpa.html" class="mega-link"><span class="mega-link-icon">🤖</span> RPA</a>
+            <a href="pages/services/intelligence-artificielle.html" class="mega-link"><span class="mega-link-icon">🧠</span> IA</a>
+            <a href="pages/services/data-analytics.html" class="mega-link"><span class="mega-link-icon">📊</span> Data Analytics</a>
+            <a href="pages/services/transformation-processus.html" class="mega-link"><span class="mega-link-icon">🔄</span> Transformation</a>
+            <a href="pages/services/data-engineering.html" class="mega-link"><span class="mega-link-icon">🗄️</span> Data Engineering</a>
+            <a href="pages/services/chatbots-ia.html" class="mega-link"><span class="mega-link-icon">💬</span> Chatbots IA</a>
+          </div>
+        </div>
+      </div>
+    </div>
     <a href="#vision">Vision</a>
     <a href="#clients">Clientèle</a>
     <a href="#contact">Contact</a>
   </div>
-
-  <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
-    Demander un devis
-  </button>
-
-  <button class="nav-hamburger" id="hamburger" aria-label="Menu">
-    <span></span><span></span><span></span>
-  </button>
+  <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Demander un devis</button>
+  <button class="nav-hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
 </nav>
 
-<!-- Mobile Nav -->
 <nav class="nav-mobile" id="mobile-nav">
   <a href="#about">À propos</a>
   <a href="#services">Services</a>
-  <a href="#vision">Vision & Mission</a>
+  <a href="#sectors">IT &amp; IA</a>
+  <a href="#vision">Vision &amp; Mission</a>
   <a href="#clients">Clientèle</a>
   <a href="#contact">Contact</a>
   <button class="nav-cta">Demander un devis</button>
 </nav>
 
-<!-- ================================================
-     HERO
-================================================ -->
+<!-- HERO -->
 <section id="hero">
   <div class="hero-bg-img"></div>
-  <div class="hero-overlay"></div>
-
+  <div class="hero-mesh"></div>
   <div class="hero-content">
     <div class="hero-eyebrow">
-      <div class="hero-eyebrow-line"></div>
-      <span class="hero-eyebrow-text">Fondée en 2025 · Matadi, Kongo Central · RDC</span>
+      <div class="hero-eyebrow-pill">
+        <div class="hero-eyebrow-dot"></div>
+        <span class="hero-eyebrow-text">Ingénierie · IT · Digitalisation · Multiservices</span>
+      </div>
     </div>
-
     <h1 class="hero-title">
       Votre<br>
-      <span class="accent">partenaire</span><br>
-      <span class="line-2">multiservices</span>
+      <span class="gradient-text">partenaire</span><br>
+      <span class="line-indent">d'excellence</span>
     </h1>
-
-    <p class="hero-desc">
-      RM5 Pluri-Services intervient pour les particuliers, entreprises et institutions dans les domaines du génie civil, de l'informatique, du fret international et bien plus encore.
-    </p>
-
+    <p class="hero-desc">Matiaba Firm intervient pour les entreprises et institutions dans l'ingénierie IT, la digitalisation &amp; IA, le génie civil, la logistique et bien plus encore.</p>
     <div class="hero-actions">
       <button class="btn-primary" onclick="document.getElementById('services').scrollIntoView({behavior:'smooth'})">
-        Découvrir nos services
-        <svg><use href="#icon-arrow-right"/></svg>
+        Découvrir nos services <svg><use href="#icon-arrow-right"/></svg>
       </button>
-      <button class="btn-outline" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">
-        Nous contacter
-      </button>
+      <button class="btn-outline" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Nous contacter</button>
     </div>
   </div>
-
-  <!-- Stats sidebar -->
   <div class="hero-sidebar">
     <div class="hero-sidebar-line"></div>
-    <div class="hero-stat">
-      <div class="hero-stat-num" data-count="7">7+</div>
-      <div class="hero-stat-label">Domaines d'intervention</div>
-    </div>
-    <div class="hero-stat">
-      <div class="hero-stat-num" data-count="4">4</div>
-      <div class="hero-stat-label">Types de clientèle</div>
-    </div>
-    <div class="hero-stat">
-      <div class="hero-stat-num" data-count="2025">2025</div>
-      <div class="hero-stat-label">Année de création</div>
-    </div>
+    <div class="hero-stat"><div class="hero-stat-num" data-count="9">9+</div><div class="hero-stat-label">Domaines d'intervention</div></div>
+    <div class="hero-stat"><div class="hero-stat-num" data-count="2">02</div><div class="hero-stat-label">Secteurs spécialisés</div></div>
+    <div class="hero-stat"><div class="hero-stat-num" data-count="2020">2020</div><div class="hero-stat-label">Année de création</div></div>
   </div>
 </section>
 
-<!-- ================================================
-     TICKER
-================================================ -->
+<!-- TICKER -->
 <div class="ticker-bar">
   <div class="ticker-track">
+    <div class="ticker-item"><span class="ticker-text">Ingénierie IT</span><div class="ticker-diamond"></div></div>
+    <div class="ticker-item"><span class="ticker-text">Digitalisation &amp; IA</span><div class="ticker-diamond"></div></div>
     <div class="ticker-item"><span class="ticker-text">Génie civil</span><div class="ticker-diamond"></div></div>
-    <div class="ticker-item"><span class="ticker-text">Services informatiques</span><div class="ticker-diamond"></div></div>
+    <div class="ticker-item"><span class="ticker-text">Cybersécurité</span><div class="ticker-diamond"></div></div>
+    <div class="ticker-item"><span class="ticker-text">Cloud &amp; Hébergement</span><div class="ticker-diamond"></div></div>
     <div class="ticker-item"><span class="ticker-text">Fret maritime &amp; aérien</span><div class="ticker-diamond"></div></div>
     <div class="ticker-item"><span class="ticker-text">Nettoyage &amp; assainissement</span><div class="ticker-diamond"></div></div>
+    <div class="ticker-item"><span class="ticker-text">Data Analytics &amp; BI</span><div class="ticker-diamond"></div></div>
     <div class="ticker-item"><span class="ticker-text">Entretien &amp; maintenance</span><div class="ticker-diamond"></div></div>
-    <div class="ticker-item"><span class="ticker-text">Fourniture de matériels</span><div class="ticker-diamond"></div></div>
-    <div class="ticker-item"><span class="ticker-text">Conseils techniques</span><div class="ticker-diamond"></div></div>
-    <div class="ticker-item"><span class="ticker-text">Réhabilitation d'infrastructures</span><div class="ticker-diamond"></div></div>
-    <div class="ticker-item"><span class="ticker-text">Accompagnement professionnel</span><div class="ticker-diamond"></div></div>
   </div>
 </div>
-
-<!-- ================================================
-     ABOUT
-================================================ -->
+<!-- ABOUT -->
 <section id="about">
   <div class="about-grid">
-    <!-- Visual -->
     <div class="about-visual-wrap fade-up">
-      <img src="images/about-visual.svg" alt="RM5 Pluri-Services — Présentation" class="about-visual-img">
-      <div class="about-badge">
-        <span class="about-badge-year">2025</span>
-        <span class="about-badge-label">Fondée</span>
+      <div class="about-logo-display">
+        <img src="images/logo.png" alt="Matiaba Firm" class="about-logo-img">
+        <div class="about-stat-row">
+          <div class="about-stat-box"><div class="about-stat-num">9+</div><div class="about-stat-lbl">Services</div></div>
+          <div class="about-stat-box"><div class="about-stat-num">2</div><div class="about-stat-lbl">Secteurs IT</div></div>
+          <div class="about-stat-box"><div class="about-stat-num">24/7</div><div class="about-stat-lbl">Support</div></div>
+        </div>
       </div>
+      <div class="about-badge"><span class="about-badge-year">2020</span><span class="about-badge-label">Fondée</span></div>
     </div>
-
-    <!-- Text -->
     <div>
       <p class="section-tag fade-up">Qui sommes-nous</p>
-      <h2 class="section-title fade-up">RM5<br>Pluri-<br>Services</h2>
-      <p class="section-lead fade-up">
-        Entreprise spécialisée dans la prestation de services diversifiés, RM5 Pluri-Services répond efficacement aux besoins des particuliers, entreprises et institutions grâce à une approche professionnelle et orientée vers la satisfaction client.
-      </p>
-
-      <div class="about-quote fade-up">
-        <p>"Votre partenaire multiservices de confiance, alliant professionnalisme, innovation et engagement envers le développement socio-économique local."</p>
-      </div>
-
+      <h2 class="section-title fade-up">Matiaba<br>Firm</h2>
+      <p class="section-lead fade-up">Entreprise spécialisée dans l'ingénierie informatique, la digitalisation et les services multisectoriels, Matiaba Firm accompagne les entreprises et institutions dans leur transformation numérique et leurs projets d'infrastructure.</p>
+      <div class="about-quote fade-up"><p>"Votre partenaire de confiance pour l'ingénierie IT, la transformation digitale et les services multisectoriels — ancré dans l'excellence et l'innovation."</p></div>
       <div class="values-grid fade-up">
-        <div class="value-chip"><div class="value-dot"></div>Professionnalisme</div>
-        <div class="value-chip"><div class="value-dot"></div>Intégrité</div>
+        <div class="value-chip"><div class="value-dot"></div>Excellence technique</div>
         <div class="value-chip"><div class="value-dot"></div>Innovation</div>
-        <div class="value-chip"><div class="value-dot"></div>Esprit d'équipe</div>
+        <div class="value-chip"><div class="value-dot"></div>Intégrité</div>
+        <div class="value-chip"><div class="value-dot"></div>Réactivité 24/7</div>
         <div class="value-chip"><div class="value-dot"></div>Satisfaction client</div>
         <div class="value-chip"><div class="value-dot"></div>Qualité</div>
       </div>
@@ -295,344 +347,371 @@
   </div>
 </section>
 
-<!-- ================================================
-     SERVICES
-================================================ -->
+<!-- SERVICES CLASSIQUES -->
 <section id="services">
   <div class="services-header">
     <div>
       <p class="section-tag">Ce que nous faisons</p>
       <h2 class="section-title" style="color:white">Domaines<br>d'intervention</h2>
     </div>
-    <p class="section-lead">
-      Nous offrons une gamme complète de services adaptés aux besoins spécifiques de chaque client, avec réactivité et expertise.
-    </p>
+    <p class="section-lead">Nous offrons une gamme complète de services adaptés aux besoins spécifiques de chaque client, avec réactivité et expertise.</p>
   </div>
-
   <div class="services-grid">
-    <!-- 1 -->
-    <div class="service-card">
+    <a href="pages/services/genie-civil.html" class="service-card">
       <div class="service-num">01</div>
-      <div class="service-icon-wrap">
-        <svg><use href="#icon-construction"/></svg>
-      </div>
+      <div class="service-icon-wrap"><svg><use href="#icon-construction"/></svg></div>
       <h3 class="service-title">Génie civil &amp; réhabilitation</h3>
-      <p class="service-desc">Réhabilitation et construction d'infrastructures selon les standards professionnels les plus exigeants. Routes, bâtiments, ouvrages d'art.</p>
+      <p class="service-desc">Réhabilitation et construction d'infrastructures selon les standards professionnels. Routes, bâtiments, ouvrages d'art.</p>
       <div class="service-arrow"><svg><use href="#icon-arrow-right"/></svg></div>
-    </div>
-
-    <!-- 2 -->
-    <div class="service-card">
+    </a>
+    <a href="pages/services/maintenance.html" class="service-card">
       <div class="service-num">02</div>
-      <div class="service-icon-wrap">
-        <svg><use href="#icon-maintenance"/></svg>
-      </div>
+      <div class="service-icon-wrap"><svg><use href="#icon-maintenance"/></svg></div>
       <h3 class="service-title">Entretien &amp; maintenance</h3>
       <p class="service-desc">Maintenance préventive et corrective de bâtiments et équipements industriels. Intervention rapide et garantie de qualité.</p>
       <div class="service-arrow"><svg><use href="#icon-arrow-right"/></svg></div>
-    </div>
-
-    <!-- 3 -->
-    <div class="service-card">
+    </a>
+    <a href="pages/services/informatique-bureautique.html" class="service-card">
       <div class="service-num">03</div>
-      <div class="service-icon-wrap">
-        <svg><use href="#icon-it"/></svg>
-      </div>
+      <div class="service-icon-wrap"><svg><use href="#icon-it"/></svg></div>
       <h3 class="service-title">Services informatiques &amp; bureautiques</h3>
       <p class="service-desc">Solutions numériques sur mesure : installation, maintenance, réseaux, formation bureautique pour entreprises et institutions.</p>
       <div class="service-arrow"><svg><use href="#icon-arrow-right"/></svg></div>
-    </div>
-
-    <!-- 4 -->
-    <div class="service-card">
+    </a>
+    <a href="pages/services/fourniture-btp.html" class="service-card">
       <div class="service-num">04</div>
-      <div class="service-icon-wrap">
-        <svg><use href="#icon-supply"/></svg>
-      </div>
-      <h3 class="service-title">Fourniture de matériels &amp; équipements</h3>
-      <p class="service-desc">Approvisionnement en matériels et équipements professionnels de qualité. Sourcing local et international selon vos spécifications.</p>
+      <div class="service-icon-wrap"><svg><use href="#icon-supply"/></svg></div>
+      <h3 class="service-title">Fourniture Matériel BTP</h3>
+      <p class="service-desc">Approvisionnement en matériels et équipements professionnels de qualité. Matériaux de construction, engins, outillage BTP et équipements de chantier.</p>
       <div class="service-arrow"><svg><use href="#icon-arrow-right"/></svg></div>
-    </div>
-
-    <!-- 5 -->
-    <div class="service-card">
+    </a>
+    <a href="pages/services/nettoyage-assainissement.html" class="service-card">
       <div class="service-num">05</div>
-      <div class="service-icon-wrap">
-        <svg><use href="#icon-cleaning"/></svg>
-      </div>
+      <div class="service-icon-wrap"><svg><use href="#icon-cleaning"/></svg></div>
       <h3 class="service-title">Nettoyage &amp; assainissement</h3>
-      <p class="service-desc">Services de nettoyage industriel et assainissement selon les normes environnementales en vigueur. Résidentiel, commercial et industriel.</p>
+      <p class="service-desc">Services de nettoyage industriel et assainissement selon les normes environnementales. Résidentiel, commercial et industriel.</p>
       <div class="service-arrow"><svg><use href="#icon-arrow-right"/></svg></div>
-    </div>
-
-    <!-- 6 -->
-    <div class="service-card">
+    </a>
+    <a href="pages/services/fret-logistique.html" class="service-card">
       <div class="service-num">06</div>
-      <div class="service-icon-wrap">
-        <svg><use href="#icon-freight"/></svg>
-      </div>
+      <div class="service-icon-wrap"><svg><use href="#icon-freight"/></svg></div>
       <h3 class="service-title">Fret maritime &amp; aérien</h3>
       <p class="service-desc">Gestion complète du transport de marchandises par voie maritime et aérienne. Logistique internationale, dédouanement, livraison.</p>
       <div class="service-arrow"><svg><use href="#icon-arrow-right"/></svg></div>
-    </div>
-
-    <!-- 7 -->
-    <div class="service-card">
+    </a>
+    <a href="pages/services/conseils-technique.html" class="service-card">
       <div class="service-num">07</div>
-      <div class="service-icon-wrap">
-        <svg><use href="#icon-consulting"/></svg>
-      </div>
+      <div class="service-icon-wrap"><svg><use href="#icon-consulting"/></svg></div>
       <h3 class="service-title">Conseils &amp; accompagnement technique</h3>
       <p class="service-desc">Expertise et accompagnement personnalisé pour vos projets. Audit, études de faisabilité, conseil stratégique et suivi de projets.</p>
       <div class="service-arrow"><svg><use href="#icon-arrow-right"/></svg></div>
+    </a>
+  </div>
+</section>
+<!-- SECTEURS SPECIALISES: IT & IA -->
+<section id="sectors">
+  <div class="sectors-header">
+    <p class="section-tag" style="justify-content:center">Expertise avancée</p>
+    <h2 class="section-title" style="color:white;text-align:center">Secteurs<br>Spécialisés</h2>
+    <p class="section-lead" style="text-align:center">Deux pôles d'excellence technologique pour accélérer votre transformation numérique.</p>
+  </div>
+  <div class="sectors-tabs">
+    <button class="sector-tab active" onclick="switchTab(this,'it')">💻 Ingénierie &amp; Technologies IT</button>
+    <button class="sector-tab" onclick="switchTab(this,'ai')">🤖 Digitalisation &amp; Intelligence Artificielle</button>
+  </div>
+
+  <!-- PANEL IT -->
+  <div class="sector-panel active" id="panel-it">
+    <div class="services-grid">
+      <a href="pages/services/infogerance.html" class="service-card">
+        <div class="service-num">01</div>
+        <div class="service-icon-wrap"><svg><use href="#icon-helpdesk"/></svg></div>
+        <h3 class="service-title">Infogérance</h3>
+        <p class="service-desc">Gestion externalisée de votre infrastructure IT, support helpdesk et astreinte 24/7.</p>
+        <div class="service-arrow"><svg><use href="#icon-arrow-right"/></svg></div>
+      </a>
+      <a href="pages/services/dev-web-mobile.html" class="service-card">
+        <div class="service-num">02</div>
+        <div class="service-icon-wrap"><svg><use href="#icon-code"/></svg></div>
+        <h3 class="service-title">Développement Web &amp; Mobile</h3>
+        <p class="service-desc">Sites web, applications mobiles iOS/Android et logiciels métiers sur mesure.</p>
+        <div class="service-arrow"><svg><use href="#icon-arrow-right"/></svg></div>
+      </a>
+      <a href="pages/services/marketing-digital.html" class="service-card">
+        <div class="service-num">03</div>
+        <div class="service-icon-wrap"><svg><use href="#icon-marketing"/></svg></div>
+        <h3 class="service-title">Marketing Numérique</h3>
+        <p class="service-desc">SEO, réseaux sociaux, publicité digitale et stratégie de contenu.</p>
+        <div class="service-arrow"><svg><use href="#icon-arrow-right"/></svg></div>
+      </a>
+      <a href="pages/services/reseaux-systemes.html" class="service-card">
+        <div class="service-num">04</div>
+        <div class="service-icon-wrap"><svg><use href="#icon-network"/></svg></div>
+        <h3 class="service-title">Ingénierie Réseaux &amp; Systèmes</h3>
+        <p class="service-desc">Architecture LAN/WAN, Wi-Fi, VPN, virtualisation et systèmes Linux/Windows.</p>
+        <div class="service-arrow"><svg><use href="#icon-arrow-right"/></svg></div>
+      </a>
+      <a href="pages/services/cybersecurite.html" class="service-card">
+        <div class="service-num">05</div>
+        <div class="service-icon-wrap"><svg><use href="#icon-shield"/></svg></div>
+        <h3 class="service-title">Audit &amp; Cybersécurité</h3>
+        <p class="service-desc">Audit de sécurité, tests de pénétration, SIEM et mise en conformité.</p>
+        <div class="service-arrow"><svg><use href="#icon-arrow-right"/></svg></div>
+      </a>
+      <a href="pages/services/cloud-hebergement.html" class="service-card">
+        <div class="service-num">06</div>
+        <div class="service-icon-wrap"><svg><use href="#icon-cloud"/></svg></div>
+        <h3 class="service-title">Cloud &amp; Hébergement</h3>
+        <p class="service-desc">Migration cloud (AWS, Azure, GCP), hébergement dédié et sauvegarde.</p>
+        <div class="service-arrow"><svg><use href="#icon-arrow-right"/></svg></div>
+      </a>
+    </div>
+    <div class="methodology-section" style="margin-top:40px">
+      <div class="methodology-header">
+        <h3>Méthodologie projet</h3>
+        <p>Notre approche structurée pour garantir le succès de vos projets IT</p>
+      </div>
+      <div class="methodology-steps">
+        <div class="method-step">
+          <div class="method-num">01</div>
+          <h4 class="method-title">Audit &amp; Cadrage</h4>
+          <p class="method-desc">Analyse de l'existant et définition des objectifs du projet.</p>
+        </div>
+        <div class="method-step">
+          <div class="method-num">02</div>
+          <h4 class="method-title">Architecture &amp; Design</h4>
+          <p class="method-desc">Conception de la solution technique et des spécifications.</p>
+        </div>
+        <div class="method-step">
+          <div class="method-num">03</div>
+          <h4 class="method-title">Développement &amp; Déploiement</h4>
+          <p class="method-desc">Réalisation en mode agile, tests et mise en production.</p>
+        </div>
+        <div class="method-step">
+          <div class="method-num">04</div>
+          <h4 class="method-title">Maintenance &amp; Évolution</h4>
+          <p class="method-desc">Support technique, TMA et montées en version.</p>
+        </div>
+      </div>
+      <div class="methodology-cta">
+        <a href="#contact" class="btn-green"><svg><use href="#icon-arrow-right"/></svg> Demander un audit</a>
+        <span style="color:rgba(255,255,255,0.4);font-size:13px">Faites évaluer votre infrastructure IT par nos experts.</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- PANEL IA -->
+  <div class="sector-panel" id="panel-ai">
+    <div class="services-grid">
+      <a href="pages/services/rpa.html" class="service-card">
+        <div class="service-num">01</div>
+        <div class="service-icon-wrap"><svg><use href="#icon-robot"/></svg></div>
+        <h3 class="service-title">Automatisation RPA</h3>
+        <p class="service-desc">Robots logiciels pour automatiser les tâches répétitives et les processus métier.</p>
+        <div class="service-arrow"><svg><use href="#icon-arrow-right"/></svg></div>
+      </a>
+      <a href="pages/services/intelligence-artificielle.html" class="service-card">
+        <div class="service-num">02</div>
+        <div class="service-icon-wrap"><svg><use href="#icon-zap"/></svg></div>
+        <h3 class="service-title">Intelligence Artificielle</h3>
+        <p class="service-desc">Modèles de ML/Deep Learning pour la prédiction, classification et optimisation.</p>
+        <div class="service-arrow"><svg><use href="#icon-arrow-right"/></svg></div>
+      </a>
+      <a href="pages/services/data-analytics.html" class="service-card">
+        <div class="service-num">03</div>
+        <div class="service-icon-wrap"><svg><use href="#icon-chart"/></svg></div>
+        <h3 class="service-title">Data Analytics &amp; BI</h3>
+        <p class="service-desc">Tableaux de bord, KPIs, entrepôts de données et rapports automatisés.</p>
+        <div class="service-arrow"><svg><use href="#icon-arrow-right"/></svg></div>
+      </a>
+      <a href="pages/services/transformation-processus.html" class="service-card">
+        <div class="service-num">04</div>
+        <div class="service-icon-wrap"><svg><use href="#icon-workflow"/></svg></div>
+        <h3 class="service-title">Transformation des processus</h3>
+        <p class="service-desc">Modélisation BPM, dématérialisation documentaire et workflow management.</p>
+        <div class="service-arrow"><svg><use href="#icon-arrow-right"/></svg></div>
+      </a>
+      <a href="pages/services/data-engineering.html" class="service-card">
+        <div class="service-num">05</div>
+        <div class="service-icon-wrap"><svg><use href="#icon-data"/></svg></div>
+        <h3 class="service-title">Data Engineering</h3>
+        <p class="service-desc">Pipeline de données, ETL, data lake et architecture data moderne.</p>
+        <div class="service-arrow"><svg><use href="#icon-arrow-right"/></svg></div>
+      </a>
+      <a href="pages/services/chatbots-ia.html" class="service-card">
+        <div class="service-num">06</div>
+        <div class="service-icon-wrap"><svg><use href="#icon-chat"/></svg></div>
+        <h3 class="service-title">Chatbots &amp; Assistants IA</h3>
+        <p class="service-desc">Assistants virtuels conversationnels pour le service client et l'assistance interne.</p>
+        <div class="service-arrow"><svg><use href="#icon-arrow-right"/></svg></div>
+      </a>
+    </div>
+    <div class="methodology-section" style="margin-top:40px">
+      <div class="methodology-header">
+        <h3>Approche de transformation</h3>
+        <p>Notre méthode éprouvée pour réussir votre transformation digitale</p>
+      </div>
+      <div class="methodology-steps">
+        <div class="method-step">
+          <div class="method-num">01</div>
+          <h4 class="method-title">Diagnostic</h4>
+          <p class="method-desc">Évaluation de la maturité digitale et identification des opportunités d'automatisation.</p>
+        </div>
+        <div class="method-step">
+          <div class="method-num">02</div>
+          <h4 class="method-title">Roadmap</h4>
+          <p class="method-desc">Élaboration de la feuille de route digitale priorisée par valeur ajoutée.</p>
+        </div>
+        <div class="method-step">
+          <div class="method-num">03</div>
+          <h4 class="method-title">Implémentation</h4>
+          <p class="method-desc">Développement agile des solutions IA et déploiement progressif.</p>
+        </div>
+        <div class="method-step">
+          <div class="method-num">04</div>
+          <h4 class="method-title">Adoption &amp; Optimisation</h4>
+          <p class="method-desc">Formation des équipes, mesure des performances et amélioration continue.</p>
+        </div>
+      </div>
+      <div class="methodology-cta">
+        <a href="#contact" class="btn-green"><svg><use href="#icon-arrow-right"/></svg> Démarrer votre projet</a>
+        <span style="color:rgba(255,255,255,0.4);font-size:13px">Discutez de votre stratégie de digitalisation avec nos experts.</span>
+      </div>
     </div>
   </div>
 </section>
-
-<!-- ================================================
-     VISION / MISSION
-================================================ -->
+<!-- VISION / MISSION -->
 <section id="vision">
   <div class="vm-top">
     <div>
       <p class="section-tag fade-up">Notre orientation</p>
       <h2 class="section-title fade-up">Vision &amp;<br>Mission</h2>
     </div>
-    <p class="section-lead fade-up">
-      Chaque prestation est guidée par une vision claire et une mission de service exceptionnel, ancrée dans les réalités du marché congolais.
-    </p>
+    <p class="section-lead fade-up">Chaque prestation est guidée par une vision claire et une mission de service exceptionnel, ancrée dans les réalités du marché.</p>
   </div>
-
   <div class="vm-cards">
     <div class="vm-card vision-card fade-up">
       <svg class="vm-card-icon"><use href="#icon-star"/></svg>
       <div class="vm-card-label">Notre vision</div>
       <h3 class="vm-card-title">Référence<br>incontournable</h3>
-      <p class="vm-card-text">
-        Devenir une référence incontournable dans le secteur des services multisectoriels en offrant des prestations de qualité adaptées aux réalités locales et aux besoins croissants du marché congolais.
-      </p>
+      <p class="vm-card-text">Devenir la référence incontournable en ingénierie IT et services multisectoriels, en offrant des solutions innovantes et sur mesure qui transforment positivement nos clients et leur environnement.</p>
     </div>
-
     <div class="vm-card mission-card fade-up">
       <svg class="vm-card-icon"><use href="#icon-zap"/></svg>
       <div class="vm-card-label">Notre mission</div>
-      <h3 class="vm-card-title">Services fiables<br>&amp; accessibles</h3>
-      <p class="vm-card-text">
-        Fournir des services fiables, rapides et accessibles tout en garantissant la pleine satisfaction des clients et en contribuant activement au développement socio-économique de la République Démocratique du Congo.
-      </p>
+      <h3 class="vm-card-title">Services fiables<br>&amp; innovants</h3>
+      <p class="vm-card-text">Fournir des services IT et multisectoriels fiables, rapides et accessibles, en garantissant la pleine satisfaction de nos clients grâce à une expertise technique de pointe et un engagement sans faille envers la qualité.</p>
     </div>
   </div>
 </section>
 
-<!-- ================================================
-     OBJECTIVES
-================================================ -->
+<!-- OBJECTIVES -->
 <section id="objectives">
   <p class="section-tag fade-up">Nos engagements</p>
   <h2 class="section-title fade-up">Objectifs<br>stratégiques</h2>
-
   <div class="objectives-grid">
     <div class="obj-main fade-up">
       <div class="obj-main-label">Objectif général</div>
       <h3 class="obj-main-title">Qualité &amp; Excellence</h3>
-      <p class="obj-main-text">
-        Offrir des services de qualité supérieure répondant précisément aux besoins spécifiques de nos clients, avec un engagement total envers leur satisfaction et la création de valeur durable.
-      </p>
+      <p class="obj-main-text">Offrir des services de qualité supérieure répondant précisément aux besoins spécifiques de nos clients, avec un engagement total envers leur satisfaction et la création de valeur durable.</p>
     </div>
-
     <div class="obj-list fade-up">
-      <div class="obj-item">
-        <div class="obj-item-num">01</div>
-        <p class="obj-item-text">Assurer un service rapide et efficace avec des délais d'intervention compétitifs</p>
-      </div>
-      <div class="obj-item">
-        <div class="obj-item-num">02</div>
-        <p class="obj-item-text">Garantir la qualité des prestations à travers des processus rigoureux de contrôle</p>
-      </div>
-      <div class="obj-item">
-        <div class="obj-item-num">03</div>
-        <p class="obj-item-text">Développer un portefeuille clients solide basé sur la confiance et la fidélité</p>
-      </div>
-      <div class="obj-item">
-        <div class="obj-item-num">04</div>
-        <p class="obj-item-text">Contribuer à la création d'emplois et au développement économique local</p>
-      </div>
-      <div class="obj-item">
-        <div class="obj-item-num">05</div>
-        <p class="obj-item-text">Étendre notre présence géographique et développer des partenariats stratégiques</p>
-      </div>
+      <div class="obj-item"><div class="obj-item-num">01</div><p class="obj-item-text">Assurer un service rapide et efficace avec des délais d'intervention compétitifs</p></div>
+      <div class="obj-item"><div class="obj-item-num">02</div><p class="obj-item-text">Garantir la qualité des prestations à travers des processus rigoureux de contrôle</p></div>
+      <div class="obj-item"><div class="obj-item-num">03</div><p class="obj-item-text">Développer un portefeuille clients solide basé sur la confiance et la fidélité</p></div>
+      <div class="obj-item"><div class="obj-item-num">04</div><p class="obj-item-text">Contribuer à la transformation digitale et au développement économique local</p></div>
+      <div class="obj-item"><div class="obj-item-num">05</div><p class="obj-item-text">Étendre notre présence géographique et développer des partenariats stratégiques</p></div>
     </div>
   </div>
 </section>
 
-<!-- ================================================
-     CLIENTS
-================================================ -->
+<!-- CLIENTS -->
 <section id="clients">
   <p class="section-tag fade-up">À qui nous servons</p>
   <h2 class="section-title fade-up">Clientèle<br>cible</h2>
-  <p class="section-lead fade-up" style="margin-bottom:0">
-    RM5 Pluri-Services s'adresse à une clientèle diversifiée, des particuliers aux grandes institutions.
-  </p>
-
+  <p class="section-lead fade-up" style="margin-bottom:0">Matiaba Firm s'adresse à une clientèle diversifiée, des particuliers aux grandes institutions.</p>
   <div class="clients-grid">
     <div class="client-card fade-up">
-      <div class="client-icon-wrap">
-        <svg><use href="#icon-user"/></svg>
-      </div>
+      <div class="client-icon-wrap"><svg><use href="#icon-user"/></svg></div>
       <div class="client-label">Particuliers</div>
-      <p class="client-desc">Services personnalisés pour toutes vos besoins domestiques et personnels</p>
+      <p class="client-desc">Services personnalisés pour tous vos besoins domestiques et personnels</p>
     </div>
-
     <div class="client-card fade-up">
-      <div class="client-icon-wrap">
-        <svg><use href="#icon-building"/></svg>
-      </div>
+      <div class="client-icon-wrap"><svg><use href="#icon-building"/></svg></div>
       <div class="client-label">Entreprises privées</div>
       <p class="client-desc">Solutions professionnelles adaptées aux PME et grandes entreprises</p>
     </div>
-
     <div class="client-card fade-up">
-      <div class="client-icon-wrap">
-        <svg><use href="#icon-globe"/></svg>
-      </div>
+      <div class="client-icon-wrap"><svg><use href="#icon-globe"/></svg></div>
       <div class="client-label">ONG</div>
       <p class="client-desc">Partenariats avec les organisations non gouvernementales locales et internationales</p>
     </div>
-
     <div class="client-card fade-up">
-      <div class="client-icon-wrap">
-        <svg><use href="#icon-gov"/></svg>
-      </div>
+      <div class="client-icon-wrap"><svg><use href="#icon-gov"/></svg></div>
       <div class="client-label">Institutions publiques</div>
       <p class="client-desc">Appui aux administrations publiques et aux collectivités territoriales</p>
     </div>
   </div>
 </section>
 
-<!-- ================================================
-     STRENGTHS
-================================================ -->
+<!-- STRENGTHS -->
 <section id="strengths">
   <div class="strengths-header">
     <p class="section-tag">Pourquoi nous choisir</p>
     <h2 class="section-title" style="color:white">Nos atouts</h2>
   </div>
-
   <div class="strengths-grid">
-    <div class="strength-item fade-up">
-      <div class="strength-num">01</div>
-      <div class="strength-body">
-        <h3 class="strength-title">Équipe dynamique &amp; compétente</h3>
-        <p class="strength-text">Des professionnels qualifiés et engagés, formés aux meilleures pratiques du secteur, prêts à répondre à vos besoins.</p>
-      </div>
-    </div>
-
-    <div class="strength-item fade-up">
-      <div class="strength-num">02</div>
-      <div class="strength-body">
-        <h3 class="strength-title">Flexibilité &amp; réactivité</h3>
-        <p class="strength-text">Capacité d'adaptation rapide aux besoins changeants des clients avec des délais d'exécution optimisés.</p>
-      </div>
-    </div>
-
-    <div class="strength-item fade-up">
-      <div class="strength-num">03</div>
-      <div class="strength-body">
-        <h3 class="strength-title">Polyvalence des services</h3>
-        <p class="strength-text">Un seul interlocuteur pour tous vos besoins. Notre gamme étendue couvre l'ensemble de vos projets.</p>
-      </div>
-    </div>
-
-    <div class="strength-item fade-up">
-      <div class="strength-num">04</div>
-      <div class="strength-body">
-        <h3 class="strength-title">Prix compétitifs</h3>
-        <p class="strength-text">Des tarifs transparents et compétitifs sans compromis sur la qualité. Rapport qualité-prix imbattable.</p>
-      </div>
-    </div>
-
-    <div class="strength-item fade-up">
-      <div class="strength-num">05</div>
-      <div class="strength-body">
-        <h3 class="strength-title">Engagement qualité</h3>
-        <p class="strength-text">Chaque prestation est encadrée par des procédures strictes de contrôle qualité et de satisfaction client.</p>
-      </div>
-    </div>
-
-    <div class="strength-item fade-up">
-      <div class="strength-num">06</div>
-      <div class="strength-body">
-        <h3 class="strength-title">Connaissance du marché local</h3>
-        <p class="strength-text">Ancrée dans la réalité du Kongo Central, RM5 comprend les défis et opportunités du tissu économique local.</p>
-      </div>
-    </div>
+    <div class="strength-item fade-up"><div class="strength-num">01</div><div class="strength-body"><h3 class="strength-title">Expertise IT &amp; IA de pointe</h3><p class="strength-text">Une équipe de spécialistes certifiés en ingénierie IT, cybersécurité, cloud et intelligence artificielle, prêts à relever vos défis technologiques.</p></div></div>
+    <div class="strength-item fade-up"><div class="strength-num">02</div><div class="strength-body"><h3 class="strength-title">Astreinte &amp; support 24/7</h3><p class="strength-text">Disponibilité permanente pour assurer la continuité de votre activité avec un support helpdesk réactif et une astreinte technique 24h/24.</p></div></div>
+    <div class="strength-item fade-up"><div class="strength-num">03</div><div class="strength-body"><h3 class="strength-title">Polyvalence des services</h3><p class="strength-text">Un seul interlocuteur pour tous vos besoins : du développement web à la cybersécurité, du génie civil à la logistique internationale.</p></div></div>
+    <div class="strength-item fade-up"><div class="strength-num">04</div><div class="strength-body"><h3 class="strength-title">Approche sur mesure</h3><p class="strength-text">Des solutions personnalisées construites autour de vos besoins spécifiques, avec une méthodologie agile et des résultats mesurables.</p></div></div>
+    <div class="strength-item fade-up"><div class="strength-num">05</div><div class="strength-body"><h3 class="strength-title">Engagement qualité</h3><p class="strength-text">Chaque prestation est encadrée par des procédures strictes de contrôle qualité et de satisfaction client, avec des indicateurs de performance clairs.</p></div></div>
+    <div class="strength-item fade-up"><div class="strength-num">06</div><div class="strength-body"><h3 class="strength-title">Prix compétitifs</h3><p class="strength-text">Des tarifs transparents et compétitifs sans compromis sur la qualité. Rapport qualité-prix imbattable sur le marché.</p></div></div>
   </div>
 </section>
-
-<!-- ================================================
-     CONTACT
-================================================ -->
+<!-- CONTACT -->
 <section id="contact">
   <p class="section-tag fade-up">Travaillons ensemble</p>
   <h2 class="section-title fade-up">Contactez-<br>nous</h2>
-
   <div class="contact-grid">
-    <!-- Info + Map -->
     <div>
       <div class="contact-info-list">
         <div class="contact-info-item fade-up">
-          <div class="contact-info-icon">
-            <svg><use href="#icon-pin"/></svg>
-          </div>
+          <div class="contact-info-icon"><svg><use href="#icon-pin"/></svg></div>
           <div>
             <div class="contact-info-label">Adresse</div>
-            <div class="contact-info-val">Avenue Kinkela N°9 bis, Quartier Ville-Haute<br>Commune de Matadi, Kongo Central — RDC</div>
+            <div class="contact-info-val">15 rue Kalli Fayette, Mpita wharf</div>
           </div>
         </div>
-
         <div class="contact-info-item fade-up">
-          <div class="contact-info-icon">
-            <svg><use href="#icon-phone"/></svg>
-          </div>
+          <div class="contact-info-icon"><svg><use href="#icon-phone"/></svg></div>
           <div>
             <div class="contact-info-label">Téléphone</div>
-            <div class="contact-info-val">+243 823 258 701</div>
+            <div class="contact-info-val">+242 04 006 5640</div>
           </div>
         </div>
-
         <div class="contact-info-item fade-up">
-          <div class="contact-info-icon">
-            <svg><use href="#icon-mail"/></svg>
-          </div>
+          <div class="contact-info-icon"><svg><use href="#icon-mail"/></svg></div>
           <div>
             <div class="contact-info-label">Email</div>
-            <div class="contact-info-val">raisonmavinga@gmail.com</div>
+            <div class="contact-info-val">contact@matiabafirm.com</div>
           </div>
         </div>
-
         <div class="contact-info-item fade-up">
-          <div class="contact-info-icon">
-            <svg><use href="#icon-user"/></svg>
-          </div>
+          <div class="contact-info-icon"><svg><use href="#icon-user"/></svg></div>
           <div>
             <div class="contact-info-label">Responsable</div>
-            <div class="contact-info-val">Mavinga Lubabu Raison</div>
+            <div class="contact-info-val">Matiaba Firm</div>
           </div>
         </div>
       </div>
-
-      <!-- Map -->
       <div class="contact-map-wrap fade-up">
-        <img src="images/map.svg" alt="Localisation RM5 Pluri-Services — Matadi, Kongo Central">
+        <img src="images/map.svg" alt="Localisation Matiaba Firm — Mpita wharf">
       </div>
     </div>
-
-    <!-- Form -->
     <div class="contact-form fade-up">
       <h3 class="form-title">Envoyez-nous un message</h3>
       <p class="form-subtitle">Remplissez ce formulaire et nous vous répondrons dans les plus brefs délais.</p>
-
       <form id="contact-form" novalidate>
         <div class="form-row">
           <div class="form-group">
@@ -644,45 +723,53 @@
             <input class="form-input" type="email" id="f-email" placeholder="votre@email.com" required>
           </div>
         </div>
-
         <div class="form-group">
           <label class="form-label" for="f-service">Service concerné</label>
           <select class="form-select" id="f-service">
             <option value="">Sélectionnez un service...</option>
-            <option>Génie civil &amp; réhabilitation</option>
-            <option>Entretien &amp; maintenance</option>
-            <option>Services informatiques &amp; bureautiques</option>
-            <option>Fourniture de matériels &amp; équipements</option>
-            <option>Nettoyage &amp; assainissement</option>
-            <option>Fret maritime &amp; aérien</option>
-            <option>Conseils &amp; accompagnement technique</option>
+            <optgroup label="Services généraux">
+              <option>Génie civil &amp; réhabilitation</option>
+              <option>Entretien &amp; maintenance</option>
+              <option>Services informatiques &amp; bureautiques</option>
+              <option>Fourniture Matériel BTP</option>
+              <option>Nettoyage &amp; assainissement</option>
+              <option>Fret maritime &amp; aérien</option>
+              <option>Conseils &amp; accompagnement technique</option>
+            </optgroup>
+            <optgroup label="Ingénierie &amp; Technologies IT">
+              <option>Infogérance</option>
+              <option>Développement Web &amp; Mobile</option>
+              <option>Marketing Numérique</option>
+              <option>Ingénierie Réseaux &amp; Systèmes</option>
+              <option>Audit &amp; Cybersécurité</option>
+              <option>Cloud &amp; Hébergement</option>
+            </optgroup>
+            <optgroup label="Digitalisation &amp; IA">
+              <option>Automatisation RPA</option>
+              <option>Intelligence Artificielle</option>
+              <option>Data Analytics &amp; BI</option>
+              <option>Transformation des processus</option>
+              <option>Data Engineering</option>
+              <option>Chatbots &amp; Assistants IA</option>
+            </optgroup>
             <option>Autre</option>
           </select>
         </div>
-
         <div class="form-group">
           <label class="form-label" for="f-subject">Objet *</label>
           <input class="form-input" type="text" id="f-subject" placeholder="Objet de votre demande" required>
         </div>
-
         <div class="form-group">
           <label class="form-label" for="f-message">Message *</label>
           <textarea class="form-input" id="f-message" placeholder="Décrivez votre besoin..." required></textarea>
         </div>
-
         <button type="submit" class="btn-submit">
-          <svg><use href="#icon-send"/></svg>
-          Envoyer le message
+          <svg><use href="#icon-send"/></svg> Envoyer le message
         </button>
-
         <p class="form-note">* Champs obligatoires. Vos données restent confidentielles.</p>
       </form>
-
-      <!-- Success message -->
       <div id="form-success" class="form-success">
-        <div class="form-success-icon">
-          <svg><use href="#icon-check"/></svg>
-        </div>
+        <div class="form-success-icon"><svg><use href="#icon-check"/></svg></div>
         <h3>Message envoyé !</h3>
         <p>Merci de nous avoir contactés. Nous vous répondrons dans les plus brefs délais.</p>
       </div>
@@ -690,98 +777,70 @@
   </div>
 </section>
 
-<!-- ================================================
-     FOOTER
-================================================ -->
+<!-- FOOTER -->
 <footer>
   <div class="footer-main">
-    <!-- Brand -->
     <div>
-      <div class="footer-brand-logo">
-        <img src="images/logo-white.svg" alt="RM5 Pluri-Services" height="50">
-      </div>
-      <p class="footer-tagline">
-        Votre partenaire multiservices de confiance à Matadi, Kongo Central, République Démocratique du Congo.
-      </p>
+      <img src="images/logo.png" alt="Matiaba Firm" class="footer-logo-img">
+      <p class="footer-tagline">Votre partenaire en ingénierie IT, digitalisation &amp; IA et services multisectoriels — Clean and Save.</p>
       <div class="footer-social">
-        <a href="mailto:raisonmavinga@gmail.com" class="social-btn" title="Email">
-          <svg><use href="#icon-mail"/></svg>
-        </a>
-        <a href="tel:+243823258701" class="social-btn" title="Téléphone">
-          <svg><use href="#icon-phone"/></svg>
-        </a>
-        <a href="#contact" class="social-btn" title="Localisation">
-          <svg><use href="#icon-pin"/></svg>
-        </a>
+        <a href="mailto:contact@matiabafirm.com" class="social-btn" title="Email"><svg><use href="#icon-mail"/></svg></a>
+        <a href="tel:+242040065640" class="social-btn" title="Téléphone"><svg><use href="#icon-phone"/></svg></a>
+        <a href="#contact" class="social-btn" title="Localisation"><svg><use href="#icon-pin"/></svg></a>
       </div>
     </div>
-
-    <!-- Services -->
     <div>
       <div class="footer-col-title">Nos services</div>
       <div class="footer-links">
         <a href="#services">Génie civil &amp; réhabilitation</a>
         <a href="#services">Entretien &amp; maintenance</a>
         <a href="#services">Services informatiques</a>
-        <a href="#services">Fourniture d'équipements</a>
+        <a href="#services">Fourniture Matériel BTP</a>
         <a href="#services">Nettoyage &amp; assainissement</a>
         <a href="#services">Fret maritime &amp; aérien</a>
-        <a href="#services">Conseils techniques</a>
       </div>
     </div>
-
-    <!-- Company -->
     <div>
-      <div class="footer-col-title">Entreprise</div>
+      <div class="footer-col-title">IT &amp; IA</div>
       <div class="footer-links">
-        <a href="#about">À propos de nous</a>
-        <a href="#vision">Vision &amp; Mission</a>
-        <a href="#objectives">Nos objectifs</a>
-        <a href="#strengths">Nos atouts</a>
-        <a href="#clients">Clientèle</a>
-        <a href="#contact">Contact</a>
+        <a href="#sectors">Infogérance &amp; Helpdesk</a>
+        <a href="#sectors">Développement Web &amp; Mobile</a>
+        <a href="#sectors">Cybersécurité</a>
+        <a href="#sectors">Cloud &amp; Hébergement</a>
+        <a href="#sectors">Automatisation RPA</a>
+        <a href="#sectors">Data Analytics &amp; BI</a>
       </div>
     </div>
-
-    <!-- Contact -->
     <div>
       <div class="footer-col-title">Contact</div>
-      <div class="footer-contact-item">
-        <svg><use href="#icon-pin"/></svg>
-        <span class="footer-contact-text">Avenue Kinkela N°9 bis, Quartier Ville-Haute, Matadi, Kongo Central</span>
-      </div>
-      <div class="footer-contact-item">
-        <svg><use href="#icon-phone"/></svg>
-        <span class="footer-contact-text">+243 823 258 701</span>
-      </div>
-      <div class="footer-contact-item">
-        <svg><use href="#icon-mail"/></svg>
-        <span class="footer-contact-text">raisonmavinga@gmail.com</span>
-      </div>
-      <div class="footer-contact-item">
-        <svg><use href="#icon-user"/></svg>
-        <span class="footer-contact-text">Mavinga Lubabu Raison<br>Responsable</span>
-      </div>
+      <div class="footer-contact-item"><svg><use href="#icon-pin"/></svg><span class="footer-contact-text">15 rue Kalli Fayette, Mpita wharf</span></div>
+      <div class="footer-contact-item"><svg><use href="#icon-phone"/></svg><span class="footer-contact-text">+242 04 006 5640</span></div>
+      <div class="footer-contact-item"><svg><use href="#icon-mail"/></svg><span class="footer-contact-text">contact@matiabafirm.com</span></div>
     </div>
   </div>
-
   <div class="footer-bottom">
-    <span class="footer-copy">© 2025 RM5 Pluri-Services SARL. Tous droits réservés.</span>
+    <span class="footer-copy">© 2025 Matiaba Firm. Tous droits réservés.</span>
     <div class="footer-legal">
-      <a href="#">Mentions légales</a>
-      <a href="#">Politique de confidentialité</a>
+      <a href="pages/mentions-legales.html">Mentions légales</a>
+      <a href="pages/confidentialite.html">Politique de confidentialité</a>
       <a href="#contact">Contact</a>
     </div>
   </div>
 </footer>
 
-<!-- Scroll to top -->
-<button id="scroll-top" aria-label="Retour en haut">
-  <svg><use href="#icon-chevron-up"/></svg>
-</button>
+<button id="scroll-top" aria-label="Retour en haut"><svg><use href="#icon-chevron-up"/></svg></button>
 
-<!-- Main JS -->
+<script>
+function switchTab(btn, panel) {
+  document.querySelectorAll('.sector-tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('.sector-panel').forEach(p => p.classList.remove('active'));
+  btn.classList.add('active');
+  document.getElementById('panel-' + panel).classList.add('active');
+}
+</script>
 <script src="js/main.js"></script>
-
 </body>
 </html>
+
+
+

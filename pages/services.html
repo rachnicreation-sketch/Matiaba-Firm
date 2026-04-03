@@ -1,278 +1,664 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Services de RM5 Pluri-Services — Génie civil, maintenance, informatique, fournitures, nettoyage, fret maritime et conseils techniques à Matadi.">
-  <title>Nos services — RM5 Pluri-Services</title>
-  <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Services Matiaba Firm — Détail de chaque prestation avec accordéon interactif.">
+  <title>Nos Services — Matiaba Firm</title>
+  <link rel="icon" type="image/png" href="../images/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Barlow+Condensed:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/pages.css">
 </head>
 <body>
-
-<!-- PAGE HERO -->
-<div class="page-hero">
-  <div class="page-hero-inner">
-    <div class="breadcrumb">
-      <a href="../index.html">Accueil</a>
-      <div class="breadcrumb-sep"></div>
-      <span class="breadcrumb-current">Services</span>
-    </div>
-    <p class="page-hero-tag">Ce que nous faisons</p>
-    <h1>Nos<br><span>services</span></h1>
-    <p class="page-hero-desc">RM5 Pluri-Services intervient dans 7 domaines clés pour répondre à tous vos besoins avec efficacité, qualité et professionnalisme.</p>
-  </div>
-</div>
-
-<!-- SERVICES OVERVIEW GRID -->
-<section class="page-content light">
-  <p class="section-tag fade-up">Vue d'ensemble</p>
-  <h2 class="section-title fade-up">7 domaines<br>d'expertise</h2>
-  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:3px;margin-top:48px;background:rgba(0,0,0,0.06);max-width:1200px">
-    <a href="#genie-civil" style="background:white;padding:28px 24px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:10px;transition:background .28s;text-decoration:none;color:inherit" onmouseover="this.style.background='var(--red)';this.querySelector('.slbl').style.color='white'" onmouseout="this.style.background='white';this.querySelector('.slbl').style.color='var(--dark)'">
-      <div style="font-size:28px">🏗️</div>
-      <span class="slbl" style="font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--dark);transition:color .28s;line-height:1.3">Génie civil</span>
-    </a>
-    <a href="#maintenance" style="background:white;padding:28px 24px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:10px;transition:background .28s;text-decoration:none;color:inherit" onmouseover="this.style.background='var(--red)';this.querySelector('.slbl').style.color='white'" onmouseout="this.style.background='white';this.querySelector('.slbl').style.color='var(--dark)'">
-      <div style="font-size:28px">🔧</div>
-      <span class="slbl" style="font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--dark);transition:color .28s;line-height:1.3">Maintenance</span>
-    </a>
-    <a href="#informatique" style="background:white;padding:28px 24px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:10px;transition:background .28s;text-decoration:none;color:inherit" onmouseover="this.style.background='var(--red)';this.querySelector('.slbl').style.color='white'" onmouseout="this.style.background='white';this.querySelector('.slbl').style.color='var(--dark)'">
-      <div style="font-size:28px">💻</div>
-      <span class="slbl" style="font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--dark);transition:color .28s;line-height:1.3">Informatique</span>
-    </a>
-    <a href="#fourniture" style="background:white;padding:28px 24px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:10px;transition:background .28s;text-decoration:none;color:inherit" onmouseover="this.style.background='var(--red)';this.querySelector('.slbl').style.color='white'" onmouseout="this.style.background='white';this.querySelector('.slbl').style.color='var(--dark)'">
-      <div style="font-size:28px">📦</div>
-      <span class="slbl" style="font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--dark);transition:color .28s;line-height:1.3">Fournitures</span>
-    </a>
-    <a href="#nettoyage" style="background:white;padding:28px 24px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:10px;transition:background .28s;text-decoration:none;color:inherit" onmouseover="this.style.background='var(--red)';this.querySelector('.slbl').style.color='white'" onmouseout="this.style.background='white';this.querySelector('.slbl').style.color='var(--dark)'">
-      <div style="font-size:28px">🧹</div>
-      <span class="slbl" style="font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--dark);transition:color .28s;line-height:1.3">Nettoyage</span>
-    </a>
-    <a href="#fret" style="background:white;padding:28px 24px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:10px;transition:background .28s;text-decoration:none;color:inherit" onmouseover="this.style.background='var(--red)';this.querySelector('.slbl').style.color='white'" onmouseout="this.style.background='white';this.querySelector('.slbl').style.color='var(--dark)'">
-      <div style="font-size:28px">🚢</div>
-      <span class="slbl" style="font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--dark);transition:color .28s;line-height:1.3">Fret</span>
-    </a>
-    <a href="#conseils" style="background:white;padding:28px 24px;text-align:center;display:flex;flex-direction:column;align-items:center;gap:10px;transition:background .28s;text-decoration:none;color:inherit" onmouseover="this.style.background='var(--red)';this.querySelector('.slbl').style.color='white'" onmouseout="this.style.background='white';this.querySelector('.slbl').style.color='var(--dark)'">
-      <div style="font-size:28px">📋</div>
-      <span class="slbl" style="font-size:12px;font-weight:700;letter-spacing:1px;text-transform:uppercase;color:var(--dark);transition:color .28s;line-height:1.3">Conseils</span>
-    </a>
-  </div>
-</section>
-
-<!-- SERVICE DETAIL SECTIONS -->
-
-<!-- 1. Génie Civil -->
-<section id="genie-civil" class="service-detail">
-  <div class="service-detail-visual fade-up">
-    <div class="service-detail-bg-num">01</div>
-    <div class="service-detail-icon-big">
-      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" width="40" height="40">
-        <rect x="4" y="36" width="40" height="6" rx="1" fill="white"/>
-        <rect x="10" y="20" width="4" height="16" fill="white"/>
-        <rect x="34" y="20" width="4" height="16" fill="white"/>
-        <rect x="18" y="26" width="12" height="10" fill="white" opacity="0.5"/>
-        <polygon points="24,6 6,20 42,20" fill="white"/>
-      </svg>
-    </div>
-  </div>
-  <div class="service-detail-content fade-up">
-    <div class="service-detail-tag">Service 01</div>
-    <h2 class="service-detail-title">Génie civil &amp;<br>réhabilitation des<br>infrastructures</h2>
-    <p class="service-detail-desc">RM5 Pluri-Services intervient dans la conception, la construction et la réhabilitation d'infrastructures selon les normes techniques les plus exigeantes. Nous accompagnons vos projets de A à Z, de l'étude de faisabilité jusqu'à la réception des travaux.</p>
-    <div class="service-features">
-      <div class="service-feature"><div class="service-feature-dot"></div>Construction et réhabilitation de bâtiments</div>
-      <div class="service-feature"><div class="service-feature-dot"></div>Travaux de voirie et d'assainissement</div>
-      <div class="service-feature"><div class="service-feature-dot"></div>Réhabilitation d'ouvrages existants</div>
-      <div class="service-feature"><div class="service-feature-dot"></div>Supervision et contrôle de travaux</div>
-      <div class="service-feature"><div class="service-feature-dot"></div>Études techniques et devis</div>
-    </div>
-    <a href="devis.html" class="btn-service">Demander un devis <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></a>
-  </div>
-</section>
-
-<!-- 2. Maintenance -->
-<section id="maintenance" class="service-detail" style="background:var(--off-white)">
-  <div class="service-detail-visual fade-up" style="background:var(--dark-3)">
-    <div class="service-detail-bg-num">02</div>
-    <div class="service-detail-icon-big">
-      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" width="40" height="40">
-        <circle cx="24" cy="24" r="7" stroke="white" stroke-width="3"/>
-        <path d="M24 4v8M24 36v8M4 24h8M36 24h8M9.4 9.4l5.7 5.7M32.9 32.9l5.7 5.7M9.4 38.6l5.7-5.7M32.9 15.1l5.7-5.7" stroke="white" stroke-width="3" stroke-linecap="round"/>
-      </svg>
-    </div>
-  </div>
-  <div class="service-detail-content fade-up">
-    <div class="service-detail-tag">Service 02</div>
-    <h2 class="service-detail-title">Entretien &amp;<br>maintenance</h2>
-    <p class="service-detail-desc">Nous assurons la maintenance préventive et corrective de vos bâtiments, installations et équipements industriels. Notre équipe technique intervient rapidement pour minimiser les interruptions et garantir la pérennité de vos actifs.</p>
-    <div class="service-features">
-      <div class="service-feature"><div class="service-feature-dot"></div>Maintenance préventive planifiée</div>
-      <div class="service-feature"><div class="service-feature-dot"></div>Intervention d'urgence 24h/7j</div>
-      <div class="service-feature"><div class="service-feature-dot"></div>Entretien de bâtiments résidentiels et commerciaux</div>
-      <div class="service-feature"><div class="service-feature-dot"></div>Maintenance d'équipements industriels</div>
-      <div class="service-feature"><div class="service-feature-dot"></div>Contrats de maintenance à long terme</div>
-    </div>
-    <a href="devis.html" class="btn-service">Demander un devis <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></a>
-  </div>
-</section>
-
-<!-- 3. Informatique -->
-<section id="informatique" class="service-detail">
-  <div class="service-detail-visual fade-up">
-    <div class="service-detail-bg-num">03</div>
-    <div class="service-detail-icon-big">
-      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" width="40" height="40">
-        <rect x="6" y="8" width="36" height="24" rx="2" stroke="white" stroke-width="3"/>
-        <line x1="16" y1="40" x2="32" y2="40" stroke="white" stroke-width="3" stroke-linecap="round"/>
-        <line x1="24" y1="32" x2="24" y2="40" stroke="white" stroke-width="3"/>
-        <polyline points="13,22 19,16 25,22 31,14" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </div>
-  </div>
-  <div class="service-detail-content fade-up">
-    <div class="service-detail-tag">Service 03</div>
-    <h2 class="service-detail-title">Services<br>informatiques &amp;<br>bureautiques</h2>
-    <p class="service-detail-desc">Nous accompagnons entreprises et institutions dans leur transition numérique et la gestion de leurs systèmes informatiques. De l'installation réseau à la formation bureautique, RM5 couvre tous vos besoins IT.</p>
-    <div class="service-features">
-      <div class="service-feature"><div class="service-feature-dot"></div>Installation et configuration de réseaux informatiques</div>
-      <div class="service-feature"><div class="service-feature-dot"></div>Maintenance et dépannage matériel / logiciel</div>
-      <div class="service-feature"><div class="service-feature-dot"></div>Formation bureautique (Office, comptabilité)</div>
-      <div class="service-feature"><div class="service-feature-dot"></div>Sécurisation des systèmes et données</div>
-      <div class="service-feature"><div class="service-feature-dot"></div>Conseil en transformation numérique</div>
-    </div>
-    <a href="devis.html" class="btn-service">Demander un devis <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></a>
-  </div>
-</section>
-
-<!-- 4. Fourniture -->
-<section id="fourniture" class="service-detail" style="background:var(--off-white)">
-  <div class="service-detail-visual fade-up" style="background:var(--dark-3)">
-    <div class="service-detail-bg-num">04</div>
-    <div class="service-detail-icon-big">
-      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" width="40" height="40">
-        <rect x="8" y="20" width="32" height="22" rx="2" stroke="white" stroke-width="3"/>
-        <path d="M16 20v-6a8 8 0 0 1 16 0v6" stroke="white" stroke-width="3"/>
-        <line x1="8" y1="30" x2="40" y2="30" stroke="white" stroke-width="2"/>
-      </svg>
-    </div>
-  </div>
-  <div class="service-detail-content fade-up">
-    <div class="service-detail-tag">Service 04</div>
-    <h2 class="service-detail-title">Fourniture de<br>matériels &amp;<br>équipements</h2>
-    <p class="service-detail-desc">RM5 Pluri-Services s'approvisionne en matériels et équipements professionnels de qualité sur le marché local et international. Nous assurons la livraison et, si nécessaire, l'installation sur site selon vos spécifications.</p>
-    <div class="service-features">
-      <div class="service-feature"><div class="service-feature-dot"></div>Matériels de construction et BTP</div>
-      <div class="service-feature"><div class="service-feature-dot"></div>Équipements de bureau et informatiques</div>
-      <div class="service-feature"><div class="service-feature-dot"></div>Matériels d'entretien et de nettoyage</div>
-      <div class="service-feature"><div class="service-feature-dot"></div>Fournitures médicales et de laboratoire</div>
-      <div class="service-feature"><div class="service-feature-dot"></div>Sourcing sur mesure selon vos besoins</div>
-    </div>
-    <a href="devis.html" class="btn-service">Demander un devis <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></a>
-  </div>
-</section>
-
-<!-- 5. Nettoyage -->
-<section id="nettoyage" class="service-detail">
-  <div class="service-detail-visual fade-up">
-    <div class="service-detail-bg-num">05</div>
-    <div class="service-detail-icon-big">
-      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" width="40" height="40">
-        <path d="M18 42L22 8L30 8L34 42" stroke="white" stroke-width="3" stroke-linejoin="round"/>
-        <line x1="16" y1="42" x2="36" y2="42" stroke="white" stroke-width="3" stroke-linecap="round"/>
-        <ellipse cx="26" cy="8" rx="7" ry="3" stroke="white" stroke-width="2.5"/>
-        <path d="M12 20C14 16 20 16 22 20C24 24 30 24 32 20" stroke="white" stroke-width="2" stroke-linecap="round" opacity="0.6"/>
-      </svg>
-    </div>
-  </div>
-  <div class="service-detail-content fade-up">
-    <div class="service-detail-tag">Service 05</div>
-    <h2 class="service-detail-title">Nettoyage &amp;<br>assainissement</h2>
-    <p class="service-detail-desc">Nos équipes spécialisées assurent des services de nettoyage et d'assainissement complets pour les espaces résidentiels, commerciaux et industriels. Nous utilisons des produits et techniques respectueux des normes environnementales en vigueur.</p>
-    <div class="service-features">
-      <div class="service-feature"><div class="service-feature-dot"></div>Nettoyage de bureaux et espaces commerciaux</div>
-      <div class="service-feature"><div class="service-feature-dot"></div>Nettoyage industriel et post-chantier</div>
-      <div class="service-feature"><div class="service-feature-dot"></div>Assainissement et dépollution</div>
-      <div class="service-feature"><div class="service-feature-dot"></div>Entretien des espaces verts</div>
-      <div class="service-feature"><div class="service-feature-dot"></div>Contrats de nettoyage réguliers</div>
-    </div>
-    <a href="devis.html" class="btn-service">Demander un devis <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></a>
-  </div>
-</section>
-
-<!-- 6. Fret -->
-<section id="fret" class="service-detail" style="background:var(--off-white)">
-  <div class="service-detail-visual fade-up" style="background:var(--dark-3)">
-    <div class="service-detail-bg-num">06</div>
-    <div class="service-detail-icon-big">
-      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" width="40" height="40">
-        <path d="M4 30V20L28 20V36H4V30Z" stroke="white" stroke-width="3"/>
-        <path d="M28 24H36L44 31V36H28V24Z" stroke="white" stroke-width="3"/>
-        <circle cx="12" cy="38" r="4" stroke="white" stroke-width="3"/>
-        <circle cx="36" cy="38" r="4" stroke="white" stroke-width="3"/>
-        <line x1="4" y1="26" x2="28" y2="26" stroke="white" stroke-width="1.5" opacity="0.4"/>
-      </svg>
-    </div>
-  </div>
-  <div class="service-detail-content fade-up">
-    <div class="service-detail-tag">Service 06</div>
-    <h2 class="service-detail-title">Fret maritime<br>&amp; aérien</h2>
-    <p class="service-detail-desc">RM5 Pluri-Services gère le transport de vos marchandises par voie maritime et aérienne. Grâce à notre réseau de partenaires logistiques, nous assurons des expéditions fiables et dans les délais, avec une gestion complète des formalités douanières.</p>
-    <div class="service-features">
-      <div class="service-feature"><div class="service-feature-dot"></div>Transport maritime international (import/export)</div>
-      <div class="service-feature"><div class="service-feature-dot"></div>Fret aérien express et standard</div>
-      <div class="service-feature"><div class="service-feature-dot"></div>Gestion des formalités douanières</div>
-      <div class="service-feature"><div class="service-feature-dot"></div>Entreposage et logistique de distribution</div>
-      <div class="service-feature"><div class="service-feature-dot"></div>Suivi et traçabilité des expéditions</div>
-    </div>
-    <a href="devis.html" class="btn-service">Demander un devis <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></a>
-  </div>
-</section>
-
-<!-- 7. Conseils -->
-<section id="conseils" class="service-detail">
-  <div class="service-detail-visual fade-up">
-    <div class="service-detail-bg-num">07</div>
-    <div class="service-detail-icon-big">
-      <svg viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg" width="40" height="40">
-        <circle cx="24" cy="16" r="10" stroke="white" stroke-width="3"/>
-        <path d="M8 44c0-8 7.2-14 16-14s16 6 16 14" stroke="white" stroke-width="3" stroke-linecap="round"/>
-        <line x1="24" y1="12" x2="24" y2="20" stroke="white" stroke-width="2.5" stroke-linecap="round"/>
-        <circle cx="24" cy="23" r="1.5" fill="white"/>
-      </svg>
-    </div>
-  </div>
-  <div class="service-detail-content fade-up">
-    <div class="service-detail-tag">Service 07</div>
-    <h2 class="service-detail-title">Conseils &amp;<br>accompagnement<br>technique</h2>
-    <p class="service-detail-desc">Notre équipe d'experts accompagne vos projets avec des conseils techniques et stratégiques personnalisés. De l'audit initial au suivi de mise en œuvre, nous vous guidons pour prendre les meilleures décisions.</p>
-    <div class="service-features">
-      <div class="service-feature"><div class="service-feature-dot"></div>Audit et diagnostic de vos installations</div>
-      <div class="service-feature"><div class="service-feature-dot"></div>Études de faisabilité et plans d'action</div>
-      <div class="service-feature"><div class="service-feature-dot"></div>Accompagnement à la gestion de projet</div>
-      <div class="service-feature"><div class="service-feature-dot"></div>Conseil en optimisation des coûts</div>
-      <div class="service-feature"><div class="service-feature-dot"></div>Assistance technique spécialisée</div>
-    </div>
-    <a href="devis.html" class="btn-service">Demander un devis <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg></a>
-  </div>
-</section>
-
-<!-- CTA DEVIS -->
-<section class="page-content dark" style="text-align:center">
-  <p class="section-tag fade-up" style="justify-content:center;display:flex">Prêt à commencer ?</p>
-  <h2 class="section-title fade-up" style="color:white">Demandez<br>votre devis</h2>
-  <p class="section-lead fade-up" style="margin:0 auto 40px;text-align:center;color:rgba(255,255,255,0.5)">Décrivez votre besoin et recevez une proposition personnalisée sous 48h.</p>
-  <a href="devis.html" class="fade-up" style="display:inline-flex;align-items:center;gap:10px;background:var(--red);color:white;padding:16px 44px;font-size:13px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;border-radius:2px;text-decoration:none">
-    Demander un devis
-    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12,5 19,12 12,19"/></svg>
+<nav id="navbar">
+  <a href="../index.html" class="nav-logo">
+    <img src="../images/logo.png" alt="Matiaba Firm" class="nav-logo-img">
+    <div><span class="nav-logo-name">Matiaba Firm</span><span class="nav-logo-sub">Clean and Save</span></div>
   </a>
+  <div class="nav-menu">
+    <a href="../index.html">Accueil</a>
+    <a href="a-propos.html">A propos</a>
+    <a href="services.html" class="active">Services</a>
+    <a href="../index.html#sectors">IT &amp; IA</a>
+    <a href="../index.html#contact">Contact</a>
+  </div>
+  <a href="devis.html" class="nav-cta">Demander un devis</a>
+  <button class="nav-hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<nav class="nav-mobile" id="mobile-nav">
+  <a href="../index.html">Accueil</a><a href="a-propos.html">A propos</a>
+  <li class="nav-item-dropdown">
+  <a href="services.html" class="nav-link">Services <svg width="10" height="6" viewBox="0 0 10 6" fill="none" style="display:inline;vertical-align:middle;margin-left:4px"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+  <div class="mega-menu">
+    <div class="mega-col">
+      <div class="mega-col-title">🏗️ Multiservices</div>
+      <div class="mega-links">
+        <a href="services/genie-civil.html" class="mega-link"><span class="mega-link-icon">🏗️</span> Génie civil</a>
+        <a href="services/maintenance.html" class="mega-link"><span class="mega-link-icon">⚙️</span> Maintenance</a>
+        <a href="services/informatique-bureautique.html" class="mega-link"><span class="mega-link-icon">💻</span> Informatique</a>
+        <a href="services/fourniture-btp.html" class="mega-link"><span class="mega-link-icon">🧱</span> Fourniture BTP</a>
+        <a href="services/nettoyage-assainissement.html" class="mega-link"><span class="mega-link-icon">🧹</span> Nettoyage</a>
+        <a href="services/fret-logistique.html" class="mega-link"><span class="mega-link-icon">🚢</span> Fret Logistique</a>
+        <a href="services/conseils-technique.html" class="mega-link"><span class="mega-link-icon">🎯</span> Conseils</a>
+      </div>
+    </div>
+    <div class="mega-col mega-col-it">
+      <div class="mega-col-title">🖥️ Secteur IT</div>
+      <div class="mega-links">
+        <a href="services/infogerance.html" class="mega-link"><span class="mega-link-icon">☁️</span> Infogérance</a>
+        <a href="services/dev-web-mobile.html" class="mega-link"><span class="mega-link-icon">📱</span> Dev Web/Mobile</a>
+        <a href="services/marketing-digital.html" class="mega-link"><span class="mega-link-icon">📈</span> Marketing</a>
+        <a href="services/reseaux-systemes.html" class="mega-link"><span class="mega-link-icon">🌐</span> Réseaux</a>
+        <a href="services/cybersecurite.html" class="mega-link"><span class="mega-link-icon">🔐</span> Cybersécurité</a>
+        <a href="services/cloud-hebergement.html" class="mega-link"><span class="mega-link-icon">☁️</span> Cloud</a>
+      </div>
+    </div>
+    <div class="mega-col mega-col-ia">
+        <div class="mega-col-title">🤖 IA & Digital</div>
+        <div class="mega-links">
+          <a href="services/rpa.html" class="mega-link"><span class="mega-link-icon">🤖</span> RPA</a>
+          <a href="services/intelligence-artificielle.html" class="mega-link"><span class="mega-link-icon">🧠</span> IA</a>
+          <a href="services/data-analytics.html" class="mega-link"><span class="mega-link-icon">📊</span> Data Analytics</a>
+          <a href="services/transformation-processus.html" class="mega-link"><span class="mega-link-icon">🔄</span> Transformation</a>
+          <a href="services/data-engineering.html" class="mega-link"><span class="mega-link-icon">🗄️</span> Data Engineering</a>
+          <a href="services/chatbots-ia.html" class="mega-link"><span class="mega-link-icon">💬</span> Chatbots IA</a>
+        </div>
+      </div>
+  </div>
+</li><a href="../index.html#contact">Contact</a>
+  <a href="devis.html" class="nav-cta">Demander un devis</a>
+</nav>
+<section class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="page-hero-content">
+    <p class="section-tag">Ce que nous offrons</p>
+    <h1 class="page-hero-title">Nos<br><span class="gradient-text">Services</span></h1>
+    <p class="page-hero-desc">Cliquez sur chaque service pour voir le detail complet des prestations.</p>
+  </div>
+  <nav class="breadcrumb"><a href="../index.html">Accueil</a><span>/</span><span>Services</span></nav>
+</section>
+<section class="page-section bg-dark">
+  <div style="margin-bottom:56px">
+    <p class="section-tag">Pole multiservices</p>
+    <h2 class="section-title" style="color:white">Services generaux</h2>
+    <p class="section-lead" style="color:rgba(255,255,255,0.4)">Cliquez sur un service pour voir les details</p>
+  </div>
+  <div class="accordion-list">
+
+    <div class="accordion-item">
+      <button class="accordion-trigger" onclick="toggleAcc(this)">
+        <div class="accordion-left"><span class="accordion-num">01</span><div class="accordion-icon-wrap">&#x1F3D7;&#xFE0F;</div><div><div class="accordion-title">Genie civil &amp; rehabilitation</div><div class="accordion-subtitle">Construction &middot; Rehabilitation &middot; Ouvrages</div></div></div>
+        <div class="accordion-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,9 12,15 18,9"/></svg></div>
+      </button>
+      <div class="accordion-body"><div class="accordion-content">
+        <div><p class="accordion-desc">Construction neuve et rehabilitation d'infrastructures selon les standards professionnels. Routes, batiments et ouvrages d'art du diagnostic a la reception des travaux.</p>
+          <div class="accordion-features">
+            <div class="accordion-feature">Construction de batiments residentiels, commerciaux et industriels</div>
+            <div class="accordion-feature">Rehabilitation et renovation d'infrastructures existantes</div>
+            <div class="accordion-feature">Travaux de voirie, routes et ouvrages d'art</div>
+            <div class="accordion-feature">Supervision et maitrise d'oeuvre de chantiers</div>
+            <div class="accordion-feature">Etudes de faisabilite et metres</div>
+          </div>
+        </div>
+        <div class="accordion-meta">
+          <div class="accordion-meta-title">Infos pratiques</div>
+          <div class="accordion-meta-item"><span>&#x1F4CD;</span><span>Pointe-Noire et environs</span></div>
+          <div class="accordion-meta-item"><span>&#x2705;</span><span>Devis gratuit sous 48h</span></div>
+          <div class="accordion-meta-item"><span>&#x1F91D;</span><span>Suivi personnalise du chantier</span></div>
+          <div style="display:flex;gap:12px"><a href="devis.html" class="accordion-cta">Devis</a><a href="services/genie-civil.html" class="accordion-cta" style="background:rgba(255,255,255,0.1);color:white">En savoir plus</a></div>
+        </div>
+      </div></div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-trigger" onclick="toggleAcc(this)">
+        <div class="accordion-left"><span class="accordion-num">02</span><div class="accordion-icon-wrap">&#x2699;&#xFE0F;</div><div><div class="accordion-title">Entretien &amp; maintenance</div><div class="accordion-subtitle">Preventif &middot; Correctif &middot; Contrats</div></div></div>
+        <div class="accordion-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,9 12,15 18,9"/></svg></div>
+      </button>
+      <div class="accordion-body"><div class="accordion-content">
+        <div><p class="accordion-desc">Maintenance preventive et corrective de batiments et equipements industriels. Intervention rapide pour minimiser les temps d'arret.</p>
+          <div class="accordion-features">
+            <div class="accordion-feature">Maintenance preventive planifiee et contrats annuels</div>
+            <div class="accordion-feature">Depannage correctif et intervention d'urgence</div>
+            <div class="accordion-feature">Maintenance electrique, plomberie et climatisation</div>
+            <div class="accordion-feature">Inspection periodique et rapports de conformite</div>
+          </div>
+        </div>
+        <div class="accordion-meta">
+          <div class="accordion-meta-title">Infos pratiques</div>
+          <div class="accordion-meta-item"><span>&#x26A1;</span><span>Intervention sous 4h en urgence</span></div>
+          <div class="accordion-meta-item"><span>&#x1F4CB;</span><span>Contrats mensuels disponibles</span></div>
+          <div class="accordion-meta-item"><span>&#x1F551;</span><span>Disponibilite 6j/7</span></div>
+          <div style="display:flex;gap:12px"><a href="devis.html" class="accordion-cta">Devis</a><a href="services/genie-civil.html" class="accordion-cta" style="background:rgba(255,255,255,0.1);color:white">En savoir plus</a></div>
+        </div>
+      </div></div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-trigger" onclick="toggleAcc(this)">
+        <div class="accordion-left"><span class="accordion-num">03</span><div class="accordion-icon-wrap">&#x1F4BB;</div><div><div class="accordion-title">Services informatiques &amp; bureautiques</div><div class="accordion-subtitle">Installation &middot; Support &middot; Formation</div></div></div>
+        <div class="accordion-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,9 12,15 18,9"/></svg></div>
+      </button>
+      <div class="accordion-body"><div class="accordion-content">
+        <div><p class="accordion-desc">Solutions numeriques completes : installation de postes, reseaux bureautiques, maintenance informatique et formations Microsoft Office.</p>
+          <div class="accordion-features">
+            <div class="accordion-feature">Installation et configuration de postes de travail</div>
+            <div class="accordion-feature">Mise en reseau bureautique (LAN, Wi-Fi, NAS)</div>
+            <div class="accordion-feature">Support technique et depannage informatique</div>
+            <div class="accordion-feature">Formation Microsoft 365, Word, Excel, PowerPoint</div>
+            <div class="accordion-feature">Gestion de parc informatique et inventaire</div>
+          </div>
+        </div>
+        <div class="accordion-meta">
+          <div class="accordion-meta-title">Infos pratiques</div>
+          <div class="accordion-meta-item"><span>&#x1F393;</span><span>Formations groupes ou individuels</span></div>
+          <div class="accordion-meta-item"><span>&#x1F527;</span><span>Maintenance sur site ou a distance</span></div>
+          <div class="accordion-meta-item"><span>&#x1F4DE;</span><span>Hotline technique disponible</span></div>
+          <div style="display:flex;gap:12px"><a href="devis.html" class="accordion-cta">Devis</a><a href="services/genie-civil.html" class="accordion-cta" style="background:rgba(255,255,255,0.1);color:white">En savoir plus</a></div>
+        </div>
+      </div></div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-trigger" onclick="toggleAcc(this)">
+        <div class="accordion-left"><span class="accordion-num">04</span><div class="accordion-icon-wrap">&#x1F9F1;</div><div><div class="accordion-title">Fourniture Materiel BTP</div><div class="accordion-subtitle">Materiaux &middot; Engins &middot; Outillage</div></div></div>
+        <div class="accordion-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,9 12,15 18,9"/></svg></div>
+      </button>
+      <div class="accordion-body"><div class="accordion-content">
+        <div><p class="accordion-desc">Approvisionnement en materiaux de construction, engins, outillage BTP et equipements de chantier. Sourcing local et international selon vos specifications.</p>
+          <div class="accordion-features">
+            <div class="accordion-feature">Materiaux de construction (ciment, acier, carrelage...)</div>
+            <div class="accordion-feature">Location et vente d'engins de chantier</div>
+            <div class="accordion-feature">Outillage professionnel et equipements de securite</div>
+            <div class="accordion-feature">Fournitures electriques, plomberie et sanitaire</div>
+            <div class="accordion-feature">Livraison sur chantier</div>
+          </div>
+        </div>
+        <div class="accordion-meta">
+          <div class="accordion-meta-title">Infos pratiques</div>
+          <div class="accordion-meta-item"><span>&#x1F30D;</span><span>Sourcing local et international</span></div>
+          <div class="accordion-meta-item"><span>&#x1F69A;</span><span>Livraison sur chantier</span></div>
+          <div class="accordion-meta-item"><span>&#x1F4E6;</span><span>Commandes groupees disponibles</span></div>
+          <div style="display:flex;gap:12px"><a href="devis.html" class="accordion-cta">Devis</a><a href="services/genie-civil.html" class="accordion-cta" style="background:rgba(255,255,255,0.1);color:white">En savoir plus</a></div>
+        </div>
+      </div></div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-trigger" onclick="toggleAcc(this)">
+        <div class="accordion-left"><span class="accordion-num">05</span><div class="accordion-icon-wrap">&#x1F9F9;</div><div><div class="accordion-title">Nettoyage &amp; assainissement</div><div class="accordion-subtitle">Industriel &middot; Commercial &middot; Residentiel</div></div></div>
+        <div class="accordion-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,9 12,15 18,9"/></svg></div>
+      </button>
+      <div class="accordion-body"><div class="accordion-content">
+        <div><p class="accordion-desc">Services de nettoyage industriel et assainissement selon les normes environnementales. Locaux residentiels, commerciaux et industriels avec equipements professionnels.</p>
+          <div class="accordion-features">
+            <div class="accordion-feature">Nettoyage industriel de haute pression</div>
+            <div class="accordion-feature">Entretien regulier de bureaux et espaces commerciaux</div>
+            <div class="accordion-feature">Nettoyage de fin de chantier</div>
+            <div class="accordion-feature">Desinfection et traitement anti-nuisibles</div>
+            <div class="accordion-feature">Assainissement et gestion des eaux usees</div>
+          </div>
+        </div>
+        <div class="accordion-meta">
+          <div class="accordion-meta-title">Infos pratiques</div>
+          <div class="accordion-meta-item"><span>&#x1F4C5;</span><span>Contrats hebdomadaires/mensuels</span></div>
+          <div class="accordion-meta-item"><span>&#x1F33F;</span><span>Produits ecologiques disponibles</span></div>
+          <div class="accordion-meta-item"><span>&#x23F0;</span><span>Intervention hors heures d'ouverture</span></div>
+          <div style="display:flex;gap:12px"><a href="devis.html" class="accordion-cta">Devis</a><a href="services/genie-civil.html" class="accordion-cta" style="background:rgba(255,255,255,0.1);color:white">En savoir plus</a></div>
+        </div>
+      </div></div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-trigger" onclick="toggleAcc(this)">
+        <div class="accordion-left"><span class="accordion-num">06</span><div class="accordion-icon-wrap">&#x1F6A2;</div><div><div class="accordion-title">Fret maritime &amp; aerien</div><div class="accordion-subtitle">Import &middot; Export &middot; Dedouanement</div></div></div>
+        <div class="accordion-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,9 12,15 18,9"/></svg></div>
+      </button>
+      <div class="accordion-body"><div class="accordion-content">
+        <div><p class="accordion-desc">Gestion complete du transport de marchandises maritime et aerien. Depuis le port de Pointe-Noire, nous gerons l'integralite de votre chaine logistique internationale.</p>
+          <div class="accordion-features">
+            <div class="accordion-feature">Fret maritime FCL (conteneur complet) et LCL (groupage)</div>
+            <div class="accordion-feature">Fret aerien express et economique</div>
+            <div class="accordion-feature">Dedouanement import/export</div>
+            <div class="accordion-feature">Transit et transport terrestre au Congo</div>
+            <div class="accordion-feature">Entreposage et gestion de stock</div>
+          </div>
+        </div>
+        <div class="accordion-meta">
+          <div class="accordion-meta-title">Infos pratiques</div>
+          <div class="accordion-meta-item"><span>&#x2693;</span><span>Port de Pointe-Noire</span></div>
+          <div class="accordion-meta-item"><span>&#x2708;&#xFE0F;</span><span>Departs vers tous continents</span></div>
+          <div class="accordion-meta-item"><span>&#x1F4C4;</span><span>Assistance documentaire incluse</span></div>
+          <div style="display:flex;gap:12px"><a href="devis.html" class="accordion-cta">Devis</a><a href="services/genie-civil.html" class="accordion-cta" style="background:rgba(255,255,255,0.1);color:white">En savoir plus</a></div>
+        </div>
+      </div></div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-trigger" onclick="toggleAcc(this)">
+        <div class="accordion-left"><span class="accordion-num">07</span><div class="accordion-icon-wrap">&#x1F3AF;</div><div><div class="accordion-title">Conseils &amp; accompagnement technique</div><div class="accordion-subtitle">Audit &middot; Strategie &middot; Gestion de projet</div></div></div>
+        <div class="accordion-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,9 12,15 18,9"/></svg></div>
+      </button>
+      <div class="accordion-body"><div class="accordion-content">
+        <div><p class="accordion-desc">Notre equipe d'experts vous accompagne dans la definition et la mise en oeuvre de vos strategies. Audit, conseil, etudes de faisabilite et pilotage de projets complexes.</p>
+          <div class="accordion-features">
+            <div class="accordion-feature">Audit organisationnel et technique</div>
+            <div class="accordion-feature">Conseil strategique et plan d'action</div>
+            <div class="accordion-feature">Etudes de faisabilite et business plan</div>
+            <div class="accordion-feature">Pilotage et gestion de projets (PMI/Agile)</div>
+            <div class="accordion-feature">Formation et transfert de competences</div>
+          </div>
+        </div>
+        <div class="accordion-meta">
+          <div class="accordion-meta-title">Infos pratiques</div>
+          <div class="accordion-meta-item"><span>&#x1F4CA;</span><span>Livrables detailles inclus</span></div>
+          <div class="accordion-meta-item"><span>&#x1F50D;</span><span>Approche personnalisee</span></div>
+          <div class="accordion-meta-item"><span>&#x1F4DE;</span><span>Consultation gratuite initiale</span></div>
+          <div style="display:flex;gap:12px"><a href="devis.html" class="accordion-cta">Devis</a><a href="services/genie-civil.html" class="accordion-cta" style="background:rgba(255,255,255,0.1);color:white">En savoir plus</a></div>
+        </div>
+      </div></div>
+    </div>
+
+  </div>
+</section>
+<section class="page-section bg-light">
+  <div style="margin-bottom:56px">
+    <div style="display:inline-block;background:rgba(61,186,80,0.1);border:1px solid rgba(61,186,80,0.3);border-radius:100px;padding:6px 18px;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--green-bright);margin-bottom:20px">Secteur Specialise 01</div>
+    <h2 class="section-title">Ingenierie &amp; Technologies IT</h2>
+    <p class="section-lead">Solutions technologiques completes pour la gestion, securite et evolution de votre systeme d'information.</p>
+  </div>
+  <div class="accordion-list">
+
+    <div class="accordion-item">
+      <button class="accordion-trigger" onclick="toggleAcc(this)">
+        <div class="accordion-left"><span class="accordion-num">01</span><div class="accordion-icon-wrap">&#x1F5A5;&#xFE0F;</div><div><div class="accordion-title">Infogerance</div><div class="accordion-subtitle">Externalisation IT &middot; Helpdesk &middot; Astreinte 24/7</div></div></div>
+        <div class="accordion-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,9 12,15 18,9"/></svg></div>
+      </button>
+      <div class="accordion-body"><div class="accordion-content">
+        <div><p class="accordion-desc">Externalisez la gestion de votre infrastructure IT a nos experts. Disponibilite, performance et securite avec support helpdesk reactif et astreinte 24/7.</p>
+          <div class="accordion-features">
+            <div class="accordion-feature">Supervision proactive de votre infrastructure (monitoring)</div>
+            <div class="accordion-feature">Support helpdesk niveaux 1, 2 et 3</div>
+            <div class="accordion-feature">Astreinte technique 24h/24, 7j/7</div>
+            <div class="accordion-feature">Administration serveurs et equipements reseau</div>
+            <div class="accordion-feature">Gestion des mises a jour et correctifs de securite</div>
+            <div class="accordion-feature">Rapports mensuels de performance et incidents</div>
+          </div>
+        </div>
+        <div class="accordion-meta">
+          <div class="accordion-meta-title">SLA garanti</div>
+          <div class="accordion-meta-item"><span>&#x26A1;</span><span>Temps de reponse &lt; 2h critique</span></div>
+          <div class="accordion-meta-item"><span>&#x1F4CA;</span><span>99.9% uptime garanti</span></div>
+          <div class="accordion-meta-item"><span>&#x1F4F1;</span><span>Application de ticketing incluse</span></div>
+          <div style="display:flex;gap:12px"><a href="devis.html" class="accordion-cta">Devis</a><a href="services/genie-civil.html" class="accordion-cta" style="background:rgba(255,255,255,0.1);color:white">En savoir plus</a></div>
+        </div>
+      </div></div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-trigger" onclick="toggleAcc(this)">
+        <div class="accordion-left"><span class="accordion-num">02</span><div class="accordion-icon-wrap">&#x1F4F1;</div><div><div class="accordion-title">Developpement Web &amp; Mobile</div><div class="accordion-subtitle">Sites &middot; Apps iOS/Android &middot; Logiciels metiers</div></div></div>
+        <div class="accordion-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,9 12,15 18,9"/></svg></div>
+      </button>
+      <div class="accordion-body"><div class="accordion-content">
+        <div><p class="accordion-desc">Sites web modernes, applications mobiles iOS/Android et logiciels metiers sur mesure. Conception, developpement et mise en production en methodologie agile.</p>
+          <div class="accordion-features">
+            <div class="accordion-feature">Sites web vitrines, e-commerce et plateformes SaaS</div>
+            <div class="accordion-feature">Applications mobiles iOS et Android (React Native / Flutter)</div>
+            <div class="accordion-feature">Logiciels metiers et ERP sur mesure</div>
+            <div class="accordion-feature">APIs REST et integrations tierces</div>
+            <div class="accordion-feature">UX/UI design et maquettage</div>
+          </div>
+        </div>
+        <div class="accordion-meta">
+          <div class="accordion-meta-title">Stack technique</div>
+          <div class="accordion-meta-item"><span>&#x1F310;</span><span>React, Vue, Laravel, Node.js</span></div>
+          <div class="accordion-meta-item"><span>&#x1F4F1;</span><span>Flutter / React Native</span></div>
+          <div class="accordion-meta-item"><span>&#x1F5C4;&#xFE0F;</span><span>MySQL, PostgreSQL, MongoDB</span></div>
+          <div style="display:flex;gap:12px"><a href="devis.html" class="accordion-cta">Devis</a><a href="services/genie-civil.html" class="accordion-cta" style="background:rgba(255,255,255,0.1);color:white">En savoir plus</a></div>
+        </div>
+      </div></div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-trigger" onclick="toggleAcc(this)">
+        <div class="accordion-left"><span class="accordion-num">03</span><div class="accordion-icon-wrap">&#x1F4C8;</div><div><div class="accordion-title">Marketing Numerique</div><div class="accordion-subtitle">SEO &middot; Reseaux sociaux &middot; Publicite digitale</div></div></div>
+        <div class="accordion-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,9 12,15 18,9"/></svg></div>
+      </button>
+      <div class="accordion-body"><div class="accordion-content">
+        <div><p class="accordion-desc">Developpez votre visibilite en ligne et generez des leads qualifies. SEO, community management, publicite programmatique et creation de contenu.</p>
+          <div class="accordion-features">
+            <div class="accordion-feature">Referencement naturel (SEO) et audit de site</div>
+            <div class="accordion-feature">Gestion des reseaux sociaux (Facebook, LinkedIn, Instagram)</div>
+            <div class="accordion-feature">Publicite Google Ads et Meta Ads</div>
+            <div class="accordion-feature">Creation de contenu et copywriting</div>
+            <div class="accordion-feature">Email marketing et newsletters</div>
+          </div>
+        </div>
+        <div class="accordion-meta">
+          <div class="accordion-meta-title">Resultats</div>
+          <div class="accordion-meta-item"><span>&#x1F4CA;</span><span>Reporting mensuel detaille</span></div>
+          <div class="accordion-meta-item"><span>&#x1F3AF;</span><span>Ciblage precis de votre audience</span></div>
+          <div class="accordion-meta-item"><span>&#x1F4C5;</span><span>Strategie sur 3/6/12 mois</span></div>
+          <div style="display:flex;gap:12px"><a href="devis.html" class="accordion-cta">Devis</a><a href="services/genie-civil.html" class="accordion-cta" style="background:rgba(255,255,255,0.1);color:white">En savoir plus</a></div>
+        </div>
+      </div></div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-trigger" onclick="toggleAcc(this)">
+        <div class="accordion-left"><span class="accordion-num">04</span><div class="accordion-icon-wrap">&#x1F310;</div><div><div class="accordion-title">Ingenierie Reseaux &amp; Systemes</div><div class="accordion-subtitle">LAN/WAN &middot; VPN &middot; Virtualisation</div></div></div>
+        <div class="accordion-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,9 12,15 18,9"/></svg></div>
+      </button>
+      <div class="accordion-body"><div class="accordion-content">
+        <div><p class="accordion-desc">Conception et deploiement d'architectures reseau performantes et securisees. Nos ingenieurs certifies concoivent des infrastructures adaptees a votre taille.</p>
+          <div class="accordion-features">
+            <div class="accordion-feature">Architecture LAN/WAN et Wi-Fi entreprise</div>
+            <div class="accordion-feature">Deploiement VPN site-a-site et acces distant securise</div>
+            <div class="accordion-feature">Virtualisation (VMware, Hyper-V, Proxmox)</div>
+            <div class="accordion-feature">Administration systemes Linux (Debian, Ubuntu, CentOS)</div>
+            <div class="accordion-feature">Active Directory, DNS, DHCP, GPO Windows Server</div>
+          </div>
+        </div>
+        <div class="accordion-meta">
+          <div class="accordion-meta-title">Certifications</div>
+          <div class="accordion-meta-item"><span>&#x1F3C5;</span><span>Ingenieurs Cisco / CCNA</span></div>
+          <div class="accordion-meta-item"><span>&#x1F427;</span><span>Certifies Linux (LPIC)</span></div>
+          <div class="accordion-meta-item"><span>&#x1F5A5;&#xFE0F;</span><span>Microsoft MCSA</span></div>
+          <div style="display:flex;gap:12px"><a href="devis.html" class="accordion-cta">Devis</a><a href="services/genie-civil.html" class="accordion-cta" style="background:rgba(255,255,255,0.1);color:white">En savoir plus</a></div>
+        </div>
+      </div></div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-trigger" onclick="toggleAcc(this)">
+        <div class="accordion-left"><span class="accordion-num">05</span><div class="accordion-icon-wrap">&#x1F510;</div><div><div class="accordion-title">Audit &amp; Cybersecurite</div><div class="accordion-subtitle">Pentest &middot; SIEM &middot; Conformite</div></div></div>
+        <div class="accordion-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,9 12,15 18,9"/></svg></div>
+      </button>
+      <div class="accordion-body"><div class="accordion-content">
+        <div><p class="accordion-desc">Protegez vos actifs numeriques. Audit de securite complet, tests de penetration et mise en conformite reglementaire par nos experts certifies.</p>
+          <div class="accordion-features">
+            <div class="accordion-feature">Audit de securite des systemes d'information (ISO 27001)</div>
+            <div class="accordion-feature">Tests de penetration (pentest) internes et externes</div>
+            <div class="accordion-feature">Deploiement SIEM et detection d'incidents (SOC)</div>
+            <div class="accordion-feature">Mise en conformite RGPD et reglementations locales</div>
+            <div class="accordion-feature">Plan de reprise d'activite (PRA/PCA)</div>
+          </div>
+        </div>
+        <div class="accordion-meta">
+          <div class="accordion-meta-title">Notre approche</div>
+          <div class="accordion-meta-item"><span>&#x1F50D;</span><span>Audit initial gratuit</span></div>
+          <div class="accordion-meta-item"><span>&#x1F4CB;</span><span>Rapport detaille et plan correctif</span></div>
+          <div class="accordion-meta-item"><span>&#x1F6E1;&#xFE0F;</span><span>Suivi et reevaluation periodique</span></div>
+          <div style="display:flex;gap:12px"><a href="devis.html" class="accordion-cta">Devis</a><a href="services/genie-civil.html" class="accordion-cta" style="background:rgba(255,255,255,0.1);color:white">En savoir plus</a></div>
+        </div>
+      </div></div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-trigger" onclick="toggleAcc(this)">
+        <div class="accordion-left"><span class="accordion-num">06</span><div class="accordion-icon-wrap">&#x2601;&#xFE0F;</div><div><div class="accordion-title">Cloud &amp; Hebergement</div><div class="accordion-subtitle">AWS &middot; Azure &middot; GCP &middot; Dedie</div></div></div>
+        <div class="accordion-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,9 12,15 18,9"/></svg></div>
+      </button>
+      <div class="accordion-body"><div class="accordion-content">
+        <div><p class="accordion-desc">Migration cloud et optimisation de vos couts d'infrastructure. Gestion de la migration vers AWS, Azure ou GCP avec hebergement et sauvegarde des donnees critiques.</p>
+          <div class="accordion-features">
+            <div class="accordion-feature">Audit et strategie de migration cloud</div>
+            <div class="accordion-feature">Migration vers AWS, Microsoft Azure, Google Cloud</div>
+            <div class="accordion-feature">Hebergement dedie et VPS manage</div>
+            <div class="accordion-feature">Sauvegarde automatisee et reprise apres sinistre</div>
+            <div class="accordion-feature">Optimisation des couts cloud (FinOps)</div>
+          </div>
+        </div>
+        <div class="accordion-meta">
+          <div class="accordion-meta-title">Plateformes</div>
+          <div class="accordion-meta-item"><span>&#x2601;&#xFE0F;</span><span>AWS / Azure / GCP partenaires</span></div>
+          <div class="accordion-meta-item"><span>&#x1F4B0;</span><span>Optimisation des couts incluse</span></div>
+          <div class="accordion-meta-item"><span>&#x1F512;</span><span>Chiffrement et conformite</span></div>
+          <div style="display:flex;gap:12px"><a href="devis.html" class="accordion-cta">Devis</a><a href="services/genie-civil.html" class="accordion-cta" style="background:rgba(255,255,255,0.1);color:white">En savoir plus</a></div>
+        </div>
+      </div></div>
+    </div>
+
+  </div>
+</section>
+<section class="page-section bg-dark">
+  <div style="margin-bottom:56px">
+    <div style="display:inline-block;background:rgba(123,45,139,0.15);border:1px solid rgba(157,61,175,0.4);border-radius:100px;padding:6px 18px;font-size:11px;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--purple-light);margin-bottom:20px">Secteur Specialise 02</div>
+    <h2 class="section-title" style="color:white">Digitalisation &amp; Intelligence Artificielle</h2>
+    <p class="section-lead" style="color:rgba(255,255,255,0.4)">Accelerez votre transformation numerique grace a l'IA et l'automatisation.</p>
+  </div>
+  <div class="accordion-list">
+
+    <div class="accordion-item">
+      <button class="accordion-trigger" onclick="toggleAcc(this)">
+        <div class="accordion-left"><span class="accordion-num">01</span><div class="accordion-icon-wrap">&#x1F916;</div><div><div class="accordion-title">Automatisation RPA</div><div class="accordion-subtitle">Robots logiciels &middot; Processus metier &middot; Gains de productivite</div></div></div>
+        <div class="accordion-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,9 12,15 18,9"/></svg></div>
+      </button>
+      <div class="accordion-body"><div class="accordion-content">
+        <div><p class="accordion-desc">Robots logiciels qui automatisent vos taches repetitives sans modifier vos systemes existants. Gain de temps, reduction d'erreurs et liberation de vos equipes pour des taches a valeur ajoutee.</p>
+          <div class="accordion-features">
+            <div class="accordion-feature">Analyse et cartographie des processus automatisables</div>
+            <div class="accordion-feature">Developpement de robots RPA (UiPath, Power Automate)</div>
+            <div class="accordion-feature">Automatisation des saisies, rapports et transferts de donnees</div>
+            <div class="accordion-feature">Integration avec vos ERP, CRM et outils metiers</div>
+            <div class="accordion-feature">Formation des equipes a la supervision des robots</div>
+          </div>
+        </div>
+        <div class="accordion-meta">
+          <div class="accordion-meta-title">ROI typique</div>
+          <div class="accordion-meta-item"><span>&#x23F1;&#xFE0F;</span><span>Gain de 60-80% de temps operationnel</span></div>
+          <div class="accordion-meta-item"><span>&#x1F4C9;</span><span>Reduction des erreurs a quasi 0%</span></div>
+          <div class="accordion-meta-item"><span>&#x1F4B0;</span><span>ROI en 3-6 mois en moyenne</span></div>
+          <a href="devis.html" class="accordion-cta">Demarrer votre projet &#x2192;</a>
+        </div>
+      </div></div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-trigger" onclick="toggleAcc(this)">
+        <div class="accordion-left"><span class="accordion-num">02</span><div class="accordion-icon-wrap">&#x1F9E0;</div><div><div class="accordion-title">Intelligence Artificielle</div><div class="accordion-subtitle">ML &middot; Deep Learning &middot; Prediction</div></div></div>
+        <div class="accordion-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,9 12,15 18,9"/></svg></div>
+      </button>
+      <div class="accordion-body"><div class="accordion-content">
+        <div><p class="accordion-desc">Modeles d'IA sur mesure : machine learning, deep learning et NLP pour la prediction, la classification et l'optimisation de vos processus metier.</p>
+          <div class="accordion-features">
+            <div class="accordion-feature">Modeles predictifs (maintenance, prevision des ventes)</div>
+            <div class="accordion-feature">Classification d'images et documents par deep learning</div>
+            <div class="accordion-feature">Traitement du langage naturel (NLP)</div>
+            <div class="accordion-feature">Systemes de recommandation personnalisee</div>
+            <div class="accordion-feature">Detection d'anomalies et fraude</div>
+          </div>
+        </div>
+        <div class="accordion-meta">
+          <div class="accordion-meta-title">Technologies</div>
+          <div class="accordion-meta-item"><span>&#x1F40D;</span><span>Python, TensorFlow, PyTorch</span></div>
+          <div class="accordion-meta-item"><span>&#x2601;&#xFE0F;</span><span>AWS SageMaker, Azure ML</span></div>
+          <div class="accordion-meta-item"><span>&#x1F4CA;</span><span>Scikit-learn, Pandas, NumPy</span></div>
+          <a href="devis.html" class="accordion-cta">Demarrer votre projet &#x2192;</a>
+        </div>
+      </div></div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-trigger" onclick="toggleAcc(this)">
+        <div class="accordion-left"><span class="accordion-num">03</span><div class="accordion-icon-wrap">&#x1F4CA;</div><div><div class="accordion-title">Data Analytics &amp; BI</div><div class="accordion-subtitle">Tableaux de bord &middot; KPIs &middot; Entrepots de donnees</div></div></div>
+        <div class="accordion-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,9 12,15 18,9"/></svg></div>
+      </button>
+      <div class="accordion-body"><div class="accordion-content">
+        <div><p class="accordion-desc">Transformez vos donnees brutes en insights actionnables. Tableaux de bord, KPIs et entrepot de donnees pour une prise de decision eclairee.</p>
+          <div class="accordion-features">
+            <div class="accordion-feature">Conception de tableaux de bord interactifs (Power BI, Tableau)</div>
+            <div class="accordion-feature">Definition et suivi des KPIs metier</div>
+            <div class="accordion-feature">Mise en place d'entrepots de donnees (DWH)</div>
+            <div class="accordion-feature">Rapports automatises et alertes</div>
+          </div>
+        </div>
+        <div class="accordion-meta">
+          <div class="accordion-meta-title">Outils maitrise</div>
+          <div class="accordion-meta-item"><span>&#x1F4CA;</span><span>Power BI, Tableau, Looker</span></div>
+          <div class="accordion-meta-item"><span>&#x1F5C4;&#xFE0F;</span><span>SQL, BigQuery, Snowflake</span></div>
+          <div class="accordion-meta-item"><span>&#x1F504;</span><span>Actualisation temps reel</span></div>
+          <a href="devis.html" class="accordion-cta">Demarrer votre projet &#x2192;</a>
+        </div>
+      </div></div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-trigger" onclick="toggleAcc(this)">
+        <div class="accordion-left"><span class="accordion-num">04</span><div class="accordion-icon-wrap">&#x1F504;</div><div><div class="accordion-title">Transformation des processus</div><div class="accordion-subtitle">BPM &middot; Dematerialisation &middot; Workflow</div></div></div>
+        <div class="accordion-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,9 12,15 18,9"/></svg></div>
+      </button>
+      <div class="accordion-body"><div class="accordion-content">
+        <div><p class="accordion-desc">Modelisez, optimisez et digitalisez vos processus metier. Dematerialisation documentaire et gestion de workflow pour simplifier votre organisation.</p>
+          <div class="accordion-features">
+            <div class="accordion-feature">Modelisation et cartographie des processus (BPMN)</div>
+            <div class="accordion-feature">Dematerialisation et gestion electronique (GED)</div>
+            <div class="accordion-feature">Deploiement de solutions workflow</div>
+            <div class="accordion-feature">Signature electronique et archivage legal</div>
+          </div>
+        </div>
+        <div class="accordion-meta">
+          <div class="accordion-meta-title">Benefices</div>
+          <div class="accordion-meta-item"><span>&#x26A1;</span><span>Reduction des delais de traitement</span></div>
+          <div class="accordion-meta-item"><span>&#x1F4C4;</span><span>Zero papier, 100% numerique</span></div>
+          <div class="accordion-meta-item"><span>&#x1F50D;</span><span>Tracabilite complete des actions</span></div>
+          <a href="devis.html" class="accordion-cta">Demarrer votre projet &#x2192;</a>
+        </div>
+      </div></div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-trigger" onclick="toggleAcc(this)">
+        <div class="accordion-left"><span class="accordion-num">05</span><div class="accordion-icon-wrap">&#x1F5C4;&#xFE0F;</div><div><div class="accordion-title">Data Engineering</div><div class="accordion-subtitle">Pipeline &middot; ETL &middot; Data Lake &middot; Architecture data</div></div></div>
+        <div class="accordion-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,9 12,15 18,9"/></svg></div>
+      </button>
+      <div class="accordion-body"><div class="accordion-content">
+        <div><p class="accordion-desc">Architecture data robuste et scalable. Pipelines ETL, data lake et architecture moderne pour alimenter vos outils analytiques et IA.</p>
+          <div class="accordion-features">
+            <div class="accordion-feature">Conception et developpement de pipelines de donnees</div>
+            <div class="accordion-feature">ETL/ELT et orchestration (Apache Airflow, dbt)</div>
+            <div class="accordion-feature">Mise en place de data lake et data lakehouse</div>
+            <div class="accordion-feature">Qualite, gouvernance et catalogage des donnees</div>
+          </div>
+        </div>
+        <div class="accordion-meta">
+          <div class="accordion-meta-title">Stack data</div>
+          <div class="accordion-meta-item"><span>&#x1F527;</span><span>Spark, Kafka, Airflow, dbt</span></div>
+          <div class="accordion-meta-item"><span>&#x2601;&#xFE0F;</span><span>AWS S3, Azure Data Lake</span></div>
+          <div class="accordion-meta-item"><span>&#x1F5C4;&#xFE0F;</span><span>Snowflake, BigQuery, Databricks</span></div>
+          <a href="devis.html" class="accordion-cta">Demarrer votre projet &#x2192;</a>
+        </div>
+      </div></div>
+    </div>
+
+    <div class="accordion-item">
+      <button class="accordion-trigger" onclick="toggleAcc(this)">
+        <div class="accordion-left"><span class="accordion-num">06</span><div class="accordion-icon-wrap">&#x1F4AC;</div><div><div class="accordion-title">Chatbots &amp; Assistants IA</div><div class="accordion-subtitle">Service client &middot; Assistants internes &middot; NLP</div></div></div>
+        <div class="accordion-chevron"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="6,9 12,15 18,9"/></svg></div>
+      </button>
+      <div class="accordion-body"><div class="accordion-content">
+        <div><p class="accordion-desc">Assistants virtuels intelligents pour automatiser votre service client et assister vos equipes internes, disponibles 24h/24 sur tous les canaux.</p>
+          <div class="accordion-features">
+            <div class="accordion-feature">Chatbots service client multicanal (web, WhatsApp, Messenger)</div>
+            <div class="accordion-feature">Assistants IA internes (RH, IT, juridique)</div>
+            <div class="accordion-feature">Integration GPT-4 / LLM en marque blanche</div>
+            <div class="accordion-feature">Analyse des conversations et amelioration continue</div>
+          </div>
+        </div>
+        <div class="accordion-meta">
+          <div class="accordion-meta-title">Plateformes</div>
+          <div class="accordion-meta-item"><span>&#x1F916;</span><span>GPT-4, Claude, Gemini</span></div>
+          <div class="accordion-meta-item"><span>&#x1F4AC;</span><span>WhatsApp, Messenger, Web</span></div>
+          <div class="accordion-meta-item"><span>&#x1F4CA;</span><span>Analytics conversationnelles</span></div>
+          <a href="devis.html" class="accordion-cta">Demarrer votre projet &#x2192;</a>
+        </div>
+      </div></div>
+    </div>
+
+  </div>
 </section>
 
-<script src="../js/shared.js"></script>
-<script>initShared('services');</script>
+<section class="page-cta-section">
+  <div class="page-cta-inner">
+    <h2 class="page-cta-title">Un projet en tete ?</h2>
+    <p class="page-cta-desc">Decrivez votre projet et recevez une proposition personnalisee sous 48h.</p>
+    <a href="devis.html" style="display:inline-flex;align-items:center;gap:8px;background:rgba(255,255,255,0.15);color:white;border:2px solid rgba(255,255,255,0.3);padding:16px 40px;border-radius:100px;font-size:14px;font-weight:600;text-decoration:none;transition:all 0.28s">Obtenir un devis gratuit</a>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-main">
+    <div><img src="../images/logo.png" alt="Matiaba Firm" class="footer-logo-img"><p class="footer-tagline">Ingenierie IT, Digitalisation &amp; IA, Multiservices — Clean and Save.</p></div>
+    <div><div class="footer-col-title">Navigation</div><div class="footer-links"><a href="../index.html">Accueil</a><a href="a-propos.html">A propos</a><li class="nav-item-dropdown">
+  <a href="services.html" class="nav-link">Services <svg width="10" height="6" viewBox="0 0 10 6" fill="none" style="display:inline;vertical-align:middle;margin-left:4px"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+  <div class="mega-menu">
+    <div class="mega-col">
+      <div class="mega-col-title">🏗️ Multiservices</div>
+      <div class="mega-links">
+        <a href="services/genie-civil.html" class="mega-link"><span class="mega-link-icon">🏗️</span> Génie civil</a>
+        <a href="services/maintenance.html" class="mega-link"><span class="mega-link-icon">⚙️</span> Maintenance</a>
+        <a href="services/informatique-bureautique.html" class="mega-link"><span class="mega-link-icon">💻</span> Informatique</a>
+        <a href="services/fourniture-btp.html" class="mega-link"><span class="mega-link-icon">🧱</span> Fourniture BTP</a>
+        <a href="services/nettoyage-assainissement.html" class="mega-link"><span class="mega-link-icon">🧹</span> Nettoyage</a>
+        <a href="services/fret-logistique.html" class="mega-link"><span class="mega-link-icon">🚢</span> Fret Logistique</a>
+        <a href="services/conseils-technique.html" class="mega-link"><span class="mega-link-icon">🎯</span> Conseils</a>
+      </div>
+    </div>
+    <div class="mega-col mega-col-it">
+      <div class="mega-col-title">🖥️ Secteur IT</div>
+      <div class="mega-links">
+        <a href="services/infogerance.html" class="mega-link"><span class="mega-link-icon">☁️</span> Infogérance</a>
+        <a href="services/dev-web-mobile.html" class="mega-link"><span class="mega-link-icon">📱</span> Dev Web/Mobile</a>
+        <a href="services/marketing-digital.html" class="mega-link"><span class="mega-link-icon">📈</span> Marketing</a>
+        <a href="services/reseaux-systemes.html" class="mega-link"><span class="mega-link-icon">🌐</span> Réseaux</a>
+        <a href="services/cybersecurite.html" class="mega-link"><span class="mega-link-icon">🔐</span> Cybersécurité</a>
+        <a href="services/cloud-hebergement.html" class="mega-link"><span class="mega-link-icon">☁️</span> Cloud</a>
+      </div>
+    </div>
+    <div class="mega-col mega-col-ia">
+        <div class="mega-col-title">🤖 IA & Digital</div>
+        <div class="mega-links">
+          <a href="services/rpa.html" class="mega-link"><span class="mega-link-icon">🤖</span> RPA</a>
+          <a href="services/intelligence-artificielle.html" class="mega-link"><span class="mega-link-icon">🧠</span> IA</a>
+          <a href="services/data-analytics.html" class="mega-link"><span class="mega-link-icon">📊</span> Data Analytics</a>
+          <a href="services/transformation-processus.html" class="mega-link"><span class="mega-link-icon">🔄</span> Transformation</a>
+          <a href="services/data-engineering.html" class="mega-link"><span class="mega-link-icon">🗄️</span> Data Engineering</a>
+          <a href="services/chatbots-ia.html" class="mega-link"><span class="mega-link-icon">💬</span> Chatbots IA</a>
+        </div>
+      </div>
+  </div>
+</li><a href="../index.html#contact">Contact</a></div></div>
+    <div><div class="footer-col-title">Contact</div>
+      <div class="footer-contact-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><span class="footer-contact-text">15 rue Kalli Fayette, Mpita wharf</span></div>
+      <div class="footer-contact-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12 19.79 19.79 0 0 1 1.61 3.42 2 2 0 0 1 3.61 1h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6.29 6.29l.97-.97a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg><span class="footer-contact-text">+242 04 006 5640</span></div>
+      <div class="footer-contact-item"><svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/></svg><span class="footer-contact-text">contact@matiabafirm.com</span></div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">&#169; 2025 Matiaba Firm. Tous droits reserves.</span>
+    <div class="footer-legal"><a href="mentions-legales.html">Mentions legales</a><a href="confidentialite.html">Confidentialite</a></div>
+  </div>
+</footer>
+<button id="scroll-top" aria-label="Retour en haut"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2"><polyline points="18,15 12,9 6,15"/></svg></button>
+<script>
+function toggleAcc(trigger) {
+  const item = trigger.closest('.accordion-item');
+  const isOpen = item.classList.contains('open');
+  item.closest('.accordion-list').querySelectorAll('.accordion-item.open').forEach(el => el.classList.remove('open'));
+  if (!isOpen) item.classList.add('open');
+}
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.accordion-list').forEach(list => {
+    const first = list.querySelector('.accordion-item');
+    if (first) first.classList.add('open');
+  });
+});
+</script>
+<script src="../js/main.js"></script>
 </body>
 </html>
+
+

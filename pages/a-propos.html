@@ -1,252 +1,293 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="À propos de RM5 Pluri-Services — Histoire, vision, mission, valeurs et équipe dirigeante de votre partenaire multiservices à Matadi.">
-  <title>À propos — RM5 Pluri-Services</title>
-  <link rel="icon" type="image/svg+xml" href="../images/favicon.svg">
+  <meta name="description" content="À propos de Matiaba Firm — Notre histoire, nos valeurs, notre équipe et notre vision pour l'ingénierie IT et les services multisectoriels.">
+  <title>À propos — Matiaba Firm</title>
+  <link rel="icon" type="image/png" href="../images/logo.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400&family=Barlow+Condensed:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../css/style.css">
   <link rel="stylesheet" href="../css/pages.css">
 </head>
 <body>
-
-<!-- Nav & footer injected by shared.js -->
+<!-- NAVBAR -->
+<nav id="navbar">
+  <a href="../index.html" class="nav-logo">
+    <img src="../images/logo.png" alt="Matiaba Firm" class="nav-logo-img">
+    <div><span class="nav-logo-name">Matiaba Firm</span><span class="nav-logo-sub">Clean and Save</span></div>
+  </a>
+  <div class="nav-menu">
+    <a href="../index.html">Accueil</a>
+    <a href="a-propos.html" class="active">À propos</a>
+    <li class="nav-item-dropdown">
+  <a href="services.html" class="nav-link">Services <svg width="10" height="6" viewBox="0 0 10 6" fill="none" style="display:inline;vertical-align:middle;margin-left:4px"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+  <div class="mega-menu">
+    <div class="mega-col">
+      <div class="mega-col-title">🏗️ Multiservices</div>
+      <div class="mega-links">
+        <a href="services/genie-civil.html" class="mega-link"><span class="mega-link-icon">🏗️</span> Génie civil</a>
+        <a href="services/maintenance.html" class="mega-link"><span class="mega-link-icon">⚙️</span> Maintenance</a>
+        <a href="services/informatique-bureautique.html" class="mega-link"><span class="mega-link-icon">💻</span> Informatique</a>
+        <a href="services/fourniture-btp.html" class="mega-link"><span class="mega-link-icon">🧱</span> Fourniture BTP</a>
+        <a href="services/nettoyage-assainissement.html" class="mega-link"><span class="mega-link-icon">🧹</span> Nettoyage</a>
+        <a href="services/fret-logistique.html" class="mega-link"><span class="mega-link-icon">🚢</span> Fret Logistique</a>
+        <a href="services/conseils-technique.html" class="mega-link"><span class="mega-link-icon">🎯</span> Conseils</a>
+      </div>
+    </div>
+    <div class="mega-col mega-col-it">
+      <div class="mega-col-title">🖥️ Secteur IT</div>
+      <div class="mega-links">
+        <a href="services/infogerance.html" class="mega-link"><span class="mega-link-icon">☁️</span> Infogérance</a>
+        <a href="services/dev-web-mobile.html" class="mega-link"><span class="mega-link-icon">📱</span> Dev Web/Mobile</a>
+        <a href="services/marketing-digital.html" class="mega-link"><span class="mega-link-icon">📈</span> Marketing</a>
+        <a href="services/reseaux-systemes.html" class="mega-link"><span class="mega-link-icon">🌐</span> Réseaux</a>
+        <a href="services/cybersecurite.html" class="mega-link"><span class="mega-link-icon">🔐</span> Cybersécurité</a>
+        <a href="services/cloud-hebergement.html" class="mega-link"><span class="mega-link-icon">☁️</span> Cloud</a>
+      </div>
+    </div>
+    <div class="mega-col mega-col-ia">
+        <div class="mega-col-title">🤖 IA & Digital</div>
+        <div class="mega-links">
+          <a href="services/rpa.html" class="mega-link"><span class="mega-link-icon">🤖</span> RPA</a>
+          <a href="services/intelligence-artificielle.html" class="mega-link"><span class="mega-link-icon">🧠</span> IA</a>
+          <a href="services/data-analytics.html" class="mega-link"><span class="mega-link-icon">📊</span> Data Analytics</a>
+          <a href="services/transformation-processus.html" class="mega-link"><span class="mega-link-icon">🔄</span> Transformation</a>
+          <a href="services/data-engineering.html" class="mega-link"><span class="mega-link-icon">🗄️</span> Data Engineering</a>
+          <a href="services/chatbots-ia.html" class="mega-link"><span class="mega-link-icon">💬</span> Chatbots IA</a>
+        </div>
+      </div>
+  </div>
+</li>
+    <a href="../index.html#sectors">IT &amp; IA</a>
+    <a href="../index.html#contact">Contact</a>
+  </div>
+  <a href="devis.html" class="nav-cta">Demander un devis</a>
+  <button class="nav-hamburger" id="hamburger" aria-label="Menu"><span></span><span></span><span></span></button>
+</nav>
+<nav class="nav-mobile" id="mobile-nav">
+  <a href="../index.html">Accueil</a>
+  <a href="a-propos.html">À propos</a>
+  <li class="nav-item-dropdown">
+  <a href="services.html" class="nav-link">Services <svg width="10" height="6" viewBox="0 0 10 6" fill="none" style="display:inline;vertical-align:middle;margin-left:4px"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+  <div class="mega-menu">
+    <div class="mega-col">
+      <div class="mega-col-title">🏗️ Multiservices</div>
+      <div class="mega-links">
+        <a href="services/genie-civil.html" class="mega-link"><span class="mega-link-icon">🏗️</span> Génie civil</a>
+        <a href="services/maintenance.html" class="mega-link"><span class="mega-link-icon">⚙️</span> Maintenance</a>
+        <a href="services/informatique-bureautique.html" class="mega-link"><span class="mega-link-icon">💻</span> Informatique</a>
+        <a href="services/fourniture-btp.html" class="mega-link"><span class="mega-link-icon">🧱</span> Fourniture BTP</a>
+        <a href="services/nettoyage-assainissement.html" class="mega-link"><span class="mega-link-icon">🧹</span> Nettoyage</a>
+        <a href="services/fret-logistique.html" class="mega-link"><span class="mega-link-icon">🚢</span> Fret Logistique</a>
+        <a href="services/conseils-technique.html" class="mega-link"><span class="mega-link-icon">🎯</span> Conseils</a>
+      </div>
+    </div>
+    <div class="mega-col mega-col-it">
+      <div class="mega-col-title">🖥️ Secteur IT</div>
+      <div class="mega-links">
+        <a href="services/infogerance.html" class="mega-link"><span class="mega-link-icon">☁️</span> Infogérance</a>
+        <a href="services/dev-web-mobile.html" class="mega-link"><span class="mega-link-icon">📱</span> Dev Web/Mobile</a>
+        <a href="services/marketing-digital.html" class="mega-link"><span class="mega-link-icon">📈</span> Marketing</a>
+        <a href="services/reseaux-systemes.html" class="mega-link"><span class="mega-link-icon">🌐</span> Réseaux</a>
+        <a href="services/cybersecurite.html" class="mega-link"><span class="mega-link-icon">🔐</span> Cybersécurité</a>
+        <a href="services/cloud-hebergement.html" class="mega-link"><span class="mega-link-icon">☁️</span> Cloud</a>
+      </div>
+    </div>
+    <div class="mega-col mega-col-ia">
+        <div class="mega-col-title">🤖 IA & Digital</div>
+        <div class="mega-links">
+          <a href="services/rpa.html" class="mega-link"><span class="mega-link-icon">🤖</span> RPA</a>
+          <a href="services/intelligence-artificielle.html" class="mega-link"><span class="mega-link-icon">🧠</span> IA</a>
+          <a href="services/data-analytics.html" class="mega-link"><span class="mega-link-icon">📊</span> Data Analytics</a>
+          <a href="services/transformation-processus.html" class="mega-link"><span class="mega-link-icon">🔄</span> Transformation</a>
+          <a href="services/data-engineering.html" class="mega-link"><span class="mega-link-icon">🗄️</span> Data Engineering</a>
+          <a href="services/chatbots-ia.html" class="mega-link"><span class="mega-link-icon">💬</span> Chatbots IA</a>
+        </div>
+      </div>
+  </div>
+</li>
+  <a href="../index.html#sectors">IT &amp; IA</a>
+  <a href="../index.html#contact">Contact</a>
+  <a href="devis.html" class="nav-cta">Demander un devis</a>
+</nav>
 
 <!-- PAGE HERO -->
-<div class="page-hero">
-  <div class="page-hero-inner">
-    <div class="breadcrumb">
-      <a href="../index.html">Accueil</a>
-      <div class="breadcrumb-sep"></div>
-      <span class="breadcrumb-current">À propos</span>
-    </div>
-    <p class="page-hero-tag">Notre histoire</p>
-    <h1>À <span>propos</span><br>de nous</h1>
-    <p class="page-hero-desc">Découvrez l'histoire, la vision et les valeurs de RM5 Pluri-Services, votre partenaire multiservices de confiance à Matadi, Kongo Central.</p>
+<section class="page-hero">
+  <div class="page-hero-bg"></div>
+  <div class="page-hero-content">
+    <p class="section-tag">Qui sommes-nous</p>
+    <h1 class="page-hero-title">À propos de<br><span class="gradient-text">Matiaba Firm</span></h1>
+    <p class="page-hero-desc">Ingénierie IT, digitalisation et services multisectoriels — votre partenaire d'excellence depuis 2020.</p>
   </div>
-</div>
+  <nav class="breadcrumb" aria-label="Fil d'Ariane">
+    <a href="../index.html">Accueil</a><span>/</span><span>À propos</span>
+  </nav>
+</section>
 
-<!-- PRÉSENTATION -->
-<section class="page-content white">
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center;max-width:1200px;margin:0 auto">
-    <div>
-      <p class="section-tag fade-up">Qui sommes-nous</p>
-      <h2 class="section-title fade-up">RM5<br>Pluri-<br>Services</h2>
-      <p class="section-lead fade-up">RM5 Pluri-Services est une SARL fondée le 03 septembre 2025 à Matadi, dans la province du Kongo Central en République Démocratique du Congo.</p>
-      <p class="section-lead fade-up" style="margin-top:16px">Spécialisée dans la prestation de services diversifiés, l'entreprise a été créée pour répondre efficacement aux besoins des particuliers, des entreprises et des institutions grâce à une approche professionnelle et orientée vers la satisfaction client.</p>
-      <p class="section-lead fade-up" style="margin-top:16px">Sous la direction de <strong>Mavinga Lubabu Raison</strong>, RM5 Pluri-Services se positionne comme un partenaire fiable et polyvalent dans plusieurs domaines d'intervention clés.</p>
-    </div>
+<!-- STORY -->
+<section class="page-section bg-light">
+  <div class="two-col-grid">
     <div class="fade-up">
-      <img src="../images/about-visual.svg" alt="RM5 Pluri-Services" style="width:100%;border-radius:2px">
+      <p class="section-tag">Notre histoire</p>
+      <h2 class="section-title">Une entreprise<br>née de l'ambition</h2>
+      <p class="section-lead">Fondée en 2020 à Pointe-Noire, Matiaba Firm est née de la conviction que les entreprises et institutions méritent un partenaire technologique fiable, compétent et ancré dans les réalités locales.</p>
+      <p style="margin-top:20px;color:var(--gray-2);line-height:1.85;font-size:15px">Depuis notre création, nous avons bâti une expertise solide en ingénierie IT, cybersécurité, développement de solutions numériques et services multisectoriels, tout en restant fidèles à notre devise : <strong style="color:var(--green)">Clean and Save</strong> — des solutions propres, efficaces et durables.</p>
     </div>
-  </div>
-</section>
-
-<!-- IDENTITÉ JURIDIQUE -->
-<section class="page-content light">
-  <p class="section-tag fade-up" style="margin-bottom:8px">Identité</p>
-  <h2 class="section-title fade-up" style="margin-bottom:48px">Fiche<br>entreprise</h2>
-  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:3px;max-width:1200px">
-    <!-- each identity card -->
-    <div class="fade-up" style="background:white;padding:28px 32px;border-left:3px solid var(--red)">
-      <div style="font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--gray-3);margin-bottom:8px">Dénomination</div>
-      <div style="font-size:17px;font-weight:600;color:var(--dark)">RM5 Pluri-Services</div>
-    </div>
-    <div class="fade-up" style="background:white;padding:28px 32px;border-left:3px solid var(--red)">
-      <div style="font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--gray-3);margin-bottom:8px">Forme juridique</div>
-      <div style="font-size:17px;font-weight:600;color:var(--dark)">SARL</div>
-    </div>
-    <div class="fade-up" style="background:white;padding:28px 32px;border-left:3px solid var(--red)">
-      <div style="font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--gray-3);margin-bottom:8px">Date de création</div>
-      <div style="font-size:17px;font-weight:600;color:var(--dark)">03 septembre 2025</div>
-    </div>
-    <div class="fade-up" style="background:white;padding:28px 32px;border-left:3px solid var(--red)">
-      <div style="font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--gray-3);margin-bottom:8px">Responsable</div>
-      <div style="font-size:17px;font-weight:600;color:var(--dark)">Mavinga Lubabu Raison</div>
-    </div>
-    <div class="fade-up" style="background:white;padding:28px 32px;border-left:3px solid var(--red)">
-      <div style="font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--gray-3);margin-bottom:8px">Siège social</div>
-      <div style="font-size:15px;font-weight:500;color:var(--dark);line-height:1.5">Avenue Kinkela N°9 bis<br>Quartier Ville-Haute, Matadi</div>
-    </div>
-    <div class="fade-up" style="background:white;padding:28px 32px;border-left:3px solid var(--red)">
-      <div style="font-size:10px;letter-spacing:3px;text-transform:uppercase;color:var(--gray-3);margin-bottom:8px">Province</div>
-      <div style="font-size:17px;font-weight:600;color:var(--dark)">Kongo Central — RDC</div>
-    </div>
-  </div>
-</section>
-
-<!-- VISION & MISSION -->
-<section id="vision" class="page-content white">
-  <p class="section-tag fade-up">Notre orientation</p>
-  <h2 class="section-title fade-up">Vision &amp;<br>Mission</h2>
-
-  <div style="display:grid;grid-template-columns:1fr 1fr;gap:3px;margin-top:48px;max-width:1200px">
-    <div class="fade-up" style="background:var(--red);padding:60px 52px">
-      <div style="font-size:10px;letter-spacing:4px;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:16px">Notre vision</div>
-      <h3 style="font-family:var(--font-display);font-size:clamp(28px,3vw,44px);font-weight:700;text-transform:uppercase;color:white;line-height:0.95;margin-bottom:20px">Référence<br>incontournable</h3>
-      <p style="font-size:15px;font-weight:300;color:rgba(255,255,255,0.85);line-height:1.8">Devenir une référence incontournable dans le secteur des services multisectoriels en offrant des prestations de qualité adaptées aux réalités locales et aux besoins croissants du marché congolais.</p>
-    </div>
-    <div class="fade-up" style="background:var(--dark);padding:60px 52px">
-      <div style="font-size:10px;letter-spacing:4px;text-transform:uppercase;color:rgba(255,255,255,0.5);margin-bottom:16px">Notre mission</div>
-      <h3 style="font-family:var(--font-display);font-size:clamp(28px,3vw,44px);font-weight:700;text-transform:uppercase;color:white;line-height:0.95;margin-bottom:20px">Services fiables<br>&amp; accessibles</h3>
-      <p style="font-size:15px;font-weight:300;color:rgba(255,255,255,0.75);line-height:1.8">Fournir des services fiables, rapides et accessibles tout en garantissant la pleine satisfaction des clients et en contribuant au développement socio-économique de la République Démocratique du Congo.</p>
-    </div>
-  </div>
-</section>
-
-<!-- VALEURS -->
-<section class="page-content light">
-  <p class="section-tag fade-up">Ce qui nous guide</p>
-  <h2 class="section-title fade-up">Nos valeurs<br>fondamentales</h2>
-  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;margin-top:48px;max-width:1200px">
-    <!-- value cards -->
-    <div class="fade-up" style="background:white;padding:36px 32px;border-top:4px solid var(--red)">
-      <div style="width:48px;height:48px;background:rgba(227,30,36,0.1);display:flex;align-items:center;justify-content:center;margin-bottom:16px;font-size:22px">🏆</div>
-      <h3 style="font-size:16px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:10px">Professionnalisme</h3>
-      <p style="font-size:14px;color:var(--gray-2);line-height:1.7;font-weight:300">Nous intervenons avec rigueur, expertise et un haut niveau de compétence dans chaque prestation.</p>
-    </div>
-    <div class="fade-up" style="background:white;padding:36px 32px;border-top:4px solid var(--red)">
-      <div style="width:48px;height:48px;background:rgba(227,30,36,0.1);display:flex;align-items:center;justify-content:center;margin-bottom:16px;font-size:22px">🤝</div>
-      <h3 style="font-size:16px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:10px">Intégrité</h3>
-      <p style="font-size:14px;color:var(--gray-2);line-height:1.7;font-weight:300">La transparence et l'honnêteté sont au cœur de toutes nos relations avec nos clients et partenaires.</p>
-    </div>
-    <div class="fade-up" style="background:white;padding:36px 32px;border-top:4px solid var(--red)">
-      <div style="width:48px;height:48px;background:rgba(227,30,36,0.1);display:flex;align-items:center;justify-content:center;margin-bottom:16px;font-size:22px">💡</div>
-      <h3 style="font-size:16px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:10px">Innovation</h3>
-      <p style="font-size:14px;color:var(--gray-2);line-height:1.7;font-weight:300">Nous adoptons des approches créatives et des solutions modernes pour répondre aux défis du marché.</p>
-    </div>
-    <div class="fade-up" style="background:white;padding:36px 32px;border-top:4px solid var(--red)">
-      <div style="width:48px;height:48px;background:rgba(227,30,36,0.1);display:flex;align-items:center;justify-content:center;margin-bottom:16px;font-size:22px">👥</div>
-      <h3 style="font-size:16px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:10px">Esprit d'équipe</h3>
-      <p style="font-size:14px;color:var(--gray-2);line-height:1.7;font-weight:300">La collaboration et la cohésion de notre équipe sont les moteurs de notre efficacité et réussite.</p>
-    </div>
-    <div class="fade-up" style="background:white;padding:36px 32px;border-top:4px solid var(--red)">
-      <div style="width:48px;height:48px;background:rgba(227,30,36,0.1);display:flex;align-items:center;justify-content:center;margin-bottom:16px;font-size:22px">⭐</div>
-      <h3 style="font-size:16px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:10px">Satisfaction client</h3>
-      <p style="font-size:14px;color:var(--gray-2);line-height:1.7;font-weight:300">Le client est au centre de tout. Sa satisfaction est notre priorité absolue et notre meilleure récompense.</p>
-    </div>
-    <div class="fade-up" style="background:white;padding:36px 32px;border-top:4px solid var(--red)">
-      <div style="width:48px;height:48px;background:rgba(227,30,36,0.1);display:flex;align-items:center;justify-content:center;margin-bottom:16px;font-size:22px">🛡️</div>
-      <h3 style="font-size:16px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin-bottom:10px">Qualité</h3>
-      <p style="font-size:14px;color:var(--gray-2);line-height:1.7;font-weight:300">Chaque prestation respecte des standards élevés de qualité, avec des processus rigoureux de contrôle.</p>
-    </div>
-  </div>
-</section>
-
-<!-- OBJECTIFS -->
-<section id="objectifs" class="page-content white">
-  <div style="display:grid;grid-template-columns:1fr 1.4fr;gap:80px;align-items:start;max-width:1200px;margin:0 auto">
-    <div>
-      <p class="section-tag fade-up">Nos engagements</p>
-      <h2 class="section-title fade-up">Objectifs<br>stratégiques</h2>
-      <div class="fade-up" style="background:var(--red);padding:36px 32px;margin-top:8px">
-        <div style="font-size:11px;letter-spacing:3px;text-transform:uppercase;color:rgba(255,255,255,0.6);margin-bottom:12px">Objectif général</div>
-        <p style="font-size:15px;font-weight:300;color:rgba(255,255,255,0.9);line-height:1.8">Offrir des services de qualité supérieure répondant précisément aux besoins spécifiques de nos clients, avec un engagement total envers leur satisfaction.</p>
-      </div>
-    </div>
-    <div style="padding-top:16px">
-      <div style="display:flex;flex-direction:column;gap:0">
-        <div class="fade-up" style="display:flex;gap:20px;padding:22px 0;border-bottom:1px solid var(--border)">
-          <div style="font-family:var(--font-display);font-size:32px;font-weight:700;color:var(--red);opacity:0.35;line-height:1;flex-shrink:0;width:40px">01</div>
-          <p style="font-size:15px;color:var(--gray-1);line-height:1.65;padding-top:4px">Assurer un service rapide et efficace avec des délais d'intervention compétitifs et une disponibilité maximale</p>
-        </div>
-        <div class="fade-up" style="display:flex;gap:20px;padding:22px 0;border-bottom:1px solid var(--border)">
-          <div style="font-family:var(--font-display);font-size:32px;font-weight:700;color:var(--red);opacity:0.35;line-height:1;flex-shrink:0;width:40px">02</div>
-          <p style="font-size:15px;color:var(--gray-1);line-height:1.65;padding-top:4px">Garantir la qualité des prestations à travers des processus rigoureux de contrôle et d'amélioration continue</p>
-        </div>
-        <div class="fade-up" style="display:flex;gap:20px;padding:22px 0;border-bottom:1px solid var(--border)">
-          <div style="font-family:var(--font-display);font-size:32px;font-weight:700;color:var(--red);opacity:0.35;line-height:1;flex-shrink:0;width:40px">03</div>
-          <p style="font-size:15px;color:var(--gray-1);line-height:1.65;padding-top:4px">Développer un portefeuille clients solide basé sur la confiance, la fidélité et le bouche-à-oreille positif</p>
-        </div>
-        <div class="fade-up" style="display:flex;gap:20px;padding:22px 0;border-bottom:1px solid var(--border)">
-          <div style="font-family:var(--font-display);font-size:32px;font-weight:700;color:var(--red);opacity:0.35;line-height:1;flex-shrink:0;width:40px">04</div>
-          <p style="font-size:15px;color:var(--gray-1);line-height:1.65;padding-top:4px">Contribuer à la création d'emplois locaux et au développement économique de la région du Kongo Central</p>
-        </div>
-        <div class="fade-up" style="display:flex;gap:20px;padding:22px 0">
-          <div style="font-family:var(--font-display);font-size:32px;font-weight:700;color:var(--red);opacity:0.35;line-height:1;flex-shrink:0;width:40px">05</div>
-          <p style="font-size:15px;color:var(--gray-1);line-height:1.65;padding-top:4px">Étendre notre présence géographique et développer des partenariats stratégiques avec d'autres entreprises</p>
-        </div>
+    <div class="about-logo-display fade-up" style="min-height:320px">
+      <img src="../images/logo.png" alt="Matiaba Firm" class="about-logo-img" style="width:220px">
+      <div class="about-stat-row">
+        <div class="about-stat-box"><div class="about-stat-num">2020</div><div class="about-stat-lbl">Fondée</div></div>
+        <div class="about-stat-box"><div class="about-stat-num">9+</div><div class="about-stat-lbl">Services</div></div>
+        <div class="about-stat-box"><div class="about-stat-num">24/7</div><div class="about-stat-lbl">Support</div></div>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ATOUTS -->
-<section id="atouts" class="page-content dark">
-  <p class="section-tag fade-up">Pourquoi nous choisir</p>
-  <h2 class="section-title fade-up" style="color:white;margin-bottom:48px">Nos atouts<br>concurrentiels</h2>
-  <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(300px,1fr));gap:3px;background:rgba(255,255,255,0.04);max-width:1200px">
-    <div class="fade-up" style="background:var(--dark-2);padding:40px 36px">
-      <div style="font-family:var(--font-display);font-size:48px;font-weight:700;color:rgba(227,30,36,0.15);line-height:1;margin-bottom:16px">01</div>
-      <h3 style="font-size:15px;font-weight:600;color:white;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:10px">Équipe dynamique &amp; compétente</h3>
-      <p style="font-size:13.5px;color:rgba(255,255,255,0.4);line-height:1.75;font-weight:300">Des professionnels qualifiés et engagés, formés aux meilleures pratiques du secteur, prêts à répondre à tous vos besoins.</p>
+<!-- VALUES -->
+<section class="page-section bg-dark">
+  <div style="text-align:center;margin-bottom:56px">
+    <p class="section-tag" style="justify-content:center">Ce qui nous guide</p>
+    <h2 class="section-title" style="color:white">Nos valeurs</h2>
+  </div>
+  <div class="values-cards-grid">
+    <div class="value-card fade-up">
+      <div class="value-card-icon">⚡</div>
+      <h3 class="value-card-title">Excellence technique</h3>
+      <p class="value-card-desc">Nous livrons des solutions de haute qualité, en suivant les meilleures pratiques et standards de l'industrie.</p>
     </div>
-    <div class="fade-up" style="background:var(--dark-2);padding:40px 36px">
-      <div style="font-family:var(--font-display);font-size:48px;font-weight:700;color:rgba(227,30,36,0.15);line-height:1;margin-bottom:16px">02</div>
-      <h3 style="font-size:15px;font-weight:600;color:white;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:10px">Flexibilité &amp; réactivité</h3>
-      <p style="font-size:13.5px;color:rgba(255,255,255,0.4);line-height:1.75;font-weight:300">Capacité d'adaptation rapide aux besoins changeants des clients avec des délais d'exécution optimisés.</p>
+    <div class="value-card fade-up">
+      <div class="value-card-icon">🔒</div>
+      <h3 class="value-card-title">Intégrité</h3>
+      <p class="value-card-desc">Transparence, honnêteté et éthique dans toutes nos relations avec nos clients et partenaires.</p>
     </div>
-    <div class="fade-up" style="background:var(--dark-2);padding:40px 36px">
-      <div style="font-family:var(--font-display);font-size:48px;font-weight:700;color:rgba(227,30,36,0.15);line-height:1;margin-bottom:16px">03</div>
-      <h3 style="font-size:15px;font-weight:600;color:white;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:10px">Polyvalence des services</h3>
-      <p style="font-size:13.5px;color:rgba(255,255,255,0.4);line-height:1.75;font-weight:300">Un seul interlocuteur pour tous vos besoins. Notre gamme étendue couvre l'ensemble de vos projets.</p>
+    <div class="value-card fade-up">
+      <div class="value-card-icon">💡</div>
+      <h3 class="value-card-title">Innovation</h3>
+      <p class="value-card-desc">Nous adoptons les technologies émergentes pour proposer des solutions toujours à la pointe.</p>
     </div>
-    <div class="fade-up" style="background:var(--dark-2);padding:40px 36px">
-      <div style="font-family:var(--font-display);font-size:48px;font-weight:700;color:rgba(227,30,36,0.15);line-height:1;margin-bottom:16px">04</div>
-      <h3 style="font-size:15px;font-weight:600;color:white;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:10px">Prix compétitifs</h3>
-      <p style="font-size:13.5px;color:rgba(255,255,255,0.4);line-height:1.75;font-weight:300">Des tarifs transparents et compétitifs sans compromis sur la qualité. Le meilleur rapport qualité-prix du marché.</p>
+    <div class="value-card fade-up">
+      <div class="value-card-icon">🚀</div>
+      <h3 class="value-card-title">Réactivité 24/7</h3>
+      <p class="value-card-desc">Disponibilité permanente pour assurer la continuité de votre activité, 7 jours sur 7.</p>
     </div>
-    <div class="fade-up" style="background:var(--dark-2);padding:40px 36px">
-      <div style="font-family:var(--font-display);font-size:48px;font-weight:700;color:rgba(227,30,36,0.15);line-height:1;margin-bottom:16px">05</div>
-      <h3 style="font-size:15px;font-weight:600;color:white;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:10px">Connaissance locale</h3>
-      <p style="font-size:13.5px;color:rgba(255,255,255,0.4);line-height:1.75;font-weight:300">Ancrée dans la réalité du Kongo Central, RM5 comprend les défis et opportunités spécifiques au contexte local.</p>
+    <div class="value-card fade-up">
+      <div class="value-card-icon">🤝</div>
+      <h3 class="value-card-title">Esprit d'équipe</h3>
+      <p class="value-card-desc">Une collaboration étroite avec nos clients, traités comme de véritables partenaires stratégiques.</p>
     </div>
-    <div class="fade-up" style="background:var(--dark-2);padding:40px 36px">
-      <div style="font-family:var(--font-display);font-size:48px;font-weight:700;color:rgba(227,30,36,0.15);line-height:1;margin-bottom:16px">06</div>
-      <h3 style="font-size:15px;font-weight:600;color:white;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:10px">Engagement qualité</h3>
-      <p style="font-size:13.5px;color:rgba(255,255,255,0.4);line-height:1.75;font-weight:300">Chaque prestation est encadrée par des procédures strictes de contrôle qualité garantissant l'excellence du résultat.</p>
+    <div class="value-card fade-up">
+      <div class="value-card-icon">✅</div>
+      <h3 class="value-card-title">Satisfaction client</h3>
+      <p class="value-card-desc">Votre satisfaction est notre priorité absolue à chaque étape de nos prestations.</p>
     </div>
   </div>
 </section>
 
-<!-- PERSPECTIVES -->
-<section class="page-content light">
-  <p class="section-tag fade-up">Demain</p>
-  <h2 class="section-title fade-up">Nos perspectives<br>d'avenir</h2>
-  <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:3px;margin-top:48px;max-width:1200px">
-    <div class="fade-up" style="background:white;padding:44px 36px;border-bottom:4px solid var(--red)">
-      <div style="font-size:36px;margin-bottom:16px">📈</div>
-      <h3 style="font-size:16px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:12px">Élargissement des services</h3>
-      <p style="font-size:14px;color:var(--gray-2);line-height:1.75;font-weight:300">Intégrer de nouveaux domaines d'activité pour répondre à l'évolution des besoins du marché congolais.</p>
+<!-- VISION MISSION -->
+<section class="page-section bg-light">
+  <div class="two-col-grid">
+    <div class="vm-card vision-card fade-up" style="border-radius:16px">
+      <div class="vm-card-label">Notre vision</div>
+      <h3 class="vm-card-title">Référence incontournable</h3>
+      <p class="vm-card-text">Devenir la référence incontournable en ingénierie IT et services multisectoriels, en offrant des solutions innovantes qui transforment positivement nos clients et leur environnement.</p>
     </div>
-    <div class="fade-up" style="background:white;padding:44px 36px;border-bottom:4px solid var(--red)">
-      <div style="font-size:36px;margin-bottom:16px">🗺️</div>
-      <h3 style="font-size:16px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:12px">Extension géographique</h3>
-      <p style="font-size:14px;color:var(--gray-2);line-height:1.75;font-weight:300">Étendre notre présence au-delà de Matadi vers d'autres provinces de la RDC et de la région.</p>
-    </div>
-    <div class="fade-up" style="background:white;padding:44px 36px;border-bottom:4px solid var(--red)">
-      <div style="font-size:36px;margin-bottom:16px">🤝</div>
-      <h3 style="font-size:16px;font-weight:700;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:12px">Partenariats stratégiques</h3>
-      <p style="font-size:14px;color:var(--gray-2);line-height:1.75;font-weight:300">Développer des alliances stratégiques avec d'autres entreprises et institutions pour renforcer notre offre.</p>
+    <div class="vm-card mission-card fade-up" style="border-radius:16px">
+      <div class="vm-card-label">Notre mission</div>
+      <h3 class="vm-card-title">Services fiables &amp; innovants</h3>
+      <p class="vm-card-text">Fournir des services IT et multisectoriels fiables, rapides et accessibles, en garantissant la pleine satisfaction de nos clients grâce à une expertise technique de pointe.</p>
     </div>
   </div>
 </section>
 
 <!-- CTA -->
-<section class="page-content dark" style="text-align:center">
-  <h2 class="section-title fade-up" style="color:white">Travaillons<br>ensemble</h2>
-  <p class="section-lead fade-up" style="margin:0 auto 40px;text-align:center;color:rgba(255,255,255,0.5)">Vous avez un projet ? Contactez-nous pour en discuter et obtenir un devis personnalisé.</p>
-  <div class="fade-up" style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap">
-    <a href="devis.html" class="btn-primary" style="background:var(--red);color:white;padding:16px 44px;font-size:13px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;border-radius:2px;transition:background .28s;display:inline-block">Demander un devis</a>
-    <a href="../index.html#contact" style="background:transparent;color:white;padding:15px 44px;font-size:13px;font-weight:600;letter-spacing:1.5px;text-transform:uppercase;border:1.5px solid rgba(255,255,255,0.25);border-radius:2px;display:inline-block">Nous contacter</a>
+<section class="page-cta-section">
+  <div class="page-cta-inner">
+    <h2 class="page-cta-title">Prêt à travailler avec nous ?</h2>
+    <p class="page-cta-desc">Contactez notre équipe pour discuter de votre projet.</p>
+    <a href="devis.html" class="btn-green">Demander un devis gratuit</a>
   </div>
 </section>
 
-<script src="../js/shared.js"></script>
-<script>initShared('about');</script>
+<!-- FOOTER -->
+<footer>
+  <div class="footer-main">
+    <div>
+      <img src="../images/logo.png" alt="Matiaba Firm" class="footer-logo-img">
+      <p class="footer-tagline">Votre partenaire en ingénierie IT, digitalisation &amp; IA et services multisectoriels — Clean and Save.</p>
+      <div class="footer-social">
+        <a href="mailto:contact@matiabafirm.com" class="social-btn" title="Email"><svg width="16" height="16"><use href="#icon-mail"/></svg></a>
+        <a href="tel:+242040065640" class="social-btn" title="Téléphone"><svg width="16" height="16"><use href="#icon-phone"/></svg></a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Navigation</div>
+      <div class="footer-links">
+        <a href="../index.html">Accueil</a>
+        <a href="a-propos.html">À propos</a>
+        <li class="nav-item-dropdown">
+  <a href="services.html" class="nav-link">Services <svg width="10" height="6" viewBox="0 0 10 6" fill="none" style="display:inline;vertical-align:middle;margin-left:4px"><path d="M1 1L5 5L9 1" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+  <div class="mega-menu">
+    <div class="mega-col">
+      <div class="mega-col-title">🏗️ Multiservices</div>
+      <div class="mega-links">
+        <a href="services/genie-civil.html" class="mega-link"><span class="mega-link-icon">🏗️</span> Génie civil</a>
+        <a href="services/maintenance.html" class="mega-link"><span class="mega-link-icon">⚙️</span> Maintenance</a>
+        <a href="services/informatique-bureautique.html" class="mega-link"><span class="mega-link-icon">💻</span> Informatique</a>
+        <a href="services/fourniture-btp.html" class="mega-link"><span class="mega-link-icon">🧱</span> Fourniture BTP</a>
+        <a href="services/nettoyage-assainissement.html" class="mega-link"><span class="mega-link-icon">🧹</span> Nettoyage</a>
+        <a href="services/fret-logistique.html" class="mega-link"><span class="mega-link-icon">🚢</span> Fret Logistique</a>
+        <a href="services/conseils-technique.html" class="mega-link"><span class="mega-link-icon">🎯</span> Conseils</a>
+      </div>
+    </div>
+    <div class="mega-col mega-col-it">
+      <div class="mega-col-title">🖥️ Secteur IT</div>
+      <div class="mega-links">
+        <a href="services/infogerance.html" class="mega-link"><span class="mega-link-icon">☁️</span> Infogérance</a>
+        <a href="services/dev-web-mobile.html" class="mega-link"><span class="mega-link-icon">📱</span> Dev Web/Mobile</a>
+        <a href="services/marketing-digital.html" class="mega-link"><span class="mega-link-icon">📈</span> Marketing</a>
+        <a href="services/reseaux-systemes.html" class="mega-link"><span class="mega-link-icon">🌐</span> Réseaux</a>
+        <a href="services/cybersecurite.html" class="mega-link"><span class="mega-link-icon">🔐</span> Cybersécurité</a>
+        <a href="services/cloud-hebergement.html" class="mega-link"><span class="mega-link-icon">☁️</span> Cloud</a>
+      </div>
+    </div>
+    <div class="mega-col mega-col-ia">
+        <div class="mega-col-title">🤖 IA & Digital</div>
+        <div class="mega-links">
+          <a href="services/rpa.html" class="mega-link"><span class="mega-link-icon">🤖</span> RPA</a>
+          <a href="services/intelligence-artificielle.html" class="mega-link"><span class="mega-link-icon">🧠</span> IA</a>
+          <a href="services/data-analytics.html" class="mega-link"><span class="mega-link-icon">📊</span> Data Analytics</a>
+          <a href="services/transformation-processus.html" class="mega-link"><span class="mega-link-icon">🔄</span> Transformation</a>
+          <a href="services/data-engineering.html" class="mega-link"><span class="mega-link-icon">🗄️</span> Data Engineering</a>
+          <a href="services/chatbots-ia.html" class="mega-link"><span class="mega-link-icon">💬</span> Chatbots IA</a>
+        </div>
+      </div>
+  </div>
+</li>
+        <a href="../index.html#sectors">IT &amp; IA</a>
+        <a href="../index.html#contact">Contact</a>
+      </div>
+    </div>
+    <div>
+      <div class="footer-col-title">Contact</div>
+      <div class="footer-contact-item"><svg width="13" height="13"><use href="#icon-pin"/></svg><span class="footer-contact-text">15 rue Kalli Fayette, Mpita wharf, Pointe-Noire</span></div>
+      <div class="footer-contact-item"><svg width="13" height="13"><use href="#icon-phone"/></svg><span class="footer-contact-text">+242 04 006 5640</span></div>
+      <div class="footer-contact-item"><svg width="13" height="13"><use href="#icon-mail"/></svg><span class="footer-contact-text">contact@matiabafirm.com</span></div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span class="footer-copy">© 2025 Matiaba Firm. Tous droits réservés.</span>
+    <div class="footer-legal">
+      <a href="mentions-legales.html">Mentions légales</a>
+      <a href="confidentialite.html">Politique de confidentialité</a>
+    </div>
+  </div>
+</footer>
+<button id="scroll-top" aria-label="Retour en haut"><svg width="20" height="20"><use href="#icon-chevron-up"/></svg></button>
+<script src="../js/main.js"></script>
 </body>
 </html>
+
